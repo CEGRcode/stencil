@@ -1,0 +1,13 @@
+{
+  "project_name": "frontend",
+  "version": "v1.0.0",
+  "affiliation": "Organization",
+  "hero_title": "Project Name",
+  "hero_subtitle": "tagline",
+  "hero_caption": "one line description",
+  "hero_abstract": ["lorem-english", "lorem-spanish"],
+  "track_hub_prefix": "http://genome.ucsc.edu/cgi-bin/hgTracks?db=sacCer3&hubUrl=",
+  "backend_api_server_url": "http://localhost",
+  "backend_api_server_port": 8081,
+  "docker_username": "docker_username"
+}
