@@ -1,0 +1,233 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Frontend React · Stencil</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="A project template for reactjs based web-frontend to visualize and share genomic data."/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Frontend React · Stencil"/><meta property="og:type" content="website"/><meta property="og:url" content="https://cegrcode.github.io/stencil/"/><meta property="og:description" content="A project template for reactjs based web-frontend to visualize and share genomic data."/><meta property="og:image" content="https://cegrcode.github.io/stencil/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://cegrcode.github.io/stencil/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/stencil/undefined"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400&amp;display=swap"/><link rel="stylesheet" href="/stencil/css/code-block-button.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script><script type="text/javascript" src="/stencil/js/code-block-button.js"></script><script src="https://unpkg.com/vanilla-back-to-top@7.1.14/dist/vanilla-back-to-top.min.js"></script><script>
+        document.addEventListener('DOMContentLoaded', function() {
+          addBackToTop(
+            {"zIndex":100}
+          )
+        });
+        </script><script src="/stencil/js/scrollSpy.js"></script><link rel="stylesheet" href="/stencil/css/main.css"/><script src="/stencil/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/stencil/"><h2 class="headerTitle">Stencil</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/stencil/docs/install" target="_self">Docs</a></li><li class=""><a href="https://github.com/CEGRcode/stencil" target="_blank">GitHub</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Getting started</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Getting started</h3><ul class=""><li class="navListItem"><a class="navItem" href="/stencil/docs/install">Install</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/stencil/docs/doc1">frontend-react</a></li><li class="navListItem"><a class="navItem" href="/stencil/docs/doc2">backend-node</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Frontend React</h1></header><article><div><span><p>A project template for reactjs based web-frontend to visualize and share genomic data.</p>
+<blockquote>
+<p><em>By default this frontend consumes the API served by <a href="/stencil/docs/doc2">backend-node</a>.</em></p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="quickstart"></a><a href="#quickstart" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Quickstart</h2>
+<hr>
+<ul>
+<li>Install cookiecutter</li>
+</ul>
+<pre><code class="hljs css language-bash">pip install <span class="hljs-string">'cookiecutter&gt;=1.7.2'</span>
+</code></pre>
+<ul>
+<li><p>Setup a backend application using <a href="/stencil/docs/doc2">backend-node</a></p></li>
+<li><p>Generate a frontend project :</p></li>
+</ul>
+<pre><code class="hljs css language-bash">cookiecutter https://github.com/CEGRcode/stencil.git  --directory=<span class="hljs-string">"frontend-react"</span>
+</code></pre>
+<blockquote>
+<p>Follow the prompts to create your custom frontend web-app and go into your project folder.</p>
+</blockquote>
+<ul>
+<li>Install dependencies</li>
+</ul>
+<pre><code class="hljs">npm <span class="hljs-keyword">install</span>
+</code></pre>
+<ul>
+<li>Now, we can start the frontend application</li>
+</ul>
+<pre><code class="hljs"><span class="hljs-built_in">npm</span> start
+</code></pre>
+<ul>
+<li>This automatically launches the app in your default browser. otherwise, open any browser and go to <code>http://localhost:3000</code> to view it.</li>
+</ul>
+<blockquote>
+<p>Without your backend server running parallely, you will not see anything on the frontend website that you just launched.</p>
+</blockquote>
+<ul>
+<li>Start your backend application and mongodb server in their respective terminals. (assuming you used the defaults specified in <a href="/stencil/docs/doc2">backend-node</a>)</li>
+</ul>
+<pre><code class="hljs"># <span class="hljs-keyword">start</span> mongodb <span class="hljs-keyword">server</span>
+mongod <span class="hljs-comment">--dbpath ~/Desktop/data/db</span>
+
+# <span class="hljs-keyword">start</span> backend api <span class="hljs-keyword">server</span>
+cd &lt;your_backend_directory&gt;
+
+# <span class="hljs-keyword">to</span> <span class="hljs-keyword">start</span> backend
+npm <span class="hljs-keyword">start</span>
+
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="features"></a><a href="#features" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Features</h3>
+<hr>
+<ul>
+<li>Basic search.</li>
+<li>UCSC genome browser integration and track loader.</li>
+<li>Predefined React components for common bioinformatic analysis tools.</li>
+<li>Supports interactive charts using <a href="https://nivo.rocks/">nivo</a>.</li>
+<li>Docker &amp; docker-compose support.</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="deploying-the-application"></a><a href="#deploying-the-application" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Deploying the application</h3>
+<hr>
+<p>This project was bootstrapped with <a href="https://github.com/facebook/create-react-app">Create React App</a>. You can use the default <code>build</code> scripts to compile the project.</p>
+<p>To <code>build</code> the project, use <code>npm run build</code> from your project's root folder. This will generate a <strong>build</strong> directory with minified code. For detailed instructions on how to use this <strong>build</strong> directory with nginx or its alternatives follow the official <code>deployment</code> instructions under <strong><em>Learn More</em></strong> section below.</p>
+<h2><a class="anchor" aria-hidden="true" id="building-a-docker-image"></a><a href="#building-a-docker-image" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Building a Docker image</h2>
+<hr>
+<p>This project comes with a <code>Dockerfile</code>, which can be used to build a docker image. Below are the step by step commands to build and launch a dockerized container that uses <code>nginx:alpine</code> as base image.</p>
+<pre><code class="hljs"><span class="hljs-comment">&lt;!-- generate a build for your app --&gt;</span>
+npm run build
+
+<span class="hljs-comment">&lt;!-- create a docker image --&gt;</span>
+docker build --tag=demofrontend .
+
+<span class="hljs-comment">&lt;!-- run the docker container --&gt;</span>
+docker run -d -p 3000:80
+</code></pre>
+<p>You can view your application in a browser at <code>http://localhost:3000</code>. Assuming you have the backend application running to serve the API that this docker container can consume.</p>
+<h3><a class="anchor" aria-hidden="true" id="using-docker-compose-to-combine-backend-and-frontend-deployment"></a><a href="#using-docker-compose-to-combine-backend-and-frontend-deployment" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Using docker-compose to combine backend and frontend deployment</h3>
+<hr>
+<p>To create a single standalone application that combines backend and frontend, we need to use <code>docker-compose.yml</code>.
+Below are some build instructions and <code>docker-compose.yml</code> that packages both backend and frontend into a single app.</p>
+<p><strong>Build an image for the backend ( instructions adapted from <a href="/stencil/docs/doc2">backend-node</a> )</strong></p>
+<ul>
+<li><p>Configure the backend's <code>.env</code> as below to ensure proper communication between the mongodb &amp; backend code.</p>
+<pre><code class="hljs"><span class="hljs-attr">DB_URL</span>=<span class="hljs-string">"mongo:27017"</span>
+<span class="hljs-attr">DB_NAME</span>=<span class="hljs-string">"testDB"</span>
+<span class="hljs-attr">PUBLIC_ENDPOINT</span>=<span class="hljs-string">"http://localhost:8081/samples/"</span>
+<span class="hljs-attr">IMAGE_URL</span>=<span class="hljs-string">"http://localhost:8081/images/"</span>
+<span class="hljs-attr">NODE_PORT</span>=<span class="hljs-number">8081</span>
+
+</code></pre></li>
+<li><p>Change the dataset path within the <code>app.js</code></p>
+<pre><code class="hljs"><span class="hljs-comment">&lt;!-- Replace below line in app.js--&gt;</span>
+app.use("/images", express.static("<span class="hljs-tag">&lt;<span class="hljs-name">some_example_path</span>&gt;</span>"));
+
+<span class="hljs-comment">&lt;!-- to below, before building the images --&gt;</span>
+app.use("/images", express.static("/srv/app/images"));
+
+</code></pre></li>
+<li><p>Build the image</p>
+<ul>
+<li><code>docker build --tag=demobackend .</code></li>
+</ul></li>
+</ul>
+<p>:star: <strong>Build an image for frontend</strong></p>
+<pre><code class="hljs"><span class="hljs-comment">&lt;!-- generate a build for your app --&gt;</span>
+npm run build
+
+<span class="hljs-comment">&lt;!-- create a docker image --&gt;</span>
+docker build --tag=demofrontend .
+</code></pre>
+<ul>
+<li>Create a folder <code>Docker-App</code> on your <code>Desktop</code> and copy the <code>sampleData</code> folder provided in your backend into it.</li>
+<li>Create a new file <code>docker-compose.yml</code> in <code>Docker-App</code> and copy the below contents into it.</li>
+</ul>
+<pre><code class="hljs"><span class="hljs-symbol">version:</span> <span class="hljs-string">"3"</span>
+<span class="hljs-symbol">services:</span>
+<span class="hljs-symbol">  server:</span>
+<span class="hljs-symbol">    container_name:</span> backend
+<span class="hljs-symbol">    image:</span> <span class="hljs-string">"demobackend"</span>
+<span class="hljs-symbol">    restart:</span> always
+<span class="hljs-symbol">    ports:</span>
+      - <span class="hljs-string">"8081:8081"</span>
+<span class="hljs-symbol">    volumes:</span>
+      - ./sampleData/images:<span class="hljs-meta-keyword">/srv/</span>app/images
+<span class="hljs-symbol">    depends_on:</span>
+      - <span class="hljs-string">"mongo"</span>
+<span class="hljs-symbol">  mongo:</span>
+<span class="hljs-symbol">    image:</span> <span class="hljs-string">"mongo"</span>
+<span class="hljs-symbol">    ports:</span>
+      - <span class="hljs-string">"27017:27017"</span>
+<span class="hljs-symbol">  client:</span>
+<span class="hljs-symbol">    container_name:</span> frontend
+<span class="hljs-symbol">    image:</span> <span class="hljs-string">"demofrontend"</span>
+<span class="hljs-symbol">    expose:</span>
+      - <span class="hljs-number">3000</span>
+<span class="hljs-symbol">    ports:</span>
+      - <span class="hljs-string">"3000:80"</span>
+<span class="hljs-symbol">    depends_on:</span>
+      - server
+</code></pre>
+<blockquote>
+<p>The spaces in the file matter. read more about <code>docker-compose</code> <a href="https://docs.docker.com/compose/">here</a>.</p>
+</blockquote>
+<ul>
+<li>Your <code>Docker-App</code> directory should look like this:</li>
+</ul>
+<pre><code class="hljs">|<span class="hljs-string">____Docker-App
+</span>|<span class="hljs-string"> </span>|<span class="hljs-string">____sampleData/
+</span>|<span class="hljs-string"> </span>|<span class="hljs-string">____docker-compose.yml
+
+</span></code></pre>
+<ul>
+<li>Now to launch the entire application, run the below command from <code>~/Desktop/Docker-App/</code>
+<ul>
+<li><code>docker compose up</code></li>
+</ul></li>
+<li>Once the container is running, you can use the scripts in <code>sampleData/utils/</code> to insert sampleData.</li>
+<li>To stop the container, hit <code>ctrl + c</code> and then <code>docker compose down</code></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="learn-more"></a><a href="#learn-more" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Learn More</h2>
+<hr>
+<ul>
+<li>Getting started with <a href="https://facebook.github.io/create-react-app/docs/getting-started">Create React App documentation</a>.</li>
+<li>To learn React, check out the <a href="https://reactjs.org/">React documentation</a>.</li>
+<li><a href="https://facebook.github.io/create-react-app/docs/code-splitting"><strong>Code Splitting</strong></a></li>
+<li><a href="https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size"><strong>Analyzing the Bundle Size</strong></a></li>
+<li><a href="https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app"><strong>Making a Progressive Web App</strong></a></li>
+<li><a href="https://facebook.github.io/create-react-app/docs/advanced-configuration"><strong>Advanced Configuration</strong></a></li>
+<li><a href="https://facebook.github.io/create-react-app/docs/deployment"><strong>Deployment</strong></a></li>
+<li><a href="https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify"><strong><code>build</code> fails to minify</strong></a></li>
+</ul>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 9/8/2020 by PrashantKuntala</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/stencil/docs/install"><span class="arrow-prev">← </span><span>Install</span></a><a class="docs-next button" href="/stencil/docs/doc2"><span>backend-node</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#quickstart">Quickstart</a><ul class="toc-headings"><li><a href="#features">Features</a></li><li><a href="#deploying-the-application">Deploying the application</a></li></ul></li><li><a href="#building-a-docker-image">Building a Docker image</a><ul class="toc-headings"><li><a href="#using-docker-compose-to-combine-backend-and-frontend-deployment">Using docker-compose to combine backend and frontend deployment</a></li></ul></li><li><a href="#learn-more">Learn More</a></li></ul></nav></div></div></body></html>
