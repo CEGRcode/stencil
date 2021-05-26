@@ -1,0 +1,374 @@
+{
+		"genome": "hg19",
+		"historyId": "6fb17d0cc6e8fae5",
+		"projectId": "PCRP Antibody Validation Project",
+		"libraryType": "ChIP-exo",
+		"sampleId": "GRHL2",
+		"libraryId": "GRHL2-17380",
+		"libraryDescription": "The protein encoded by this gene is a transcription factor that can act as a homodimer or as a heterodimer with either GRHL1 or GRHL3. Defects in this gene are a cause of non-syndromic sensorineural deafness autosomal dominant type 28 (DFNA28).[provided by RefSeq, Mar 2009]",
+		"createdBy": "cegr@psu.edu",
+		"token": "a23Ta13q",
+		"submitter": "cegr@psu.edu",
+		"libraryData": [
+			{
+		    "id": "Subtype0_0",
+		    "dataType": "png",
+		    "layoutId": "Chexmix_Subtype",
+				"layoutTitle": "CHEXMIX SUBTYPES",
+		    "tabId": "Subtype 0",
+		    "URL": "http://localhost:8081/localdata/PCRP/17380/17380_Subtype0_motif.png",
+		    "stepId": "0"
+		  },
+			{
+		    "id": "Subtype0_1",
+		    "dataType": "png",
+		    "layoutId": "Chexmix_Subtype",
+				"layoutTitle": "CHEXMIX SUBTYPES",
+		    "tabId": "Subtype 0",
+		    "URL": "http://localhost:8081/localdata/PCRP/17380/17380_Subtype0_motif_rc.png",
+		    "stepId": "1"
+		  },
+			{
+				"id": "Subtype0_2",
+				"dataType": "png",
+				"layoutId": "Chexmix_Subtype",
+				"layoutTitle": "CHEXMIX SUBTYPES",
+				"tabId": "Subtype 0",
+				"URL": "http://localhost:8081/localdata/PCRP/17380/17380_Subtype0_TOMTOM.png",
+				"stepId": "2"
+			},
+			{
+				"id": "Subtype0_3",
+				"dataType": "png",
+				"layoutId": "Chexmix_Subtype",
+				"layoutTitle": "CHEXMIX SUBTYPES",
+				"tabId": "Subtype 0",
+				"URL": "http://localhost:8081/localdata/PCRP/17380/17380_Subtype0_FourColor.png",
+				"stepId": "3"
+			},
+			{
+				"id": "Subtype0_4",
+				"dataType": "png",
+				"layoutId": "Chexmix_Subtype",
+				"layoutTitle": "CHEXMIX SUBTYPES",
+				"tabId": "Subtype 0",
+				"URL": "http://localhost:8081/localdata/PCRP/17380/17380_Subtype0_500bp_SAMPLE.png",
+				"stepId": "4"
+			},
+			{
+				"id": "Subtype0_5",
+				"dataType": "png",
+				"layoutId": "Chexmix_Subtype",
+				"layoutTitle": "CHEXMIX SUBTYPES",
+				"tabId": "Subtype 0",
+				"URL": "http://localhost:8081/localdata/PCRP/17380/17380_Subtype0_500bp_CONTROL.png",
+				"stepId": "5"
+			},
+			{
+		    "id": "Subtype0_6",
+		    "dataType": "lineplot",
+		    "layoutId": "Chexmix_Subtype",
+				"layoutTitle": "CHEXMIX SUBTYPES",
+		    "tabId": "Subtype 0",
+		    "URL": "http://localhost:8081/localdata/PCRP/17380/17380_Subtype0_lineplot.json",
+		    "stepId": "6"
+		  },
+			{
+		    "id": "Subtype1_0",
+		    "dataType": "png",
+		    "layoutId": "Chexmix_Subtype",
+				"layoutTitle": "CHEXMIX SUBTYPES",
+		    "tabId": "Subtype 1",
+		    "URL": "http://localhost:8081/localdata/PCRP/17380/17380_Subtype1_motif.png",
+		    "stepId": "0"
+		  },
+			{
+		    "id": "Subtype1_1",
+		    "dataType": "png",
+		    "layoutId": "Chexmix_Subtype",
+				"layoutTitle": "CHEXMIX SUBTYPES",
+		    "tabId": "Subtype 1",
+		    "URL": "http://localhost:8081/localdata/PCRP/17380/17380_Subtype1_motif_rc.png",
+		    "stepId": "1"
+		  },
+			{
+				"id": "Subtype1_2",
+				"dataType": "png",
+				"layoutId": "Chexmix_Subtype",
+				"layoutTitle": "CHEXMIX SUBTYPES",
+				"tabId": "Subtype 1",
+				"URL": "http://localhost:8081/localdata/PCRP/17380/17380_Subtype1_TOMTOM.png",
+				"stepId": "2"
+			},
+			{
+				"id": "Subtype1_3",
+				"dataType": "png",
+				"layoutId": "Chexmix_Subtype",
+				"layoutTitle": "CHEXMIX SUBTYPES",
+				"tabId": "Subtype 1",
+				"URL": "http://localhost:8081/localdata/PCRP/17380/17380_Subtype1_FourColor.png",
+				"stepId": "3"
+			},
+			{
+				"id": "Subtype1_4",
+				"dataType": "png",
+				"layoutId": "Chexmix_Subtype",
+				"layoutTitle": "CHEXMIX SUBTYPES",
+				"tabId": "Subtype 1",
+				"URL": "http://localhost:8081/localdata/PCRP/17380/17380_Subtype1_500bp_SAMPLE.png",
+				"stepId": "4"
+			},
+			{
+				"id": "Subtype1_5",
+				"dataType": "png",
+				"layoutId": "Chexmix_Subtype",
+				"layoutTitle": "CHEXMIX SUBTYPES",
+				"tabId": "Subtype 1",
+				"URL": "http://localhost:8081/localdata/PCRP/17380/17380_Subtype1_500bp_CONTROL.png",
+				"stepId": "5"
+			},
+			{
+		    "id": "Subtype1_6",
+		    "dataType": "lineplot",
+		    "layoutId": "Chexmix_Subtype",
+				"layoutTitle": "CHEXMIX SUBTYPES",
+		    "tabId": "Subtype 1",
+		    "URL": "http://localhost:8081/localdata/PCRP/17380/17380_Subtype1_lineplot.json",
+		    "stepId": "6"
+		  },
+			{
+				"id": "Subtype2_0",
+				"dataType": "png",
+				"layoutId": "Chexmix_Subtype",
+				"layoutTitle": "CHEXMIX SUBTYPES",
+				"tabId": "Subtype 2",
+				"URL": "http://localhost:8081/localdata/PCRP/17380/17380_Subtype2_motif.png",
+				"stepId": "0"
+			},
+			{
+				"id": "Subtype2_1",
+				"dataType": "png",
+				"layoutId": "Chexmix_Subtype",
+				"layoutTitle": "CHEXMIX SUBTYPES",
+				"tabId": "Subtype 2",
+				"URL": "http://localhost:8081/localdata/PCRP/17380/17380_Subtype2_motif_rc.png",
+				"stepId": "1"
+			},
+			{
+				"id": "Subtype2_2",
+				"dataType": "png",
+				"layoutId": "Chexmix_Subtype",
+				"layoutTitle": "CHEXMIX SUBTYPES",
+				"tabId": "Subtype 2",
+				"URL": "http://localhost:8081/localdata/PCRP/17380/17380_Subtype2_TOMTOM.png",
+				"stepId": "2"
+			},
+			{
+				"id": "Subtype2_3",
+				"dataType": "png",
+				"layoutId": "Chexmix_Subtype",
+				"layoutTitle": "CHEXMIX SUBTYPES",
+				"tabId": "Subtype 2",
+				"URL": "http://localhost:8081/localdata/PCRP/17380/17380_Subtype2_FourColor.png",
+				"stepId": "3"
+			},
+			{
+				"id": "Subtype2_4",
+				"dataType": "png",
+				"layoutId": "Chexmix_Subtype",
+				"layoutTitle": "CHEXMIX SUBTYPES",
+				"tabId": "Subtype 2",
+				"URL": "http://localhost:8081/localdata/PCRP/17380/17380_Subtype2_500bp_SAMPLE.png",
+				"stepId": "4"
+			},
+			{
+				"id": "Subtype2_5",
+				"dataType": "png",
+				"layoutId": "Chexmix_Subtype",
+				"layoutTitle": "CHEXMIX SUBTYPES",
+				"tabId": "Subtype 2",
+				"URL": "http://localhost:8081/localdata/PCRP/17380/17380_Subtype2_500bp_CONTROL.png",
+				"stepId": "5"
+			},
+			{
+		    "id": "Subtype2_6",
+		    "dataType": "lineplot",
+		    "layoutId": "Chexmix_Subtype",
+				"layoutTitle": "CHEXMIX SUBTYPES",
+		    "tabId": "Subtype 2",
+		    "URL": "http://localhost:8081/localdata/PCRP/17380/17380_Subtype2_lineplot.json",
+		    "stepId": "6"
+		  },
+			{
+		    "id": "Subtype3_0",
+		    "dataType": "png",
+		    "layoutId": "Chexmix_Subtype",
+				"layoutTitle": "CHEXMIX SUBTYPES",
+		    "tabId": "Subtype 3",
+		    "URL": "http://localhost:8081/localdata/PCRP/17380/17380_Subtype3_motif.png",
+		    "stepId": "0"
+		  },
+			{
+		    "id": "Subtype3_1",
+		    "dataType": "png",
+		    "layoutId": "Chexmix_Subtype",
+				"layoutTitle": "CHEXMIX SUBTYPES",
+		    "tabId": "Subtype 3",
+		    "URL": "http://localhost:8081/localdata/PCRP/17380/17380_Subtype3_motif_rc.png",
+		    "stepId": "1"
+		  },
+			{
+				"id": "Subtype3_2",
+				"dataType": "png",
+				"layoutId": "Chexmix_Subtype",
+				"layoutTitle": "CHEXMIX SUBTYPES",
+				"tabId": "Subtype 3",
+				"URL": "http://localhost:8081/localdata/PCRP/17380/17380_Subtype3_TOMTOM.png",
+				"stepId": "2"
+			},
+			{
+				"id": "Subtype3_3",
+				"dataType": "png",
+				"layoutId": "Chexmix_Subtype",
+				"layoutTitle": "CHEXMIX SUBTYPES",
+				"tabId": "Subtype 3",
+				"URL": "http://localhost:8081/localdata/PCRP/17380/17380_Subtype3_FourColor.png",
+				"stepId": "3"
+			},
+			{
+				"id": "Subtype3_4",
+				"dataType": "png",
+				"layoutId": "Chexmix_Subtype",
+				"layoutTitle": "CHEXMIX SUBTYPES",
+				"tabId": "Subtype 3",
+				"URL": "http://localhost:8081/localdata/PCRP/17380/17380_Subtype3_500bp_SAMPLE.png",
+				"stepId": "4"
+			},
+			{
+				"id": "Subtype3_5",
+				"dataType": "png",
+				"layoutId": "Chexmix_Subtype",
+				"layoutTitle": "CHEXMIX SUBTYPES",
+				"tabId": "Subtype 3",
+				"URL": "http://localhost:8081/localdata/PCRP/17380/17380_Subtype3_500bp_CONTROL.png",
+				"stepId": "5"
+			},
+			{
+		    "id": "Subtype3_6",
+		    "dataType": "lineplot",
+		    "layoutId": "Chexmix_Subtype",
+				"layoutTitle": "CHEXMIX SUBTYPES",
+		    "tabId": "Subtype 3",
+		    "URL": "http://localhost:8081/localdata/PCRP/17380/17380_Subtype3_lineplot.json",
+		    "stepId": "6"
+		  },
+			{
+				"id": "CTCF-0",
+				"dataType": "lineplot",
+				"layoutId": "Mammalian_Feature",
+				"layoutTitle": "FEATURE PILEUP",
+				"tabId": "CTCF",
+				"URL": "http://localhost:8081/localdata/PCRP/17380/17380_Feature_CTCF_lineplot.json",
+				"stepId": "0"
+			},
+			{
+				"id": "CTCF-1",
+				"dataType": "png",
+				"layoutId": "Mammalian_Feature",
+				"layoutTitle": "FEATURE PILEUP",
+				"tabId": "CTCF",
+				"URL": "http://localhost:8081/localdata/PCRP/17380/17380_Feature_CTCF_Heatmap.png",
+				"stepId": "1"
+			},
+			{
+				"id": "CTCF-2",
+				"dataType": "png",
+				"layoutId": "Mammalian_Feature",
+				"layoutTitle": "FEATURE PILEUP",
+				"tabId": "CTCF",
+				"URL": "http://localhost:8081/localdata/PCRP/17380/17380_Feature_CTCF-IgG_Heatmap.png",
+				"stepId": "2"
+			},
+			{
+				"id": "TSS-0",
+				"dataType": "lineplot",
+				"layoutId": "Mammalian_Feature",
+				"layoutTitle": "FEATURE PILEUP",
+				"tabId": "TSS",
+				"URL": "http://localhost:8081/localdata/PCRP/17380/17380_Feature_TSS_lineplot.json",
+				"stepId": "0"
+			},
+			{
+				"id": "TSS-1",
+				"dataType": "png",
+				"layoutId": "Mammalian_Feature",
+				"layoutTitle": "FEATURE PILEUP",
+				"tabId": "TSS",
+				"URL": "http://localhost:8081/localdata/PCRP/17380/17380_Feature_TSS_Heatmap.png",
+				"stepId": "1"
+			},
+			{
+				"id": "TSS-2",
+				"dataType": "png",
+				"layoutId": "Mammalian_Feature",
+				"layoutTitle": "FEATURE PILEUP",
+				"tabId": "TSS",
+				"URL": "http://localhost:8081/localdata/PCRP/17380/17380_Feature_TSS-IgG_Heatmap.png",
+				"stepId": "2"
+			},
+			{
+				"id": "chromHMM-log2",
+				"dataType": "barchart",
+				"layoutId": "DoubleChart",
+				"layoutTitle": "STATE ENRICHMENT",
+				"tabId": "chromHMM",
+				"URL": "http://localhost:8081/localdata/PCRP/17380/17380_chromHMM-log2_barchart.json",
+				"stepId": "0"
+			},
+			{
+				"id": "chromHMM-freq",
+				"dataType": "barchart",
+				"layoutId": "DoubleChart",
+				"layoutTitle": "STATE ENRICHMENT",
+				"tabId": "chromHMM",
+				"URL": "http://localhost:8081/localdata/PCRP/17380/17380_chromHMM-histogram_barchart.json",
+				"stepId": "1"
+			},
+			{
+				"id": "segway-log2",
+				"dataType": "barchart",
+				"layoutId": "DoubleChart",
+				"layoutTitle": "STATE ENRICHMENT",
+				"tabId": "Segway",
+				"URL": "http://localhost:8081/localdata/PCRP/17380/17380_segway-log2_barchart.json",
+				"stepId": "0"
+			},
+			{
+				"id": "segway-freq",
+				"dataType": "barchart",
+				"layoutId": "DoubleChart",
+				"layoutTitle": "STATE ENRICHMENT",
+				"tabId": "Segway",
+				"URL": "http://localhost:8081/localdata/PCRP/17380/17380_segway-histogram_barchart.json",
+				"stepId": "1"
+			},
+			{
+				"id": "repeat-log2",
+				"dataType": "barchart",
+				"layoutId": "DoubleChart",
+				"layoutTitle": "STATE ENRICHMENT",
+				"tabId": "Repeat Element",
+				"URL": "http://localhost:8081/localdata/PCRP/17380/17380_repeat-log2_barchart.json",
+				"stepId": "0"
+			},
+			{
+				"id": "repeat-freq",
+				"dataType": "barchart",
+				"layoutId": "DoubleChart",
+				"layoutTitle": "STATE ENRICHMENT",
+				"tabId": "Repeat Element",
+				"URL": "http://localhost:8081/localdata/PCRP/17380/17380_repeat-histogram_barchart.json",
+				"stepId": "1"
+			}
+		]
+}

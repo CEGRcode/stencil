@@ -1,0 +1,13 @@
+{
+	"trackOptions": {
+		"genome": "hg19"
+	},
+	"trackData":
+	[
+		{
+			"name": "p300-ENCFF533LGP",
+			"url": "http://localhost:8081/localdata/ENCODE/CS_p300/ENCFF533LGP.bigBed",
+			"format": "bigBed"
+		}
+	]
+}

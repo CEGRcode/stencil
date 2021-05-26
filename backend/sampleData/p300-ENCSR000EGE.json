@@ -1,0 +1,398 @@
+{
+	"genome": "hg19",
+	"historyId": "6fb17d0cc6e8fae5",
+	"projectId": "ENCODE Analysis",
+	"libraryType": "ChIP-seq",
+	"sampleId": "p300",
+	"libraryId": "p300-ENCSR000EGE",
+	"libraryDescription": "This gene encodes the adenovirus E1A-associated cellular p300 transcriptional co-activator protein. It functions as histone acetyltransferase that regulates transcription via chromatin remodeling and is important in the processes of cell proliferation and differentiation. It mediates cAMP-gene regulation by binding specifically to phosphorylated CREB protein. This gene has also been identified as a co-activator of HIF1A (hypoxia-inducible factor 1 alpha), and thus plays a role in the stimulation of hypoxia-induced genes such as VEGF. Defects in this gene are a cause of Rubinstein-Taybi syndrome and may also play a role in epithelial cancer. [provided by RefSeq, Jul 2008]",
+	"token": "a23Ta13q",
+	"submitter": "cegr@psu.edu",
+	"libraryData": [{
+			"id": "IGVbrowser",
+			"dataType": "igvtrack",
+			"layoutId": "SingleChart",
+			"layoutTitle": "IGV browser",
+			"URL": "http://localhost:8081/localdata/ENCODE/CS_p300/igvtrack.json",
+			"stepId": "0"
+		},
+		{
+			"id": "Motif1_Logo",
+			"dataType": "png",
+			"layoutId": "ENCODE_Motif",
+			"layoutTitle": "MOTIF ANALYSIS",
+			"tabId": "MOTIF 1",
+			"URL": "http://localhost:8081/localdata/ENCODE/CS_p300/ENCSR000EGE_motif1.png",
+			"stepId": "0"
+		},
+		{
+			"id": "Motif1_LogoRC",
+			"dataType": "png",
+			"layoutId": "ENCODE_Motif",
+			"layoutTitle": "MOTIF ANALYSIS",
+			"tabId": "MOTIF 1",
+			"URL": "http://localhost:8081/localdata/ENCODE/CS_p300/ENCSR000EGE_motif1_rc.png",
+			"stepId": "1"
+		},
+		{
+			"id": "Motif1_Plot",
+			"dataType": "lineplot",
+			"layoutId": "ENCODE_Motif",
+			"layoutTitle": "MOTIF ANALYSIS",
+			"tabId": "MOTIF 1",
+			"URL": "http://localhost:8081/localdata/ENCODE/CS_p300/ENCSR000EGE_motif1_lineplot.json",
+			"stepId": "2"
+		},
+		{
+			"id": "Motif1_4Color",
+			"dataType": "svg",
+			"layoutId": "ENCODE_Motif",
+			"layoutTitle": "MOTIF ANALYSIS",
+			"tabId": "MOTIF 1",
+			"URL": "http://localhost:8081/localdata/ENCODE/CS_p300/ENCSR000EGE_motif1_50bp.svg",
+			"stepId": "3"
+		},
+		{
+			"id": "Motif1_Sample1",
+			"dataType": "svg",
+			"layoutId": "ENCODE_Motif",
+			"layoutTitle": "MOTIF ANALYSIS",
+			"tabId": "MOTIF 1",
+			"URL": "http://localhost:8081/localdata/ENCODE/CS_p300/ENCSR000EGE_motif1_ENCFF366ROL_read1_combined_treeview.svg",
+			"stepId": "4"
+		},
+		{
+			"id": "Motif1_Sample2",
+			"dataType": "svg",
+			"layoutId": "ENCODE_Motif",
+			"layoutTitle": "MOTIF ANALYSIS",
+			"tabId": "MOTIF 1",
+			"URL": "http://localhost:8081/localdata/ENCODE/CS_p300/ENCSR000EGE_motif1_ENCFF703ULA_read1_combined_treeview.svg",
+			"stepId": "5"
+		},
+		{
+			"id": "Motif1_Control",
+			"dataType": "svg",
+			"layoutId": "ENCODE_Motif",
+			"layoutTitle": "MOTIF ANALYSIS",
+			"tabId": "MOTIF 1",
+			"URL": "http://localhost:8081/localdata/ENCODE/CS_p300/ENCSR000EGE_motif1_ENCFF710NTS_read1_combined_treeview.svg",
+			"stepId": "6"
+		},
+		{
+			"id": "Motif2_Logo",
+			"dataType": "png",
+			"layoutId": "ENCODE_Motif",
+			"layoutTitle": "MOTIF ANALYSIS",
+			"tabId": "MOTIF 2",
+			"URL": "http://localhost:8081/localdata/ENCODE/CS_p300/ENCSR000EGE_motif2.png",
+			"stepId": "0"
+		},
+		{
+			"id": "Motif2_LogoRC",
+			"dataType": "png",
+			"layoutId": "ENCODE_Motif",
+			"layoutTitle": "MOTIF ANALYSIS",
+			"tabId": "MOTIF 2",
+			"URL": "http://localhost:8081/localdata/ENCODE/CS_p300/ENCSR000EGE_motif2_rc.png",
+			"stepId": "1"
+		},
+		{
+			"id": "Motif2_Plot",
+			"dataType": "lineplot",
+			"layoutId": "ENCODE_Motif",
+			"layoutTitle": "MOTIF ANALYSIS",
+			"tabId": "MOTIF 2",
+			"URL": "http://localhost:8081/localdata/ENCODE/CS_p300/ENCSR000EGE_motif2_lineplot.json",
+			"stepId": "2"
+		},
+		{
+			"id": "Motif2_4Color",
+			"dataType": "svg",
+			"layoutId": "ENCODE_Motif",
+			"layoutTitle": "MOTIF ANALYSIS",
+			"tabId": "MOTIF 2",
+			"URL": "http://localhost:8081/localdata/ENCODE/CS_p300/ENCSR000EGE_motif2_50bp.svg",
+			"stepId": "3"
+		},
+		{
+			"id": "Motif2_Sample1",
+			"dataType": "svg",
+			"layoutId": "ENCODE_Motif",
+			"layoutTitle": "MOTIF ANALYSIS",
+			"tabId": "MOTIF 2",
+			"URL": "http://localhost:8081/localdata/ENCODE/CS_p300/ENCSR000EGE_motif2_ENCFF366ROL_read1_combined_treeview.svg",
+			"stepId": "4"
+		},
+		{
+			"id": "Motif2_Sample2",
+			"dataType": "svg",
+			"layoutId": "ENCODE_Motif",
+			"layoutTitle": "MOTIF ANALYSIS",
+			"tabId": "MOTIF 2",
+			"URL": "http://localhost:8081/localdata/ENCODE/CS_p300/ENCSR000EGE_motif2_ENCFF703ULA_read1_combined_treeview.svg",
+			"stepId": "5"
+		},
+		{
+			"id": "Motif2_Control",
+			"dataType": "svg",
+			"layoutId": "ENCODE_Motif",
+			"layoutTitle": "MOTIF ANALYSIS",
+			"tabId": "MOTIF 2",
+			"URL": "http://localhost:8081/localdata/ENCODE/CS_p300/ENCSR000EGE_motif2_ENCFF710NTS_read1_combined_treeview.svg",
+			"stepId": "6"
+		},
+		{
+			"id": "Motif6_Logo",
+			"dataType": "png",
+			"layoutId": "ENCODE_Motif",
+			"layoutTitle": "MOTIF ANALYSIS",
+			"tabId": "MOTIF 6",
+			"URL": "http://localhost:8081/localdata/ENCODE/CS_p300/ENCSR000EGE_motif6.png",
+			"stepId": "0"
+		},
+		{
+			"id": "Motif6_LogoRC",
+			"dataType": "png",
+			"layoutId": "ENCODE_Motif",
+			"layoutTitle": "MOTIF ANALYSIS",
+			"tabId": "MOTIF 6",
+			"URL": "http://localhost:8081/localdata/ENCODE/CS_p300/ENCSR000EGE_motif6_rc.png",
+			"stepId": "1"
+		},
+		{
+			"id": "Motif6_Plot",
+			"dataType": "lineplot",
+			"layoutId": "ENCODE_Motif",
+			"layoutTitle": "MOTIF ANALYSIS",
+			"tabId": "MOTIF 6",
+			"URL": "http://localhost:8081/localdata/ENCODE/CS_p300/ENCSR000EGE_motif6_lineplot.json",
+			"stepId": "2"
+		},
+		{
+			"id": "Motif6_4Color",
+			"dataType": "svg",
+			"layoutId": "ENCODE_Motif",
+			"layoutTitle": "MOTIF ANALYSIS",
+			"tabId": "MOTIF 6",
+			"URL": "http://localhost:8081/localdata/ENCODE/CS_p300/ENCSR000EGE_motif6_50bp.svg",
+			"stepId": "3"
+		},
+		{
+			"id": "Motif6_Sample1",
+			"dataType": "svg",
+			"layoutId": "ENCODE_Motif",
+			"layoutTitle": "MOTIF ANALYSIS",
+			"tabId": "MOTIF 6",
+			"URL": "http://localhost:8081/localdata/ENCODE/CS_p300/ENCSR000EGE_motif6_ENCFF366ROL_read1_combined_treeview.svg",
+			"stepId": "4"
+		},
+		{
+			"id": "Motif6_Sample2",
+			"dataType": "svg",
+			"layoutId": "ENCODE_Motif",
+			"layoutTitle": "MOTIF ANALYSIS",
+			"tabId": "MOTIF 6",
+			"URL": "http://localhost:8081/localdata/ENCODE/CS_p300/ENCSR000EGE_motif6_ENCFF703ULA_read1_combined_treeview.svg",
+			"stepId": "5"
+		},
+		{
+			"id": "Motif6_Control",
+			"dataType": "svg",
+			"layoutId": "ENCODE_Motif",
+			"layoutTitle": "MOTIF ANALYSIS",
+			"tabId": "MOTIF 6",
+			"URL": "http://localhost:8081/localdata/ENCODE/CS_p300/ENCSR000EGE_motif6_ENCFF710NTS_read1_combined_treeview.svg",
+			"stepId": "6"
+		},
+		{
+			"id": "Motif14_Logo",
+			"dataType": "png",
+			"layoutId": "ENCODE_Motif",
+			"layoutTitle": "MOTIF ANALYSIS",
+			"tabId": "MOTIF 14",
+			"URL": "http://localhost:8081/localdata/ENCODE/CS_p300/ENCSR000EGE_motif14.png",
+			"stepId": "0"
+		},
+		{
+			"id": "Motif14_LogoRC",
+			"dataType": "png",
+			"layoutId": "ENCODE_Motif",
+			"layoutTitle": "MOTIF ANALYSIS",
+			"tabId": "MOTIF 14",
+			"URL": "http://localhost:8081/localdata/ENCODE/CS_p300/ENCSR000EGE_motif14_rc.png",
+			"stepId": "1"
+		},
+		{
+			"id": "Motif14_Plot",
+			"dataType": "lineplot",
+			"layoutId": "ENCODE_Motif",
+			"layoutTitle": "MOTIF ANALYSIS",
+			"tabId": "MOTIF 14",
+			"URL": "http://localhost:8081/localdata/ENCODE/CS_p300/ENCSR000EGE_motif14_lineplot.json",
+			"stepId": "2"
+		},
+		{
+			"id": "Motif14_4Color",
+			"dataType": "svg",
+			"layoutId": "ENCODE_Motif",
+			"layoutTitle": "MOTIF ANALYSIS",
+			"tabId": "MOTIF 14",
+			"URL": "http://localhost:8081/localdata/ENCODE/CS_p300/ENCSR000EGE_motif14_50bp.svg",
+			"stepId": "3"
+		},
+		{
+			"id": "Motif14_Sample1",
+			"dataType": "svg",
+			"layoutId": "ENCODE_Motif",
+			"layoutTitle": "MOTIF ANALYSIS",
+			"tabId": "MOTIF 14",
+			"URL": "http://localhost:8081/localdata/ENCODE/CS_p300/ENCSR000EGE_motif14_ENCFF366ROL_read1_combined_treeview.svg",
+			"stepId": "4"
+		},
+		{
+			"id": "Motif14_Sample2",
+			"dataType": "svg",
+			"layoutId": "ENCODE_Motif",
+			"layoutTitle": "MOTIF ANALYSIS",
+			"tabId": "MOTIF 14",
+			"URL": "http://localhost:8081/localdata/ENCODE/CS_p300/ENCSR000EGE_motif14_ENCFF703ULA_read1_combined_treeview.svg",
+			"stepId": "5"
+		},
+		{
+			"id": "Motif14_Control",
+			"dataType": "svg",
+			"layoutId": "ENCODE_Motif",
+			"layoutTitle": "MOTIF ANALYSIS",
+			"tabId": "MOTIF 14",
+			"URL": "http://localhost:8081/localdata/ENCODE/CS_p300/ENCSR000EGE_motif14_ENCFF710NTS_read1_combined_treeview.svg",
+			"stepId": "6"
+		},
+		{
+			"id": "CTCF-0",
+			"dataType": "lineplot",
+			"layoutId": "ENCODE_Feature",
+			"layoutTitle": "FEATURE PILEUP",
+			"tabId": "CTCF",
+			"URL": "http://localhost:8081/localdata/ENCODE/CS_p300/ENCSR000EGE_CTCF_lineplot.json",
+			"stepId": "0"
+		},
+		{
+			"id": "CTCF-1",
+			"dataType": "svg",
+			"layoutId": "ENCODE_Feature",
+			"layoutTitle": "FEATURE PILEUP",
+			"tabId": "CTCF",
+			"URL": "http://localhost:8081/localdata/ENCODE/CS_p300/hg19_CTCF_2000bp_ENCFF366ROL_read1_combined_treeview.svg",
+			"stepId": "1"
+		},
+		{
+			"id": "CTCF-2",
+			"dataType": "svg",
+			"layoutId": "ENCODE_Feature",
+			"layoutTitle": "FEATURE PILEUP",
+			"tabId": "CTCF",
+			"URL": "http://localhost:8081/localdata/ENCODE/CS_p300/hg19_CTCF_2000bp_ENCFF703ULA_read1_combined_treeview.svg",
+			"stepId": "2"
+		},
+		{
+			"id": "CTCF-3",
+			"dataType": "svg",
+			"layoutId": "ENCODE_Feature",
+			"layoutTitle": "FEATURE PILEUP",
+			"tabId": "CTCF",
+			"URL": "http://localhost:8081/localdata/ENCODE/CS_p300/hg19_CTCF_2000bp_ENCFF710NTS_read1_combined_treeview.svg",
+			"stepId": "3"
+		},
+		{
+			"id": "TSS-0",
+			"dataType": "lineplot",
+			"layoutId": "ENCODE_Feature",
+			"layoutTitle": "FEATURE PILEUP",
+			"tabId": "TSS",
+			"URL": "http://localhost:8081/localdata/ENCODE/CS_p300/ENCSR000EGE_TSS_lineplot.json",
+			"stepId": "0"
+		},
+		{
+			"id": "TSS-1",
+			"dataType": "svg",
+			"layoutId": "ENCODE_Feature",
+			"layoutTitle": "FEATURE PILEUP",
+			"tabId": "TSS",
+			"URL": "http://localhost:8081/localdata/ENCODE/CS_p300/hg19_TSS_2000bp_ENCFF366ROL_read1_combined_treeview.svg",
+			"stepId": "1"
+		},
+		{
+			"id": "TSS-2",
+			"dataType": "svg",
+			"layoutId": "ENCODE_Feature",
+			"layoutTitle": "FEATURE PILEUP",
+			"tabId": "TSS",
+			"URL": "http://localhost:8081/localdata/ENCODE/CS_p300/hg19_TSS_2000bp_ENCFF703ULA_read1_combined_treeview.svg",
+			"stepId": "2"
+		},
+		{
+			"id": "TSS-3",
+			"dataType": "svg",
+			"layoutId": "ENCODE_Feature",
+			"layoutTitle": "FEATURE PILEUP",
+			"tabId": "TSS",
+			"URL": "http://localhost:8081/localdata/ENCODE/CS_p300/hg19_TSS_2000bp_ENCFF710NTS_read1_combined_treeview.svg",
+			"stepId": "3"
+		},
+		{
+			"id": "repeat-log2",
+			"dataType": "barchart",
+			"layoutId": "DoubleChart",
+			"layoutTitle": "STATE ENRICHMENT",
+			"tabId": "Repeat Element",
+			"URL": "http://localhost:8081/localdata/ENCODE/CS_p300/ENCFF549TYR_repeat_log2.json",
+			"stepId": "0"
+		},
+		{
+			"id": "repeat-freq",
+			"dataType": "barchart",
+			"layoutId": "DoubleChart",
+			"layoutTitle": "STATE ENRICHMENT",
+			"tabId": "Repeat Element",
+			"URL": "http://localhost:8081/localdata/ENCODE/CS_p300/ENCFF549TYR_repeat_freq.json",
+			"stepId": "1"
+		},
+		{
+			"id": "segway-log2",
+			"dataType": "barchart",
+			"layoutId": "DoubleChart",
+			"layoutTitle": "STATE ENRICHMENT",
+			"tabId": "Segway",
+			"URL": "http://localhost:8081/localdata/ENCODE/CS_p300/ENCFF549TYR_segway_log2.json",
+			"stepId": "0"
+		},
+		{
+			"id": "segway-freq",
+			"dataType": "barchart",
+			"layoutId": "DoubleChart",
+			"layoutTitle": "STATE ENRICHMENT",
+			"tabId": "Segway",
+			"URL": "http://localhost:8081/localdata/ENCODE/CS_p300/ENCFF549TYR_segway_freq.json",
+			"stepId": "1"
+		},
+		{
+			"id": "chromHMM-log2",
+			"dataType": "barchart",
+			"layoutId": "DoubleChart",
+			"layoutTitle": "STATE ENRICHMENT",
+			"tabId": "chromHMM",
+			"URL": "http://localhost:8081/localdata/ENCODE/CS_p300/ENCFF549TYR_chromHMM_log2.json",
+			"stepId": "0"
+		},
+		{
+			"id": "chromHMM-freq",
+			"dataType": "barchart",
+			"layoutId": "DoubleChart",
+			"layoutTitle": "STATE ENRICHMENT",
+			"tabId": "chromHMM",
+			"URL": "http://localhost:8081/localdata/ENCODE/CS_p300/ENCFF549TYR_chromHMM_freq.json",
+			"stepId": "1"
+		}
+	]
+}

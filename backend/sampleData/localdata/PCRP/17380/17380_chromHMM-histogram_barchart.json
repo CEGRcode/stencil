@@ -1,0 +1,67 @@
+{
+	"chartOptions": {
+		"keys": [ "Sample" , "Control", "Genomic" ],
+		"indexBy": "index",
+		"layout": "vertical",
+		"groupMode": "grouped",
+		"colors": [ "#0000ff", "#ff0000", "#000000" ],
+		"borderColor": "#000000",
+		"borderWidth": 1,
+		"padding": 0.5,
+		"innerPadding": 1,
+		"axisBottom": {
+			"tickSize": 5,
+			"tickPadding": 5,
+			"tickRotation": 45,
+			"legend": "chromHMM States",
+			"legendPosition": "middle",
+			"legendOffset": 60
+		},
+		"axisLeft": {
+			"tickSize": 5,
+			"tickPadding": 5,
+			"tickRotation": 0,
+			"legend": "Frequency",
+			"legendPosition": "middle",
+			"legendOffset": -50
+		}
+	},
+	"chartData": [
+			{
+					"index": "Promoter",
+					"Sample": 0.0741,
+					"Control": 0.0223,
+					"Genomic": 0.0116
+			},
+			{
+					"index": "Transcription",
+					"Sample": 0.214,
+					"Control": 0.261,
+					"Genomic": 0.153
+			},
+			{
+					"index": "Enhancer",
+					"Sample": 0.0976,
+					"Control": 0.0511,
+					"Genomic": 0.0205
+			},
+			{
+					"index": "Insulator",
+					"Sample": 0.0210,
+					"Control": 0.0131,
+					"Genomic": 0.00610
+			},
+			{
+					"index": "Repressed",
+					"Sample": 0.0430,
+					"Control": 0.0392,
+					"Genomic": 0.0238
+			},
+			{
+					"index": "Heterochromatin",
+					"Sample": 0.546,
+					"Control": 0.607,
+					"Genomic": 0.700
+			}
+	]
+}

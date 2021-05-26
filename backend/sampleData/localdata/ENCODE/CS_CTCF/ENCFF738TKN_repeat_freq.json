@@ -1,0 +1,81 @@
+{
+    "chartOptions": {
+      "keys": [ "Sample" , "Genomic" ],
+  		"indexBy": "index",
+  		"layout": "vertical",
+  		"groupMode": "grouped",
+  		"colors": [ "#0000ff", "#000000" ],
+  		"borderColor": "#000000",
+  		"borderWidth": 1,
+  		"padding": 0.5,
+  		"innerPadding": 1,
+  		"axisBottom": {
+  			"tickSize": 5,
+  			"tickPadding": 5,
+        "tickRotation": 30,
+  			"legend": "Repeat Elements",
+  			"legendPosition": "middle",
+  			"legendOffset": 60
+  		},
+  		"axisLeft": {
+  			"tickSize": 5,
+  			"tickPadding": 5,
+  			"tickRotation": 0,
+  			"legend": "Frequency",
+  			"legendPosition": "middle",
+  			"legendOffset": -50
+  		}
+    },
+    "chartData": [
+        {
+            "index": "LINE",
+            "Sample": 0.256,
+            "Genomic": 0.236
+        },
+        {
+            "index": "SINE",
+            "Sample": 0.256,
+            "Genomic": 0.147
+        },
+        {
+            "index": "LTR",
+            "Sample": 0.217,
+            "Genomic": 0.099
+        },
+        {
+            "index": "Simple_repeats",
+            "Sample": 0.057,
+            "Genomic": 0.010
+        },
+        {
+            "index": "Low_complexity",
+            "Sample": 0.078,
+            "Genomic": 0.006
+        },
+        {
+            "index": "Satellite",
+            "Sample": 0.002,
+            "Genomic": 0.005
+        },
+        {
+            "index": "RNA",
+            "Sample": 0.004,
+            "Genomic": 0.000
+        },
+        {
+            "index": "DNA",
+            "Sample": 0.128,
+            "Genomic": 0.037
+        },
+        {
+            "index": "Other",
+            "Sample": 0.001,
+            "Genomic": 0.002
+        },
+        {
+            "index": "Unknown",
+            "Sample": 0.002,
+            "Genomic": 0.000
+        }
+    ]
+}

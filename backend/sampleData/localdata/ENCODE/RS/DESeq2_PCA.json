@@ -1,0 +1,110 @@
+{
+	"chartOptions": {
+		"margin": {
+			"top": 40,
+			"right": 60,
+			"bottom": 70,
+			"left": 60
+		},
+		"axisTop": {
+			"legend": "PCA Plot for Treatment: K562 vs HepG2",
+			"tickValues": []
+		},
+		"axisBottom": {
+			"orient": "bottom",
+			"tickSize": 5,
+			"tickPadding": 5,
+			"tickRotation": 0,
+			"legend": "PC1: 98% variance",
+			"legendPosition": "middle",
+			"legendOffset": 46
+		},
+		"axisLeft": {
+			"orient": "bottom",
+			"tickSize": 5,
+			"tickPadding": 5,
+			"tickRotation": 0,
+			"legend": "PC2: 1% variance",
+			"legendPosition": "middle",
+			"legendOffset": -40
+		},
+		"xScale": {
+			"type": "linear",
+			"min": -151,
+			"max": 151
+		},
+		"yScale": {
+			"type": "linear",
+			"min": -21,
+			"max": 21
+		},
+		"blendMode": "multiply",
+		"nodeSize": 10
+	},
+	"chartData": [
+		{
+			"id": "HepG2 Sample4-Gigneras",
+			"data": [{
+				"color": "#ff0000",
+				"x": -99.2263,
+				"y": -2.112
+			}]
+		},
+		{
+			"id": "HepG2 Sample3-Gingeras",
+			"data": [{
+				"color": "#ff0000",
+				"x": -98.0181,
+				"y": -2.4344
+			}]
+		},
+		{
+			"id": "HepG2 Sample1-Wold",
+			"data": [{
+				"color": "#ff0000",
+				"x": -97.631,
+				"y": 3.5564
+			}]
+		},
+		{
+			"id": "HepG2 Sample2-Wold",
+			"data": [{
+				"color": "#ff0000",
+				"x": -98.1693,
+				"y": 1.6496
+			}]
+		},
+		{
+			"id": "K562 Sample4-Gingeras",
+			"data": [{
+				"color": "#0000ff",
+				"x": 95.8934,
+				"y": -16.3332
+			}]
+		},
+		{
+			"id": "K562 Sample2-Wold",
+			"data": [{
+				"color": "#0000ff",
+				"x": 100.537,
+				"y": 16.2102
+			}]
+		},
+		{
+			"id": "K562 Sample3-Gingeras",
+			"data": [{
+				"color": "#0000ff",
+				"x": 96.6968,
+				"y": -15.8721
+			}]
+		},
+		{
+			"id": "K562 Sample1-Wold",
+			"data": [{
+				"color": "#0000ff",
+				"x": 99.9177,
+				"y": 15.3354
+			}]
+		}
+	]
+}

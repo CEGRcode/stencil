@@ -1,0 +1,185 @@
+{
+		"genome": "hg19",
+		"historyId": "6fb17d0cc6e8fae5",
+		"projectId": "PCRP Antibody Validation Project",
+		"libraryType": "ChIP-exo",
+		"sampleId": "HNFA4A",
+		"libraryId": "HNFA4A-18755",
+		"libraryDescription": "The protein encoded by this gene is a nuclear transcription factor which binds DNA as a homodimer. The encoded protein controls the expression of several genes, including hepatocyte nuclear factor 1 alpha, a transcription factor which regulates the expression of several hepatic genes. This gene may play a role in development of the liver, kidney, and intestines. Mutations in this gene have been associated with monogenic autosomal dominant non-insulin-dependent diabetes mellitus type I. Alternative splicing of this gene results in multiple transcript variants encoding several different isoforms. [provided by RefSeq, Apr 2012]",
+		"createdBy": "cegr@psu.edu",
+		"token": "a23Ta13q",
+		"submitter": "cegr@psu.edu",
+		"libraryData": [
+			{
+		    "id": "Subtype0_0",
+		    "dataType": "png",
+		    "layoutId": "Chexmix_Subtype",
+				"layoutTitle": "CHEXMIX SUBTYPES",
+		    "tabId": "Subtype 0",
+		    "URL": "http://localhost:8081/localdata/PCRP/18755/18755_Subtype0_motif.png",
+		    "stepId": "0"
+		  },
+			{
+		    "id": "Subtype0_1",
+		    "dataType": "png",
+		    "layoutId": "Chexmix_Subtype",
+				"layoutTitle": "CHEXMIX SUBTYPES",
+		    "tabId": "Subtype 0",
+		    "URL": "http://localhost:8081/localdata/PCRP/18755/18755_Subtype0_motif_rc.png",
+		    "stepId": "1"
+		  },
+			{
+				"id": "Subtype0_2",
+				"dataType": "png",
+				"layoutId": "Chexmix_Subtype",
+				"layoutTitle": "CHEXMIX SUBTYPES",
+				"tabId": "Subtype 0",
+				"URL": "http://localhost:8081/localdata/PCRP/18755/18755_Subtype0_TOMTOM.png",
+				"stepId": "2"
+			},
+			{
+				"id": "Subtype0_3",
+				"dataType": "png",
+				"layoutId": "Chexmix_Subtype",
+				"layoutTitle": "CHEXMIX SUBTYPES",
+				"tabId": "Subtype 0",
+				"URL": "http://localhost:8081/localdata/PCRP/18755/18755_Subtype0_FourColor.png",
+				"stepId": "3"
+			},
+			{
+				"id": "Subtype0_4",
+				"dataType": "png",
+				"layoutId": "Chexmix_Subtype",
+				"layoutTitle": "CHEXMIX SUBTYPES",
+				"tabId": "Subtype 0",
+				"URL": "http://localhost:8081/localdata/PCRP/18755/18755_Subtype0_500bp_SAMPLE.png",
+				"stepId": "4"
+			},
+			{
+				"id": "Subtype0_5",
+				"dataType": "png",
+				"layoutId": "Chexmix_Subtype",
+				"layoutTitle": "CHEXMIX SUBTYPES",
+				"tabId": "Subtype 0",
+				"URL": "http://localhost:8081/localdata/PCRP/18755/18755_Subtype0_500bp_CONTROL.png",
+				"stepId": "5"
+			},
+			{
+		    "id": "Subtype0_6",
+		    "dataType": "lineplot",
+		    "layoutId": "Chexmix_Subtype",
+				"layoutTitle": "CHEXMIX SUBTYPES",
+		    "tabId": "Subtype 0",
+		    "URL": "http://localhost:8081/localdata/PCRP/18755/18755_Subtype0_lineplot.json",
+		    "stepId": "6"
+		  },
+			{
+				"id": "CTCF-0",
+				"dataType": "lineplot",
+				"layoutId": "Mammalian_Feature",
+				"layoutTitle": "FEATURE PILEUP",
+				"tabId": "CTCF",
+				"URL": "http://localhost:8081/localdata/PCRP/18755/18755_Feature_CTCF_lineplot.json",
+				"stepId": "0"
+			},
+			{
+				"id": "CTCF-1",
+				"dataType": "png",
+				"layoutId": "Mammalian_Feature",
+				"layoutTitle": "FEATURE PILEUP",
+				"tabId": "CTCF",
+				"URL": "http://localhost:8081/localdata/PCRP/18755/18755_Feature_CTCF_Heatmap.png",
+				"stepId": "1"
+			},
+			{
+				"id": "CTCF-2",
+				"dataType": "png",
+				"layoutId": "Mammalian_Feature",
+				"layoutTitle": "FEATURE PILEUP",
+				"tabId": "CTCF",
+				"URL": "http://localhost:8081/localdata/PCRP/18755/18755_Feature_CTCF-IgG_Heatmap.png",
+				"stepId": "2"
+			},
+			{
+				"id": "TSS-0",
+				"dataType": "lineplot",
+				"layoutId": "Mammalian_Feature",
+				"layoutTitle": "FEATURE PILEUP",
+				"tabId": "TSS",
+				"URL": "http://localhost:8081/localdata/PCRP/18755/18755_Feature_TSS_lineplot.json",
+				"stepId": "0"
+			},
+			{
+				"id": "TSS-1",
+				"dataType": "png",
+				"layoutId": "Mammalian_Feature",
+				"layoutTitle": "FEATURE PILEUP",
+				"tabId": "TSS",
+				"URL": "http://localhost:8081/localdata/PCRP/18755/18755_Feature_TSS_Heatmap.png",
+				"stepId": "1"
+			},
+			{
+				"id": "TSS-2",
+				"dataType": "png",
+				"layoutId": "Mammalian_Feature",
+				"layoutTitle": "FEATURE PILEUP",
+				"tabId": "TSS",
+				"URL": "http://localhost:8081/localdata/PCRP/18755/18755_Feature_TSS-IgG_Heatmap.png",
+				"stepId": "2"
+			},
+			{
+				"id": "chromHMM-log2",
+				"dataType": "barchart",
+				"layoutId": "DoubleChart",
+				"layoutTitle": "STATE ENRICHMENT",
+				"tabId": "chromHMM",
+				"URL": "http://localhost:8081/localdata/PCRP/18755/18755_chromHMM-log2_barchart.json",
+				"stepId": "0"
+			},
+			{
+				"id": "chromHMM-freq",
+				"dataType": "barchart",
+				"layoutId": "DoubleChart",
+				"layoutTitle": "STATE ENRICHMENT",
+				"tabId": "chromHMM",
+				"URL": "http://localhost:8081/localdata/PCRP/18755/18755_chromHMM-histogram_barchart.json",
+				"stepId": "1"
+			},
+			{
+				"id": "segway-log2",
+				"dataType": "barchart",
+				"layoutId": "DoubleChart",
+				"layoutTitle": "STATE ENRICHMENT",
+				"tabId": "Segway",
+				"URL": "http://localhost:8081/localdata/PCRP/18755/18755_segway-log2_barchart.json",
+				"stepId": "0"
+			},
+			{
+				"id": "segway-freq",
+				"dataType": "barchart",
+				"layoutId": "DoubleChart",
+				"layoutTitle": "STATE ENRICHMENT",
+				"tabId": "Segway",
+				"URL": "http://localhost:8081/localdata/PCRP/18755/18755_segway-histogram_barchart.json",
+				"stepId": "1"
+			},
+			{
+				"id": "repeat-log2",
+				"dataType": "barchart",
+				"layoutId": "DoubleChart",
+				"layoutTitle": "STATE ENRICHMENT",
+				"tabId": "Repeat Element",
+				"URL": "http://localhost:8081/localdata/PCRP/18755/18755_repeat-log2_barchart.json",
+				"stepId": "0"
+			},
+			{
+				"id": "repeat-freq",
+				"dataType": "barchart",
+				"layoutId": "DoubleChart",
+				"layoutTitle": "STATE ENRICHMENT",
+				"tabId": "Repeat Element",
+				"URL": "http://localhost:8081/localdata/PCRP/18755/18755_repeat-histogram_barchart.json",
+				"stepId": "1"
+			}
+		]
+}

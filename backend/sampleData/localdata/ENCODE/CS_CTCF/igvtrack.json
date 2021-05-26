@@ -1,0 +1,13 @@
+{
+	"trackOptions": {
+		"genome": "hg19"
+	},
+	"trackData":
+	[
+		{
+			"name": "CTCF-ENCFF652VUV",
+			"url": "http://localhost:8081/localdata/ENCODE/CS_CTCF/ENCFF652VUV.bigBed",
+			"format": "bigBed"
+		}
+	]
+}

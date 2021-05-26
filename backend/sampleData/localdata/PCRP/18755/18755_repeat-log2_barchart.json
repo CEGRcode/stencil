@@ -1,0 +1,82 @@
+{
+	"chartOptions": {
+		"keys": [ "LINE", "SINE", "LTR", "Simple_repeats", "Low_complexity", "Satellite", "RNA", "DNA", "Other", "Unknown" ],
+		"indexBy": "index",
+		"layout": "horizontal",
+		"groupMode": "stacked",
+		"borderColor": "#000000",
+		"borderWidth": 1,
+		"padding": 0.25,
+		"innerPadding": 1,
+		"enableLabel": true,
+		"margin": { "top": 10, "right": 80, "bottom": 80, "left": 150 },
+		"axisBottom": {
+			"tickSize": 5,
+			"tickPadding": 5,
+			"tickRotation": 45,
+			"legend": "Repeat Elements",
+			"legendPosition": "middle",
+			"legendOffset": 60
+		},
+		"axisLeft": {
+			"tickSize": 5,
+			"tickPadding": 5,
+			"tickRotation": 0,
+			"legend": "Log2 (Sample/Control) Enrichment Ratio",
+			"legendPosition": "middle",
+			"legendOffset": -110
+		}
+	},
+	"chartData": [
+			{
+					"index": "LINE",
+					"LINE": -0.203,
+					"color": "#979797"
+			},
+			{
+					"index": "SINE",
+					"SINE": -0.0348,
+					"color": "#979797"
+			},
+			{
+					"index": "LTR",
+					"LTR": 0.180,
+					"color": "#979797"
+			},
+			{
+					"index": "Simple_repeats",
+					"Simple_repeats": 0.941,
+					"color": "#979797"
+			},
+			{
+					"index": "Low_complexity",
+					"Low_complexity": 0.441,
+					"color": "#979797"
+			},
+			{
+					"index": "Satellite",
+					"Satellite": 0.392,
+					"color": "#979797"
+			},
+			{
+					"index": "RNA",
+					"RNA": 2.32,
+					"color": "#00ff00"
+			},
+			{
+					"index": "DNA",
+					"DNA": -0.283,
+					"color": "#979797"
+			},
+			{
+					"index": "Other",
+					"Other": 1.36,
+					"color": "#00ff00"
+			},
+			{
+					"index": "Unknown",
+					"Unknown": -0.0592,
+					"color": "#979797"
+			}
+	]
+}

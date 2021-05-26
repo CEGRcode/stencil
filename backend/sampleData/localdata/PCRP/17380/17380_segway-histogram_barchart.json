@@ -1,0 +1,85 @@
+{
+	"chartOptions": {
+		"keys": [ "Sample" , "Control", "Genomic" ],
+		"indexBy": "index",
+		"layout": "vertical",
+		"groupMode": "grouped",
+		"colors": [ "#0000ff", "#ff0000", "#000000" ],
+		"borderColor": "#000000",
+		"borderWidth": 1,
+		"padding": 0.5,
+		"innerPadding": 1,
+		"axisBottom": {
+			"tickSize": 5,
+			"tickPadding": 5,
+			"tickRotation": 45,
+			"legend": "segway States",
+			"legendPosition": "middle",
+			"legendOffset": 73
+		},
+		"axisLeft": {
+			"tickSize": 5,
+			"tickPadding": 5,
+			"tickRotation": 0,
+			"legend": "Frequency",
+			"legendPosition": "middle",
+			"legendOffset": -50
+		}
+	},
+	"chartData": [
+			{
+					"index": "Active_Promoter",
+					"Sample": 0.0657,
+					"Control": 0.0210,
+					"Genomic": 0.00900
+			},
+			{
+					"index": "Proximal_Active",
+					"Sample": 0.298,
+					"Control": 0.352,
+					"Genomic": 0.443
+			},
+			{
+					"index": "Inactive_Promoter",
+					"Sample": 0.000914,
+					"Control": 0.000607,
+					"Genomic": 0.000261
+			},
+			{
+					"index": "Transcription",
+					"Sample": 0.145,
+					"Control": 0.182,
+					"Genomic": 0.114
+			},
+			{
+					"index": "Enhancer",
+					"Sample": 0.168,
+					"Control": 0.115,
+					"Genomic": 0.0519
+			},
+			{
+					"index": "Open_Chromatin",
+					"Sample": 0.00865,
+					"Control": 0.00966,
+					"Genomic": 0.0100
+			},
+			{
+					"index": "Insulator",
+					"Sample": 0.0207,
+					"Control": 0.0137,
+					"Genomic": 0.00492
+			},
+			{
+					"index": "Heterochromatin",
+					"Sample": 0.0530,
+					"Control": 0.0715,
+					"Genomic": 0.107
+			},
+			{
+					"index": "Polycomb",
+					"Sample": 0.230,
+					"Control": 0.227,
+					"Genomic": 0.168
+			}
+	]
+}

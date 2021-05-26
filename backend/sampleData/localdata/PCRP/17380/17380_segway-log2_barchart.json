@@ -1,0 +1,77 @@
+{
+	"chartOptions": {
+		"keys": ["Active_Promoter" , "Proximal_Active", "Inactive_Promoter", "Transcription", "Enhancer", "Open_Chromatin", "Insulator", "Heterochromatin", "Polycomb"],
+		"indexBy": "index",
+		"layout": "horizontal",
+		"groupMode": "stacked",
+		"borderColor": "#000000",
+		"borderWidth": 1,
+		"padding": 0.25,
+		"innerPadding": 1,
+		"enableLabel": true,
+		"margin": { "top": 10, "right": 80, "bottom": 80, "left": 150 },
+		"axisBottom": {
+			"tickSize": 5,
+			"tickPadding": 5,
+			"tickRotation": 45,
+			"legend": "segway States",
+			"legendPosition": "middle",
+			"legendOffset": 60
+		},
+		"axisLeft": {
+			"tickSize": 5,
+			"tickPadding": 5,
+			"tickRotation": 0,
+			"legend": "Log2 (Sample/Control) Enrichment Ratio",
+			"legendPosition": "middle",
+			"legendOffset": -120
+		}
+	},
+	"chartData": [
+			{
+					"index": "Active_Promoter",
+					"Active_Promoter": 1.65,
+					"color": "#00ff00"
+			},
+			{
+					"index": "Proximal_Active",
+					"Proximal_Active": -0.244,
+					"color": "#979797"
+			},
+			{
+					"index": "Inactive_Promoter",
+					"Inactive_Promoter": 0.590,
+					"color": "#979797"
+			},
+			{
+					"index": "Transcription",
+					"Transcription": -0.328,
+					"color": "#979797"
+			},
+			{
+					"index": "Enhancer",
+					"Enhancer": 0.554,
+					"color": "#979797"
+			},
+			{
+					"index": "Open_Chromatin",
+					"Open_Chromatin": -0.160,
+					"color": "#979797"
+			},
+			{
+					"index": "Insulator",
+					"Insulator": 0.603,
+					"color": "#979797"
+			},
+			{
+					"index": "Heterochromatin",
+					"Heterochromatin": -0.430,
+					"color": "#979797"
+			},
+			{
+					"index": "Polycomb",
+					"Polycomb": 0.0199,
+					"color": "#979797"
+			}
+	]
+}

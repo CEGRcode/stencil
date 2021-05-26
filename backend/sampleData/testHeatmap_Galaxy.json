@@ -1,0 +1,24 @@
+{
+	"genome": "sacCer3",
+	"historyId": "6fb17d0cc6e8fae5",
+	"parameters": {},
+	"projectId": "Heatmap",
+	"libraryType": "ChIP-exo",
+	"sampleId": "Reb1",
+	"run": 396,
+	"libraryId": "heatmap",
+	"statsToolId": "script_manager_4color_stencil",
+	"createdBy": "cegr@psu.edu",
+	"token": "a23Ta13q",
+	"submitter": "cegr@psu.edu",
+	"workflowId": "unknown",
+	"statistics": [{}],
+	"libraryData": [{
+		"id": "0c5d7fa180a56458",
+		"dataType": "heatmap",
+		"layoutId": "Bar_Chart",
+		"tabId": "Motif1",
+		"URL": "https://galaxy.egc.cac.cornell.edu/datasets/2455d82a06fb29d8/display?preview=False",
+		"stepId": "0"
+	}]
+}

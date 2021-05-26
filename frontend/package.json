@@ -1,0 +1,50 @@
+{
+  "name": "stencil_frontend",
+  "version": "2.0.0",
+  "dependencies": {
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/data-grid": "^0.1.67",
+    "@material-ui/icons": "^4.11.2",
+    "@nivo/bar": "^0.66.0",
+    "@nivo/core": "^0.66.0",
+    "@nivo/heatmap": "^0.66.0",
+    "@nivo/line": "^0.66.0",
+    "@nivo/scatterplot": "^0.66.0",
+    "axios": "^0.21.1",
+    "classnames": "^2.2.6",
+    "igv": "^2.8.1",
+    "mui-datatables": "^3.7.7",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^4.0.3",
+    "react-select": "^3.0.8",
+    "source-map-explorer": "^2.1.0",
+    "styled-components": "^5.2.3"
+  },
+  "scripts": {
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0"
+  }
+}

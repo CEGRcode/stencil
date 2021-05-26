@@ -1,0 +1,113 @@
+{
+	"chartOptions": {
+		"keys": [ "HepG2 Sample4-Gingeras", "HepG2 Sample3-Gingeras",	"HepG2 Sample1-Wold",	"HepG2 Sample2-Wold", "K562 Sample4-Gingeras", "K562 Sample3-Gingeras", "K562 Sample2-Wold",	"K562 Sample1-Wold" ],
+		"indexBy": "samples",
+		"colors": "RdBu",
+		"enableLabels": false,
+		"margin": {	"top": 30,	"right": 40, "bottom": 85, "left": 20	},
+		"axisBottom": {
+			"orient": "bottom",
+			"tickSize": 5,
+			"tickPadding": 5,
+			"tickRotation": -25,
+			"legendOffset": 36
+		},
+		"axisRight": {
+			"orient": "right",
+			"tickSize": 5,
+			"tickPadding": 5,
+			"tickRotation": 0,
+			"legend": "",
+			"legendPosition": "middle",
+			"legendOffset": -120
+		},
+		"axisTop": {
+			"legend": "Sample-to-sample distance",
+			"tickValues": []
+		},
+		"hoverTarget": "cell",
+		"cellHoverOthersOpacity": 0.25,
+		"cellOpacity": 1
+	},
+	"chartData": [{
+		"samples": "HepG2 Sample4-Gingeras",
+		"HepG2 Sample4-Gingeras": 0.0,
+		"HepG2 Sample3-Gingeras": 110.552,
+		"HepG2 Sample1-Wold": 174.425,
+		"HepG2 Sample2-Wold": 158.421,
+		"K562 Sample4-Gingeras": 521.105,
+		"K562 Sample3-Gingeras": 529.241,
+		"K562 Sample2-Wold": 625.162,
+		"K562 Sample1-Wold": 623.75
+	}, {
+		"samples": "HepG2 Sample3-Gingeras",
+		"HepG2 Sample4-Gingeras": 110.552,
+		"HepG2 Sample3-Gingeras": 0.0,
+		"HepG2 Sample1-Wold": 172.859,
+		"HepG2 Sample2-Wold": 163.994,
+		"K562 Sample4-Gingeras": 516.601,
+		"K562 Sample3-Gingeras": 524.119,
+		"K562 Sample2-Wold": 609.768,
+		"K562 Sample1-Wold": 607.97
+	}, {
+		"samples": "HepG2 Sample1-Wold",
+		"HepG2 Sample4-Gingeras": 174.425,
+		"HepG2 Sample3-Gingeras": 172.859,
+		"HepG2 Sample1-Wold": 0.0,
+		"HepG2 Sample2-Wold": 134.529,
+		"K562 Sample4-Gingeras": 522.992,
+		"K562 Sample3-Gingeras": 530.561,
+		"K562 Sample2-Wold": 612.16,
+		"K562 Sample1-Wold": 611.135
+	}, {
+		"samples": "HepG2 Sample2-Wold",
+		"HepG2 Sample4-Gingeras": 158.421,
+		"HepG2 Sample3-Gingeras": 163.994,
+		"HepG2 Sample1-Wold": 134.529,
+		"HepG2 Sample2-Wold": 0.0,
+		"K562 Sample4-Gingeras": 519.967,
+		"K562 Sample3-Gingeras": 527.856,
+		"K562 Sample2-Wold": 619.263,
+		"K562 Sample1-Wold": 618.587
+	}, {
+		"samples": "K562 Sample4-Gingeras",
+		"HepG2 Sample4-Gingeras": 521.105,
+		"HepG2 Sample3-Gingeras": 516.601,
+		"HepG2 Sample1-Wold": 522.992,
+		"HepG2 Sample2-Wold": 519.967,
+		"K562 Sample4-Gingeras": 0.0,
+		"K562 Sample3-Gingeras": 156.37,
+		"K562 Sample2-Wold": 352.275,
+		"K562 Sample1-Wold": 357.112
+	}, {
+		"samples": "K562 Sample3-Gingeras",
+		"HepG2 Sample4-Gingeras": 529.241,
+		"HepG2 Sample3-Gingeras": 524.119,
+		"HepG2 Sample1-Wold": 530.561,
+		"HepG2 Sample2-Wold": 527.856,
+		"K562 Sample4-Gingeras": 156.37,
+		"K562 Sample3-Gingeras": 0.0,
+		"K562 Sample2-Wold": 348.971,
+		"K562 Sample1-Wold": 354.778
+	}, {
+		"samples": "K562 Sample2-Wold",
+		"HepG2 Sample4-Gingeras": 625.162,
+		"HepG2 Sample3-Gingeras": 609.768,
+		"HepG2 Sample1-Wold": 612.16,
+		"HepG2 Sample2-Wold": 619.263,
+		"K562 Sample4-Gingeras": 352.275,
+		"K562 Sample3-Gingeras": 348.971,
+		"K562 Sample2-Wold": 0.0,
+		"K562 Sample1-Wold": 185.535
+	}, {
+		"samples": "K562 Sample1-Wold",
+		"HepG2 Sample4-Gingeras": 623.75,
+		"HepG2 Sample3-Gingeras": 607.97,
+		"HepG2 Sample1-Wold": 611.135,
+		"HepG2 Sample2-Wold": 618.587,
+		"K562 Sample4-Gingeras": 357.112,
+		"K562 Sample3-Gingeras": 354.778,
+		"K562 Sample2-Wold": 185.535,
+		"K562 Sample1-Wold": 0.0
+	}]
+}

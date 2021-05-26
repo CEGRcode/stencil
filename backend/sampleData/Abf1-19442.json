@@ -1,0 +1,341 @@
+{
+		"genome": "sacCer3",
+		"historyId": "6fb17d0cc6e8fae5",
+		"projectId": "Yeast Epigenome Project",
+		"libraryType": "ChIP-exo",
+		"sampleId": "Abf1",
+		"libraryId": "Abf1-19442",
+		"libraryDescription": "DNA binding protein with possible chromatin-reorganizing activity; involved in transcriptional activation, gene silencing, and DNA replication and repair",
+		"createdBy": "cegr@psu.edu",
+		"token": "a23Ta13q",
+		"submitter": "cegr@psu.edu",
+		"libraryData": [
+			{
+		    "id": "ChExMixImage0",
+		    "dataType": "png",
+		    "layoutId": "Transcribed_Features",
+				"layoutTitle": "TRANSCRIBED FEATURES - RNA POLYMERASE II - CODING",
+		    "tabId": "ChExMix",
+		    "URL": "http://localhost:8081/localdata/YEP/19442/ChExMix_Transcribed-0.png",
+		    "stepId": "3"
+		  },
+			{
+		    "id": "ChExMixImage1",
+		    "dataType": "png",
+		    "layoutId": "Transcribed_Features",
+				"layoutTitle": "TRANSCRIBED FEATURES - RNA POLYMERASE II - CODING",
+		    "tabId": "ChExMix",
+		    "URL": "http://localhost:8081/localdata/YEP/19442/ChExMix_Transcribed-1.png",
+		    "stepId": "4"
+		  },
+			{
+		    "id": "ChExMixImage2",
+		    "dataType": "png",
+		    "layoutId": "Transcribed_Features",
+				"layoutTitle": "TRANSCRIBED FEATURES - RNA POLYMERASE II - CODING",
+		    "tabId": "ChExMix",
+		    "URL": "http://localhost:8081/localdata/YEP/19442/ChExMix_Transcribed-2.png",
+		    "stepId": "5"
+		  },
+			{
+		    "id": "ChExMixImage3",
+		    "dataType": "png",
+		    "layoutId": "Transcribed_Features",
+				"layoutTitle": "TRANSCRIBED FEATURES - RNA POLYMERASE II - CODING",
+		    "tabId": "ChExMix",
+		    "URL": "http://localhost:8081/localdata/YEP/19442/ChExMix_Transcribed-3.png",
+		    "stepId": "6"
+		  },
+			{
+		    "id": "ChExMixImage4",
+		    "dataType": "png",
+		    "layoutId": "Transcribed_Features",
+				"layoutTitle": "TRANSCRIBED FEATURES - RNA POLYMERASE II - CODING",
+		    "tabId": "ChExMix",
+		    "URL": "http://localhost:8081/localdata/YEP/19442/ChExMix_Transcribed-4.png",
+		    "stepId": "7"
+		  },
+			{
+		    "id": "ChExMixPlot1",
+		    "dataType": "lineplot",
+		    "layoutId": "Transcribed_Features",
+				"layoutTitle": "TRANSCRIBED FEATURES - RNA POLYMERASE II - CODING",
+		    "tabId": "ChExMix",
+		    "URL": "http://localhost:8081/localdata/YEP/19442/ChExMix_Promoter_lineplot.json",
+		    "stepId": "0"
+		  },
+			{
+		    "id": "ChExMixPlot2",
+		    "dataType": "lineplot",
+		    "layoutId": "Transcribed_Features",
+				"layoutTitle": "TRANSCRIBED FEATURES - RNA POLYMERASE II - CODING",
+		    "tabId": "ChExMix",
+		    "URL": "http://localhost:8081/localdata/YEP/19442/ChExMix_TSS_lineplot.json",
+		    "stepId": "1"
+		  },
+			{
+		    "id": "ChExMixPlot3",
+		    "dataType": "lineplot",
+		    "layoutId": "Transcribed_Features",
+				"layoutTitle": "TRANSCRIBED FEATURES - RNA POLYMERASE II - CODING",
+		    "tabId": "ChExMix",
+		    "URL": "http://localhost:8081/localdata/YEP/19442/ChExMix_TES_lineplot.json",
+		    "stepId": "2"
+		  },
+			{
+		    "id": "SectorImage0",
+		    "dataType": "png",
+		    "layoutId": "Transcribed_Features",
+				"layoutTitle": "TRANSCRIBED FEATURES - RNA POLYMERASE II - CODING",
+		    "tabId": "SUBSECTOR",
+		    "URL": "http://localhost:8081/localdata/YEP/19442/Sector_Transcribed-0.png",
+		    "stepId": "3"
+		  },
+			{
+		    "id": "SectorImage1",
+		    "dataType": "png",
+		    "layoutId": "Transcribed_Features",
+				"layoutTitle": "TRANSCRIBED FEATURES - RNA POLYMERASE II - CODING",
+		    "tabId": "SUBSECTOR",
+		    "URL": "http://localhost:8081/localdata/YEP/19442/Sector_Transcribed-1.png",
+		    "stepId": "4"
+		  },
+			{
+		    "id": "SectorImage2",
+		    "dataType": "png",
+		    "layoutId": "Transcribed_Features",
+				"layoutTitle": "TRANSCRIBED FEATURES - RNA POLYMERASE II - CODING",
+		    "tabId": "SUBSECTOR",
+		    "URL": "http://localhost:8081/localdata/YEP/19442/Sector_Transcribed-2.png",
+		    "stepId": "5"
+		  },
+			{
+		    "id": "SectorImage3",
+		    "dataType": "png",
+		    "layoutId": "Transcribed_Features",
+				"layoutTitle": "TRANSCRIBED FEATURES - RNA POLYMERASE II - CODING",
+		    "tabId": "SUBSECTOR",
+		    "URL": "http://localhost:8081/localdata/YEP/19442/Sector_Transcribed-3.png",
+		    "stepId": "6"
+		  },
+			{
+		    "id": "SectorImage4",
+		    "dataType": "png",
+		    "layoutId": "Transcribed_Features",
+				"layoutTitle": "TRANSCRIBED FEATURES - RNA POLYMERASE II - CODING",
+		    "tabId": "SUBSECTOR",
+		    "URL": "http://localhost:8081/localdata/YEP/19442/Sector_Transcribed-4.png",
+		    "stepId": "7"
+		  },
+			{
+		    "id": "SectorPlot1",
+		    "dataType": "lineplot",
+		    "layoutId": "Transcribed_Features",
+				"layoutTitle": "TRANSCRIBED FEATURES - RNA POLYMERASE II - CODING",
+		    "tabId": "SUBSECTOR",
+		    "URL": "http://localhost:8081/localdata/YEP/19442/Sector_Promoter_lineplot.json",
+		    "stepId": "0"
+		  },
+			{
+		    "id": "SectorPlot2",
+		    "dataType": "lineplot",
+		    "layoutId": "Transcribed_Features",
+				"layoutTitle": "TRANSCRIBED FEATURES - RNA POLYMERASE II - CODING",
+		    "tabId": "SUBSECTOR",
+		    "URL": "http://localhost:8081/localdata/YEP/19442/Sector_TSS_lineplot.json",
+		    "stepId": "1"
+		  },
+			{
+		    "id": "SectorPlot3",
+		    "dataType": "lineplot",
+		    "layoutId": "Transcribed_Features",
+				"layoutTitle": "TRANSCRIBED FEATURES - RNA POLYMERASE II - CODING",
+		    "tabId": "SUBSECTOR",
+		    "URL": "http://localhost:8081/localdata/YEP/19442/Sector_TES_lineplot.json",
+		    "stepId": "2"
+		  },
+			{
+				"id": "NonCoding0",
+				"dataType": "png",
+				"layoutId": "Transcribed_Noncoding",
+				"layoutTitle": "TRANSCRIBED FEATURES - NON CODING",
+				"URL": "http://localhost:8081/localdata/YEP/19442/NonCoding-0.png",
+				"stepId": "0"
+			},
+			{
+				"id": "NonCoding1",
+				"dataType": "png",
+				"layoutId": "Transcribed_Noncoding",
+				"layoutTitle": "TRANSCRIBED FEATURES - NON CODING",
+				"URL": "http://localhost:8081/localdata/YEP/19442/NonCoding-1.png",
+				"stepId": "1"
+			},
+			{
+				"id": "NonCoding2",
+				"dataType": "png",
+				"layoutId": "Transcribed_Noncoding",
+				"layoutTitle": "TRANSCRIBED FEATURES - NON CODING",
+				"URL": "http://localhost:8081/localdata/YEP/19442/NonCoding-2.png",
+				"stepId": "2"
+			},
+			{
+				"id": "NonTranscribed0",
+				"dataType": "png",
+				"layoutId": "NonTranscribed",
+				"layoutTitle": "NON TRANSCRIBED FEATURES",
+				"URL": "http://localhost:8081/localdata/YEP/19442/NonTranscribed-0.png",
+				"stepId": "0"
+			},
+			{
+				"id": "NonTranscribed1",
+				"dataType": "png",
+				"layoutId": "NonTranscribed",
+				"layoutTitle": "NON TRANSCRIBED FEATURES",
+				"URL": "http://localhost:8081/localdata/YEP/19442/NonTranscribed-1.png",
+				"stepId": "1"
+			},
+			{
+				"id": "NonTranscribed2",
+				"dataType": "png",
+				"layoutId": "NonTranscribed",
+				"layoutTitle": "NON TRANSCRIBED FEATURESG",
+				"URL": "http://localhost:8081/localdata/YEP/19442/NonTranscribed-2.png",
+				"stepId": "2"
+			},
+			{
+				"id": "Motif1_Logo",
+				"dataType": "png",
+				"layoutId": "Motif_Analysis",
+				"layoutTitle": "MOTIF ANALYSIS",
+				"tabId": "MOTIF 1",
+				"URL": "http://localhost:8081/localdata/YEP/19442/motif_logo1.png",
+				"stepId": "0"
+			},
+			{
+				"id": "Motif1_LogoRC",
+				"dataType": "png",
+				"layoutId": "Motif_Analysis",
+				"layoutTitle": "MOTIF ANALYSIS",
+				"tabId": "MOTIF 1",
+				"URL": "http://localhost:8081/localdata/YEP/19442/motif_logo1_rc.png",
+				"stepId": "1"
+			},
+			{
+				"id": "Motif1_Plot",
+				"dataType": "lineplot",
+				"layoutId": "Motif_Analysis",
+				"layoutTitle": "MOTIF ANALYSIS",
+				"tabId": "MOTIF 1",
+				"URL": "http://localhost:8081/localdata/YEP/19442/Motif1_lineplot.json",
+				"stepId": "2"
+			},
+			{
+				"id": "Motif1_4Color",
+				"dataType": "png",
+				"layoutId": "Motif_Analysis",
+				"layoutTitle": "MOTIF ANALYSIS",
+				"tabId": "MOTIF 1",
+				"URL": "http://localhost:8081/localdata/YEP/19442/Motif_1_fourcolor.png",
+				"stepId": "3"
+			},
+			{
+				"id": "Motif1_Heatmap",
+				"dataType": "png",
+				"layoutId": "Motif_Analysis",
+				"layoutTitle": "MOTIF ANALYSIS",
+				"tabId": "MOTIF 1",
+				"URL": "http://localhost:8081/localdata/YEP/19442/Motif_1_Heatmap.png",
+				"stepId": "4"
+			},
+			{
+				"id": "Motif2_Logo",
+				"dataType": "png",
+				"layoutId": "Motif_Analysis",
+				"layoutTitle": "MOTIF ANALYSIS",
+				"tabId": "MOTIF 2",
+				"URL": "http://localhost:8081/localdata/YEP/19442/motif_logo2.png",
+				"stepId": "0"
+			},
+			{
+				"id": "Motif2_LogoRC",
+				"dataType": "png",
+				"layoutId": "Motif_Analysis",
+				"layoutTitle": "MOTIF ANALYSIS",
+				"tabId": "MOTIF 2",
+				"URL": "http://localhost:8081/localdata/YEP/19442/motif_logo2_rc.png",
+				"stepId": "1"
+			},
+			{
+				"id": "Motif2_Plot",
+				"dataType": "lineplot",
+				"layoutId": "Motif_Analysis",
+				"layoutTitle": "MOTIF ANALYSIS",
+				"tabId": "MOTIF 2",
+				"URL": "http://localhost:8081/localdata/YEP/19442/Motif2_lineplot.json",
+				"stepId": "2"
+			},
+			{
+				"id": "Motif2_4Color",
+				"dataType": "png",
+				"layoutId": "Motif_Analysis",
+				"layoutTitle": "MOTIF ANALYSIS",
+				"tabId": "MOTIF 2",
+				"URL": "http://localhost:8081/localdata/YEP/19442/Motif_2_fourcolor.png",
+				"stepId": "3"
+			},
+			{
+				"id": "Motif2_Heatmap",
+				"dataType": "png",
+				"layoutId": "Motif_Analysis",
+				"layoutTitle": "MOTIF ANALYSIS",
+				"tabId": "MOTIF 2",
+				"URL": "http://localhost:8081/localdata/YEP/19442/Motif_2_Heatmap.png",
+				"stepId": "4"
+			},
+			{
+				"id": "Motif3_Logo",
+				"dataType": "png",
+				"layoutId": "Motif_Analysis",
+				"layoutTitle": "MOTIF ANALYSIS",
+				"tabId": "MOTIF 3",
+				"URL": "http://localhost:8081/localdata/YEP/19442/motif_logo3.png",
+				"stepId": "0"
+			},
+			{
+				"id": "Motif3_LogoRC",
+				"dataType": "png",
+				"layoutId": "Motif_Analysis",
+				"layoutTitle": "MOTIF ANALYSIS",
+				"tabId": "MOTIF 3",
+				"URL": "http://localhost:8081/localdata/YEP/19442/motif_logo3_rc.png",
+				"stepId": "1"
+			},
+			{
+				"id": "Motif3_Plot",
+				"dataType": "lineplot",
+				"layoutId": "Motif_Analysis",
+				"layoutTitle": "MOTIF ANALYSIS",
+				"tabId": "MOTIF 3",
+				"URL": "http://localhost:8081/localdata/YEP/19442/Motif3_lineplot.json",
+				"stepId": "2"
+			},
+			{
+				"id": "Motif3_4Color",
+				"dataType": "png",
+				"layoutId": "Motif_Analysis",
+				"layoutTitle": "MOTIF ANALYSIS",
+				"tabId": "MOTIF 3",
+				"URL": "http://localhost:8081/localdata/YEP/19442/Motif_3_fourcolor.png",
+				"stepId": "3"
+			},
+			{
+				"id": "Motif3_Heatmap",
+				"dataType": "png",
+				"layoutId": "Motif_Analysis",
+				"layoutTitle": "MOTIF ANALYSIS",
+				"tabId": "MOTIF 3",
+				"URL": "http://localhost:8081/localdata/YEP/19442/Motif_3_Heatmap.png",
+				"stepId": "4"
+			}
+		]
+}

@@ -1,0 +1,58 @@
+{
+	"genome": "hg19",
+	"historyId": "6fb17d0cc6e8fae5",
+	"projectId": "ENCODE Analysis",
+	"libraryType": "RNA-seq",
+	"sampleId": "RNA",
+	"libraryId": "RNA-seq Analysis",
+	"libraryDescription": "DESeq2 analysis",
+	"token": "a23Ta13q",
+	"submitter": "cegr@psu.edu",
+	"libraryData": [
+		{
+			"id": "DESeq2_PCAplot",
+			"dataType": "scatterplot",
+			"layoutId": "SingleChart_4",
+			"layoutTitle": "DESeq2 PCA plot",
+			"tabId": "Scatterplot",
+			"URL": "http://localhost:8081/localdata/ENCODE/RS/DESeq2_PCA.json",
+			"stepId": "0"
+		},
+		{
+			"id": "DESeq2_heatmap",
+			"dataType": "heatmap",
+			"layoutId": "SingleChart",
+			"layoutTitle": "DESeq2 Heatmap",
+			"tabId": "Heatmap",
+			"URL": "http://localhost:8081/localdata/ENCODE/RS/DESeq2_heatmap.json",
+			"stepId": "0"
+		},
+		{
+			"id": "DESeq2_barchart",
+			"dataType": "barchart",
+			"layoutId": "SingleChart_2",
+			"layoutTitle": "DESeq2 Barchart",
+			"tabId": "Barchart",
+			"URL": "http://localhost:8081/localdata/ENCODE/RS/DESeq2_pVal_barchart.json",
+			"stepId": "0"
+		},
+		{
+			"id": "DESeq2_MAplot",
+			"dataType": "scatterplot",
+			"layoutId": "SingleChart_3",
+			"layoutTitle": "DESeq2 MA plot",
+			"tabId": "MA Plot",
+			"URL": "http://localhost:8081/localdata/ENCODE/RS/DESeq2_MAplot.json",
+			"stepId": "0"
+		},
+		{
+			"id": "DESeq2_Table",
+			"dataType": "basictable",
+			"layoutId": "SingleChart_3",
+			"layoutTitle": "DESeq2 PCA plot",
+			"tabId": "Raw Data",
+			"URL": "http://localhost:8081/localdata/ENCODE/RS/DESeq2_table.json",
+			"stepId": "0"
+		}
+	]
+}
