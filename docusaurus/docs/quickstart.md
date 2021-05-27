@@ -52,3 +52,15 @@ npm start
 - This automatically launches the app in your default browser. otherwise, open any browser and go to `http://localhost:3000` to view it.
 
 > Without your backend server running parallely, you will not see anything on the frontend website that you just launched.
+
+
+## Register 'Admin' account
+The first account to register with STENCIL becomes the default Admin account. After login, a user can further modify user permissions
+
+
+## POST sample data
+Requires Python3+
+```
+cd stencil/backend/utils
+sh post_all.sh
+```

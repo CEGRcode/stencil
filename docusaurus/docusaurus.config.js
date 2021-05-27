@@ -2,8 +2,8 @@
 module.exports = {
   title: 'STENCIL',
   tagline: 'A web templating engine for visualizing and sharing data',
-  url: 'https://github.com/CEGRcode/stencil',
-  baseUrl: '/',
+    url: 'https://github.com/CEGRcode',
+    baseUrl: '/stencil/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',

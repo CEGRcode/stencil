@@ -37,7 +37,7 @@ You can view your application in a browser at `http://localhost:3000`. Assuming 
 To create a single standalone application that combines backend and frontend, we need to use `docker-compose.yml`.
 Below are some build instructions and `docker-compose.yml` that packages both backend and frontend into a single app.
 
-**Build an image for the backend ( instructions adapted from [backend-node](doc2.md) )**
+**Build an image for the backend**
 
 - Configure the backend's `.env` as below to ensure proper communication between the mongodb & backend code.
 
