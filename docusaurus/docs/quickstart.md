@@ -54,8 +54,8 @@ npm start
 > Without your backend server running parallely, you will not see anything on the frontend website that you just launched.
 
 
-## Register 'Admin' account
-The first account to register with STENCIL becomes the default Admin account. After login, a user can further modify user permissions
+## Register 'root' as initial Admin account
+The account username 'root' is configured to be an admin automatically upon registration. All other accounts will be registered as 'guest'. After initial login, a user can further modify user permissions.
 
 
 ## POST sample data
