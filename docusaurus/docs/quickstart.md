@@ -59,7 +59,14 @@ The first account to register with STENCIL becomes the default Admin account. Af
 
 
 ## POST sample data
-Requires Python3+
+Requires Python3+ and 'requests' module
+
+To install python3 requests module:
+```
+pip3 install --user requests
+```
+
+POST data
 ```
 cd stencil/backend/utils
 sh post_all.sh
