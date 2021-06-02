@@ -7,31 +7,21 @@ sidebar_label: Getting Started
 
 # Install dependencies
 
-## NodeJS
+## MacOS using [homebrew](https://brew.sh/)
+
+### Install NodeJS
 
 - Requires NodeJS >= 10 (or any latest release)
 - Install from [here](https://nodejs.org/en/download/)
-
-### MacOS using [homebrew](https://brew.sh/)
 
 ```
 brew install node
 ```
 
-### CentOS 8 setup
-
-```
-# Install Node.js
-sudo yum -y install nodejs
-sudo npm i -g pm2
-```
-
-## MongoDB
+### Install MongoDB
 
 - Requires MongoDB >= 4.0.1
 - Install from [here](https://docs.mongodb.com/manual/administration/install-community/)
-
-### MacOS using [homebrew](https://brew.sh/)
 
 - Add mongoDB Homebrew Tap
 
@@ -57,11 +47,22 @@ mkdir -p ~/Desktop/data/db
 mongod --dbpath ~/Desktop/data/db
 ```
 
-### CentOS 8 setup
-
+## CentOS 8 setup
 - These instructions assume sudo rights
 
-#### Add MongoDB repo to yum repo
+### Install NodeJS
+- Requires NodeJS >= 10 (or any latest release)
+- Install from [here](https://nodejs.org/en/download/)
+
+```
+# Install Node.js
+sudo yum -y install nodejs
+sudo npm i -g pm2
+```
+
+### Install MongoDB
+- Add MongoDB repo to yum repo
+
 ```
 cat > /etc/yum.repos.d/mongodb-org-4.4.repo <<EOF
 [mongodb-org-4.4]
@@ -77,6 +78,7 @@ EOF
 ```
 sudo yum -y install mongodb-org
 ```
+
 #### Configure server to start MongoDB on system reboot
 ```
 sudo systemctl enable mongod
