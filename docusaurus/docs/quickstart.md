@@ -5,6 +5,8 @@ title: Quickstart
 sidebar_label: Quickstart
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 - Quickstart assumes software dependencies are already [installed](install.md).
 
 ## Clone the repo
@@ -54,8 +56,16 @@ npm start
 > Without your backend server running parallely, you will not see anything on the frontend website that you just launched.
 
 
-## Register 'root' as initial Admin account
-The account username 'root' is configured to be an admin automatically upon registration. All other accounts will be registered as 'guest'. After initial login, a user can further modify user permissions.
+## Register initial Admin account
+The account username 'root' is configured to be an Admin automatically.
+<img alt="Docusaurus with Keytar" src={useBaseUrl('/img/Register-1.png')} />
+
+After successful registration, you will be returned to the Login page. Use the credentials you initialized the 'root' account for to login.
+
+<img alt="Docusaurus with Keytar" src={useBaseUrl('/img/Register-2.png')} />
+
+All other accounts are initially registered as 'guest'. The Admin account is able to modify user permissions for all registered accounts.
+<img alt="Docusaurus with Keytar" src={useBaseUrl('/img/Register-3.png')} />
 
 
 ## POST sample data
