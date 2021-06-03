@@ -1,0 +1,82 @@
+{
+	"chartOptions": {
+		"keys": ["K562 Sample2", "K562 Sample3", "K562 Sample1", "HepG2 Sample2", "HepG2 Sample3", "HepG2 Sample1"],
+		"indexBy": "Samples",
+		"colors": "RdBu",
+		"enableLabels": false,
+		"margin": {	"top": 30,	"right": 40, "bottom": 85, "left": 20	},
+		"axisBottom": {
+			"orient": "bottom",
+			"tickSize": 5,
+			"tickPadding": 5,
+			"tickRotation": -25,
+			"legendOffset": 36
+		},
+		"axisRight": {
+			"orient": "right",
+			"tickSize": 5,
+			"tickPadding": 5,
+			"tickRotation": 0,
+			"legend": "",
+			"legendPosition": "middle",
+			"legendOffset": -120
+		},
+		"axisTop": {
+			"legend": "Sample-to-Sample distance",
+			"tickValues": []
+		},
+		"hoverTarget": "cell",
+		"cellHoverOthersOpacity": 0.25,
+		"cellOpacity": 1
+	},
+	"chartData": [
+	{
+		"Samples": "K562 Sample2",
+		"K562 Sample2": 0.0,
+		"K562 Sample3": 96.717,
+		"K562 Sample1": 91.102,
+		"HepG2 Sample2": 626.898,
+		"HepG2 Sample3": 672.571,
+		"HepG2 Sample1": 636.473
+	}, {
+		"Samples": "K562 Sample3",
+		"K562 Sample2": 96.717,
+		"K562 Sample3": 0.0,
+		"K562 Sample1": 89.42,
+		"HepG2 Sample2": 625.475,
+		"HepG2 Sample3": 671.53,
+		"HepG2 Sample1": 635.164
+	}, {
+		"Samples": "K562 Sample1",
+		"K562 Sample2": 91.102,
+		"K562 Sample3": 89.42,
+		"K562 Sample1": 0.0,
+		"HepG2 Sample2": 618.475,
+		"HepG2 Sample3": 664.608,
+		"HepG2 Sample1": 628.372
+	}, {
+		"Samples": "HepG2 Sample2",
+		"K562 Sample2": 626.898,
+		"K562 Sample3": 625.475,
+		"K562 Sample1": 618.475,
+		"HepG2 Sample2": 0.0,
+		"HepG2 Sample3": 129.946,
+		"HepG2 Sample1": 104.15
+	}, {
+		"Samples": "HepG2 Sample3",
+		"K562 Sample2": 672.571,
+		"K562 Sample3": 671.53,
+		"K562 Sample1": 664.608,
+		"HepG2 Sample2": 129.946,
+		"HepG2 Sample3": 0.0,
+		"HepG2 Sample1": 123.822
+	}, {
+		"Samples": "HepG2 Sample1",
+		"K562 Sample2": 636.473,
+		"K562 Sample3": 635.164,
+		"K562 Sample1": 628.372,
+		"HepG2 Sample2": 104.15,
+		"HepG2 Sample3": 123.822,
+		"HepG2 Sample1": 0.0
+	}]
+}
