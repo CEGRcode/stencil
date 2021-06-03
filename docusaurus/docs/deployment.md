@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 6
 id: deploy
 title: Deployment
 sidebar_label: Production deployment
@@ -26,7 +26,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 To `build` the project, use `npm run build` from your project's root folder. This will generate a **build** directory with minified code. For detailed instructions on how to use this **build** directory with nginx or its alternatives follow the official `deployment` instructions under **_Learn More_** section below.
 
-## Configuring your application
+## Configuring the backend
 
 ---
 
@@ -35,52 +35,90 @@ To `build` the project, use `npm run build` from your project's root folder. Thi
 
 **Config details**
 
-| Setting           | Description                                                                                                                            |
+|Setting| Description|
 | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| `DB_URL`          | Use `localhost` to connect to a local installation of mongodb (default), please set it to `mongo:27017` while creating a docker image. |
+| `DB_HOST`          | Use `localhost` to connect to a local installation of mongodb (default), please set it to `mongo:27017` while creating a docker image. |
 | `DB_NAME`         | Name of the database to store app data.                                                                                                |
-| `DATASETS_PATH`   | Absolute path to the root folder containing subdirectories for images & any required assets.                                           |
-| `PUBLIC_ENDPOINT` | URL that will be used to serve the samples in your database. `/samples` is the default.                                                |
-| `IMAGE_URL`       | custom routePath to serve the datasets.                                                                                                |
-| `NODE_PORT`       | Port Number for your server, on which the api will be served.                                                                          |
+| `API_PORT`         | API port name data.                                                                                                |
+| `FRONT_API`         | root URL of the frontend data.                                                                                                |
+| `HTTPS`         | Boolean determining if STENCIL uses HTTPS data.                                                                                                |
+| `HTTPSCERT`         | Path of https certificate  data.                                                                                                |
+| `HTTPSKEY`         | Path of https key data.                                                                                                |
+| `SESSION_ENCRYPTION`         | Name of session encryption data.                                                                                                |
+| `SESSION_NAME`         | Name of session data.                                                                                                |
+| `MASTER_PWD`         | Master login password data.                                                                                                |
+| `SVC_STENCIL_PWD`         | Password to enable STENCIL POST from token data.                                                                                                |
+| `PROXY_SETTING`         | Proxy address data.                                                                                                |
+
 
 > default `.env` configuration for local development
 
 ```
-DB_URL="localhost"
+DB_HOST="localhost"
 DB_NAME="testDB"
-PUBLIC_ENDPOINT="http://localhost:8081/samples/"
-IMAGE_URL="http://localhost:8081/images/"
-NODE_PORT=8081
+API_PORT=8081
+FRONT_API="https://localhost:3000"
+HTTPS=true
+HTTPSCERT = "/home/xxx/fullchain.pem"   
+HTTPSKEY = "/home/xxx/privkey.pem"
+SESSION_ENCRYPTION = "xxxxxx"
+SESSION_NAME = "stencil"
+MASTER_PWD = "aaaaaa"
+SVC_STENCIL_PWD = "bbbbbb"
+PROXY_SETTING='{"/xxx" : "http://xxx.xxxx.xxxx.xx:xxxx"}'
 ```
 
-_**API Endpoints**_
+- If your frontend app needs to access api call from 3rd party, e.g. galaxy server, you need to use proxy through backend server. In the frontend app, the URL "http://xxx.xxxx.xxxx.xx:xxxx/datasets/{options}" should be replaced with "http://backendserver:xxxx/datasets/{options}". Most browsers would prohibit cross-domain call for the front end, so that proxy is needed.
 
-| Endpoint               | Supported HTTP Verbs | Description                                                         |
-| ---------------------- | -------------------- | ------------------------------------------------------------------- |
-| `/samples`             | `GET`                | Retrieve all samples                                                |
-| `/samples/:targetName` | `GET`                | Retrieve all samples for target with targetName.                    |
-| `/samples/id/:id`      | `GET`                | Retrieve all information for a sample using the mongodb's unique ID |
-| `/samples`             | `POST`               | Create a new sample. (takes one sample at a time)                   |  |
-| `/samples/:id`         | `PATCH`              | Edit sample information using mongodb's unique ID                   |
-| `/samples/:id`         | `DELETE`             | Delete a sample using mongodb's unique ID.                          |
+## Configuring the frontend
 
-- Input JSON for the `PATCH` request need to be in the format below
+---
+
+- Create a `.env` file or edit the existing.
+- Add settings to your `.env` file as described in the table below.
+
+**Config details**
+
+|Setting| Description|
+| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| `PORT`          | Frontend PORT number |
+| `HTTPS`         | Boolean determining if STENCIL uses HTTPS                                                                                               |
+| `SSL_CRT_FILE`         | path of https certificate  data.                                                                                                |
+| `SSL_KEY_FILE`         | path of https key data.                                                                                                |
+| `BROWSER`         | Browser support data.                                                                                                |
+
+> default `.env` configuration for local development
 
 ```
-[
-    {"propName": "property_Name_Defined_In_Schema","value" : "your_Value"},
-]
-
+PORT="3000"
+HTTPS=true
+SSL_CRT_FILE=/home/xxx/fullchain.pem
+SSL_KEY_FILE=/home/xxx/privkey.pem
+BROWSER=none
 ```
 
-> Example for changing few properties for a sample is shown below
+## Configuring STENCIL Config.js
+
+---
+
+- Modify *stencil/frontend/src/Config.js*
+
+**Config details**
+
+|Setting| Description|
+| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| `apiURL`          | URL of the backend server |
+| `SSOURL`          | URL of login page |
+| `librariesEndPoint`          | API endpoint for retrieve library list |
+| `libraryPageEndPoint`          | API endpoint for retrieve a library based on db id |
+
+> Sample Config.js
 
 ```
-[
-	{"propName": "sequencingInfo.assayType","value" : "ChIP-seq"},
-	{"propName": "target","value" : "SSL1"},
-]
+apiURL: "http://stencil.biohpc.cornell.edu:8081",
+SSOURL: "https://stencil.biohpc.cornell.edu",
+librariesEndPoint: "/libraries",
+libraryPageEndPoint: "/libraries/dbid"
 ```
 
 ## Deploying the application
@@ -94,31 +132,6 @@ _**API Endpoints**_
 - Install [`node`](https://nodejs.org/en/) (stable version) for `CentOS`, here is a [tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-a-centos-7-server).
 - Install [`mongodb`](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-red-hat/) on the `CentOS` server.
 - Install [`pm2`](https://www.npmjs.com/package/pm2) a production process manager for Node.js applications with a built-in load balancer.
-
-**Server Specific Configuration**
-
-- Create a `.env` file. Add and edit below fields to appropriate values :
-
-```
-DB_URL=""
-DB_NAME=""
-DATASETS_PATH=""
-PUBLIC_ENDPOINT=""
-IMAGE_URL=""
-NODE_PORT=
-```
-
-- For example, a `.env` for a server `example.vmhost.psu.edu` by a user `bob` looks like below:
-
-```
-DB_URL="localhost"
-DB_NAME="testDB"
-DATASETS_PATH="/home/bob/imageAssets"
-PUBLIC_ENDPOINT="https://example.vmhost.psu.edu:8081/samples/"
-IMAGE_URL="https://example.vmhost.psu.edu:8081/images/"
-NODE_PORT=8081
-```
-
 - Once you have configured the backend, below command will create a daemon and keeps the app running & restarts on internal app crashes, [read more here](https://pm2.io/doc/en/runtime/overview/?utm_source=pm2&utm_medium=website&utm_campaign=rebranding).
 
 ```
@@ -127,36 +140,6 @@ cd <project_directory>
 
 <!-- start the server using pm2 -->
 pm2 start server.js --name APIServer
-```
-
-### Serving the API on `HTTPS`
-
----
-
-- To enable `HTTPS` during deployment, replace the entire code in `server.js` with below code:
-
-```
-// importing the app
-const app = require("./app");
-
-// requiring the https, fs (node standard modules)
-const https = require("https");
-const fs = require("fs");
-
-// load configuration through environment variables from .env to process.env
-require("dotenv").config();
-
-// add the certificate for https
-var options = {
-  key: fs.readFileSync("<location_to_your_key_file>"),
-  cert: fs.readFileSync("<location_to_your_cert_file>")
-};
-
-// start the server, listening at the configured port.
-var server = https.createServer(options, app).listen(process.env.NODE_PORT || 8080, function() {
-  console.log("Express server listening on port " + process.env.NODE_PORT || 8080);
-});
-
 ```
 
 - You need to update the `options` property in the above code with server specific certificate files, after requesting them from a certificate authority.
