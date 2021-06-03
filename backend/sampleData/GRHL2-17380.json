@@ -1,14 +1,12 @@
 {
-		"genome": "hg19",
-		"historyId": "6fb17d0cc6e8fae5",
 		"projectId": "PCRP Antibody Validation Project",
 		"libraryType": "ChIP-exo",
 		"sampleId": "GRHL2",
 		"libraryId": "GRHL2-17380",
 		"libraryDescription": "The protein encoded by this gene is a transcription factor that can act as a homodimer or as a heterodimer with either GRHL1 or GRHL3. Defects in this gene are a cause of non-syndromic sensorineural deafness autosomal dominant type 28 (DFNA28).[provided by RefSeq, Mar 2009]",
-		"createdBy": "cegr@psu.edu",
-		"token": "a23Ta13q",
-		"submitter": "cegr@psu.edu",
+		"createdBy": "cegr@cornell.edu",
+		"token": "SGAN9WTPAUCAYDO8A8HD",
+		"submitter": "cegr@cornell.edu",
 		"libraryData": [
 			{
 		    "id": "Subtype0_0",

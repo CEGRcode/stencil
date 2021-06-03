@@ -1,13 +1,11 @@
 {
-	"genome": "hg19",
-	"historyId": "6fb17d0cc6e8fae5",
 	"projectId": "ENCODE Analysis",
 	"libraryType": "ChIP-seq",
 	"sampleId": "p300",
 	"libraryId": "p300-ENCSR000EGE",
 	"libraryDescription": "This gene encodes the adenovirus E1A-associated cellular p300 transcriptional co-activator protein. It functions as histone acetyltransferase that regulates transcription via chromatin remodeling and is important in the processes of cell proliferation and differentiation. It mediates cAMP-gene regulation by binding specifically to phosphorylated CREB protein. This gene has also been identified as a co-activator of HIF1A (hypoxia-inducible factor 1 alpha), and thus plays a role in the stimulation of hypoxia-induced genes such as VEGF. Defects in this gene are a cause of Rubinstein-Taybi syndrome and may also play a role in epithelial cancer. [provided by RefSeq, Jul 2008]",
-	"token": "a23Ta13q",
-	"submitter": "cegr@psu.edu",
+	"token": "SGAN9WTPAUCAYDO8A8HD",
+	"submitter": "cegr@cornell.edu",
 	"libraryData": [{
 			"id": "IGVbrowser",
 			"dataType": "igvtrack",

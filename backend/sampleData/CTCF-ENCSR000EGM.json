@@ -1,14 +1,12 @@
 {
-	"genome": "hg19",
-	"historyId": "6fb17d0cc6e8fae5",
 	"projectId": "ENCODE Analysis",
 	"libraryType": "ChIP-seq",
 	"sampleId": "CTCF",
 	"libraryId": "CTCF-ENCSR000EGM",
 	"libraryDescription": "This gene is a member of the BORIS + CTCF gene family and encodes a transcriptional regulator protein with 11 highly conserved zinc finger (ZF) domains. This nuclear protein is able to use different combinations of the ZF domains to bind different DNA target sequences and proteins. Depending upon the context of the site, the protein can bind a histone acetyltransferase (HAT)-containing complex and function as a transcriptional activator or bind a histone deacetylase (HDAC)-containing complex and function as a transcriptional repressor. If the protein is bound to a transcriptional insulator element, it can block communication between enhancers and upstream promoters, thereby regulating imprinted expression. Mutations in this gene have been associated with invasive breast cancers, prostate cancers, and Wilms' tumors. Alternatively spliced transcript variants encoding different isoforms have been found for this gene. [provided by RefSeq, Jul 2010]",
-	"createdBy": "cegr@psu.edu",
-	"token": "a23Ta13q",
-	"submitter": "cegr@psu.edu",
+	"createdBy": "cegr@cornell.edu",
+	"token": "SGAN9WTPAUCAYDO8A8HD",
+	"submitter": "cegr@cornell.edu",
 	"libraryData": [{
 			"id": "IGVbrowser",
 			"dataType": "igvtrack",

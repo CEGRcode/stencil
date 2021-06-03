@@ -5,7 +5,6 @@ const app = express();
 // load configuration through environment variables from .env to process.env
 require("dotenv").config();
 
-
 // adding compression middleware
 var compression = require("compression");
 
@@ -43,7 +42,6 @@ app.use(session({secret:process.env.SESSION_ENCRYPTION,
         cookie: { maxAge: 1 * 60 * 60 * 1000, sameSite: true},
         saveUninitialized:false, resave:false}));
 
-
 // To handle all deprication warnings from mongoose
 // https://mongoosejs.com/docs/deprecations.html
 mongoose.set("useNewUrlParser", true);
@@ -60,14 +58,11 @@ mongoose.connect(
 );
 mongoose.Promise = global.Promise;
 
-
-
 // compress all responses
 app.use(compression());
 
 // add routes
 const libraryRoutes = require("./api/routes/libraries");
-
 
 // adding static resources
 app.use("/localdata", express.static("./sampleData/localdata"));
@@ -82,8 +77,6 @@ if (process.env.PROXY_SETTING!==undefined){
   }
 }
 
-
-
 // adding helmet
 app.use(helmet());
 
@@ -92,11 +85,10 @@ app.use(morgan("dev"));
 
 // adding the body-parser to handle request bodies
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json({ limit: "10mb", extended: true }));
+app.use(bodyParser.json({ limit: "20mb", extended: true }));
 
 // let express use the specific routes
 app.use("/libraries", libraryRoutes);
-
 
 app.post('/login', async function(req, res) {
   let frontCaller = process.env.FRONT_API;
@@ -257,9 +249,8 @@ app.post("/updateProjects", async function(req, res){
   }
 
 
-}
+});
 
-)
 app.post('/account', async function(req, res) {
   let frontCaller = process.env.FRONT_API;
 
@@ -339,8 +330,6 @@ app.post('/edituser', async function(req, res) {
   }
 
 });
-
-
 
 app.get("/logout", function (req, res) {
   req.session.destroy();

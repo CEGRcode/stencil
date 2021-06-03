@@ -1,14 +1,12 @@
 {
-		"genome": "hg19",
-		"historyId": "6fb17d0cc6e8fae5",
 		"projectId": "PCRP Antibody Validation Project",
 		"libraryType": "ChIP-exo",
 		"sampleId": "USF1",
 		"libraryId": "USF1-26446",
 		"libraryDescription": "This gene encodes a member of the basic helix-loop-helix leucine zipper family, and can function as a cellular transcription factor. The encoded protein can activate transcription through pyrimidine-rich initiator (Inr) elements and E-box motifs. This gene has been linked to familial combined hyperlipidemia (FCHL). Alternative splicing of this gene results in multiple transcript variants. A related pseudogene has been defined on chromosome 21. [provided by RefSeq, Feb 2013]",
-		"createdBy": "cegr@psu.edu",
-		"token": "a23Ta13q",
-		"submitter": "cegr@psu.edu",
+		"createdBy": "cegr@cornell.edu",
+		"token": "SGAN9WTPAUCAYDO8A8HD",
+		"submitter": "cegr@cornell.edu",
 		"libraryData": [
 			{
 		    "id": "Subtype0_0",

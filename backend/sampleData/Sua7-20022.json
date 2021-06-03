@@ -1,14 +1,12 @@
 {
-		"genome": "sacCer3",
-		"historyId": "6fb17d0cc6e8fae5",
 		"projectId": "Yeast Epigenome Project",
 		"libraryType": "ChIP-exo",
 		"sampleId": "Sua7",
 		"libraryId": "Sua7-20022",
 		"libraryDescription": "Transcription factor TFIIB; a general transcription factor required for transcription initiation and start site selection by RNA polymerase II",
-		"createdBy": "cegr@psu.edu",
-		"token": "a23Ta13q",
-		"submitter": "cegr@psu.edu",
+		"createdBy": "cegr@cornell.edu",
+		"token": "SGAN9WTPAUCAYDO8A8HD",
+		"submitter": "cegr@cornell.edu",
 		"libraryData": [
 			{
 		    "id": "ChExMixImage0",

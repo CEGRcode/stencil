@@ -1,14 +1,12 @@
 {
-		"genome": "sacCer3",
-		"historyId": "6fb17d0cc6e8fae5",
 		"projectId": "Yeast Epigenome Project",
 		"libraryType": "ChIP-exo",
 		"sampleId": "Abf1",
 		"libraryId": "Abf1-19442",
 		"libraryDescription": "DNA binding protein with possible chromatin-reorganizing activity; involved in transcriptional activation, gene silencing, and DNA replication and repair",
-		"createdBy": "cegr@psu.edu",
-		"token": "a23Ta13q",
-		"submitter": "cegr@psu.edu",
+		"createdBy": "cegr@cornell.edu",
+		"token": "SGAN9WTPAUCAYDO8A8HD",
+		"submitter": "cegr@cornell.edu",
 		"libraryData": [
 			{
 		    "id": "ChExMixImage0",

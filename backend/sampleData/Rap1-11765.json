@@ -1,14 +1,12 @@
 {
-		"genome": "sacCer3",
-		"historyId": "6fb17d0cc6e8fae5",
 		"projectId": "Yeast Epigenome Project",
 		"libraryType": "ChIP-exo",
 		"sampleId": "Rap1",
 		"libraryId": "Rap1-11765",
 		"libraryDescription": "Essential DNA-binding transcription regulator that binds many loci; involved in transcription activation, repression, chromatin silencing, telomere length maintenance; relocalizes to cytosol under hypoxia; conserved protein with N-terminal BRCT domain, central region with homology to Myb DNA binding domain, and C-terminal Rap1-specific protein-interaction domain (RCT domain); recruits Sir complex to telomeric DNA; present in quiescent cell telomere hyperclusters",
-		"createdBy": "cegr@psu.edu",
-		"token": "a23Ta13q",
-		"submitter": "cegr@psu.edu",
+		"createdBy": "cegr@cornell.edu",
+		"token": "SGAN9WTPAUCAYDO8A8HD",
+		"submitter": "cegr@cornell.edu",
 		"libraryData": [
 			{
 		    "id": "ChExMixImage0",

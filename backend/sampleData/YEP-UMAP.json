@@ -1,14 +1,12 @@
 {
-	"genome": "sacCer3",
-	"historyId": "6fb17d0cc6e8fae5",
 	"projectId": "Yeast Epigenome Project",
 	"libraryType": "Meta-analysis",
 	"sampleId": "UMAP meta-analysis",
 	"libraryId": "UMAP",
 	"libraryDescription": "UMAP meta-analysis of all ChIP-exo data-sets generated in the Yeast Epigenome Project",
-	"createdBy": "cegr@psu.edu",
-	"token": "a23Ta13q",
-	"submitter": "cegr@psu.edu",
+	"createdBy": "cegr@cornell.edu",
+	"token": "SGAN9WTPAUCAYDO8A8HD",
+	"submitter": "cegr@cornell.edu",
 	"libraryData": [
 		{
 			"id": "UMAP_plot",

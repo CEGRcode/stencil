@@ -1,14 +1,12 @@
 {
-		"genome": "hg19",
-		"historyId": "6fb17d0cc6e8fae5",
 		"projectId": "PCRP Antibody Validation Project",
 		"libraryType": "ChIP-exo",
 		"sampleId": "HNFA4A",
 		"libraryId": "HNFA4A-18755",
 		"libraryDescription": "The protein encoded by this gene is a nuclear transcription factor which binds DNA as a homodimer. The encoded protein controls the expression of several genes, including hepatocyte nuclear factor 1 alpha, a transcription factor which regulates the expression of several hepatic genes. This gene may play a role in development of the liver, kidney, and intestines. Mutations in this gene have been associated with monogenic autosomal dominant non-insulin-dependent diabetes mellitus type I. Alternative splicing of this gene results in multiple transcript variants encoding several different isoforms. [provided by RefSeq, Apr 2012]",
-		"createdBy": "cegr@psu.edu",
-		"token": "a23Ta13q",
-		"submitter": "cegr@psu.edu",
+		"createdBy": "cegr@cornell.edu",
+		"token": "SGAN9WTPAUCAYDO8A8HD",
+		"submitter": "cegr@cornell.edu",
 		"libraryData": [
 			{
 		    "id": "Subtype0_0",
