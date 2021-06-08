@@ -129,7 +129,7 @@ exports.getBatchLibraryMetaInfo = async (req, res, next) => {
   // console.log("get all libraries");
   // console.log( req.session.username);
   let token = req.params.token;
-  if (token === process.env.MASTER_PWD){
+  if (token === process.env.SVC_STENCIL_PWD){
     myLib.find()
     .exec()
     .then(docs => {
@@ -608,7 +608,7 @@ exports.deleteLibraryById = (req, res, next) => {
   let token = req.params.token;
   let queryId = req.params.dbid;
 
-  if (token === process.env.MASTER_PWD){
+  if (token === process.env.SVC_STENCIL_PWD){
     myLib.deleteOne({ _id: queryId })
     .exec()
     .then(result => {
@@ -633,7 +633,7 @@ exports.deleteLibraryByLibId = (req, res, next) => {
   let projId = req.params.projid;
   let token = req.params.token;
 
-  if (token === process.env.MASTER_PWD){
+  if (token === process.env.SVC_STENCIL_PWD){
     myLib.deleteOne({ libraryId:libId, projectId:projId})
     .exec()
     .then(result => {
