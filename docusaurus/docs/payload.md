@@ -1,13 +1,18 @@
 ---
 sidebar_position: 3
 id: payload
-title: STENCIL POST payload
-sidebar_label: STENCIL payload
+title: Galaxy POST command
+sidebar_label: Galaxy integration
 ---
 
 ---
 
-## STENCIL payload
+## Galaxy integration with STENCIL
+ - Galaxy integration with STENCIL is facilitated by adding a simple python POST tool into a Galaxy workflow.
+ - Example Galaxy scripts (with XML) to allow Galaxy to POST to STENCIL:
+   - https://github.com/CEGRcode/galaxy_tools_for_stencil
+
+## JSON payload
 
 **projectId**
   - projectId is the highest level of categorizing the data in STENCIL.

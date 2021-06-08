@@ -38,17 +38,16 @@ To `build` the project, use `npm run build` from your project's root folder. Thi
 |Setting| Description|
 | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
 | `DB_HOST`          | Use `localhost` to connect to a local installation of mongodb (default), please set it to `mongo:27017` while creating a docker image. |
-| `DB_NAME`         | Name of the database to store app data.                                                                                                |
-| `API_PORT`         | API port name data.                                                                                                |
-| `FRONT_API`         | root URL of the frontend data.                                                                                                |
-| `HTTPS`         | Boolean determining if STENCIL uses HTTPS data.                                                                                                |
-| `HTTPSCERT`         | Path of https certificate  data.                                                                                                |
-| `HTTPSKEY`         | Path of https key data.                                                                                                |
-| `SESSION_ENCRYPTION`         | Name of session encryption data.                                                                                                |
-| `SESSION_NAME`         | Name of session data.                                                                                                |
-| `MASTER_PWD`         | Master login password data.                                                                                                |
-| `SVC_STENCIL_PWD`         | Password to enable STENCIL POST from token data.                                                                                                |
-| `PROXY_SETTING`         | Proxy address data.                                                                                                |
+| `DB_NAME`         | Name of the database to store app data. |
+| `API_PORT`         | API port name data. |
+| `FRONT_API`         | root URL of the frontend data. |
+| `HTTPS`         | Boolean determining if STENCIL uses HTTPS data. |
+| `HTTPSCERT`         | Not used if HTTPS == false: Path of https certificate  data. |
+| `HTTPSKEY`         | Not used if HTTPS == false: Path of https key data. |
+| `SESSION_ENCRYPTION`         | String used for encript session variables in cookies. |
+| `MASTER_PWD`         | Master login password data. |
+| `SVC_STENCIL_PWD`         | Password to enable STENCIL POST from token data. |
+| `PROXY_SETTING`         | Proxy address data. |
 
 
 > default `.env` configuration for local development
@@ -62,11 +61,14 @@ HTTPS=true
 HTTPSCERT = "/home/xxx/fullchain.pem"   
 HTTPSKEY = "/home/xxx/privkey.pem"
 SESSION_ENCRYPTION = "xxxxxx"
-SESSION_NAME = "stencil"
 MASTER_PWD = "aaaaaa"
 SVC_STENCIL_PWD = "bbbbbb"
 PROXY_SETTING='{"/xxx" : "http://xxx.xxxx.xxxx.xx:xxxx"}'
 ```
+
+- SSO_TOKEN_KEY and SSO_TOKEN_IV are used to encrypting user ID by SSO protected redirecting page, and then decrypted by stencil login page. The key must be 32, IV must be 16 char; You should replace the two strings to your own.
+
+- An example SSO redirecting page is provided in the repository directory sso_apache_site. The restricted directory should be an SSO protected directory. The redirecting page restricted/index.html should be defined as SSOURL. The cgi-bin/stencil.cgi.py file should be modifiedto match SSO_TOKEN_KEY and SSO_TOKEN_IV and redirect URL.
 
 - If your frontend app needs to access api call from 3rd party, e.g. galaxy server, you need to use proxy through backend server. In the frontend app, the URL "http://xxx.xxxx.xxxx.xx:xxxx/datasets/{options}" should be replaced with "http://backendserver:xxxx/datasets/{options}". Most browsers would prohibit cross-domain call for the front end, so that proxy is needed.
 
@@ -82,10 +84,10 @@ PROXY_SETTING='{"/xxx" : "http://xxx.xxxx.xxxx.xx:xxxx"}'
 |Setting| Description|
 | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
 | `PORT`          | Frontend PORT number |
-| `HTTPS`         | Boolean determining if STENCIL uses HTTPS                                                                                               |
-| `SSL_CRT_FILE`         | path of https certificate  data.                                                                                                |
-| `SSL_KEY_FILE`         | path of https key data.                                                                                                |
-| `BROWSER`         | Browser support data.                                                                                                |
+| `HTTPS`         | Boolean determining if STENCIL uses HTTPS |
+| `SSL_CRT_FILE`         | path of https certificate  data. |
+| `SSL_KEY_FILE`         | path of https key data. |
+| `BROWSER`         | Browser support data. |
 
 > default `.env` configuration for local development
 
@@ -96,6 +98,7 @@ SSL_CRT_FILE=/home/xxx/fullchain.pem
 SSL_KEY_FILE=/home/xxx/privkey.pem
 BROWSER=none
 ```
+- "Let’s Encript” offers free https certificate. You can set up the certificate by following instructions on its web site. https://letsencrypt.org/getting-started/
 
 ## Configuring STENCIL Config.js
 
@@ -108,15 +111,15 @@ BROWSER=none
 |Setting| Description|
 | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
 | `apiURL`          | URL of the backend server |
-| `SSOURL`          | URL of login page |
-| `librariesEndPoint`          | API endpoint for retrieve library list |
-| `libraryPageEndPoint`          | API endpoint for retrieve a library based on db id |
+| `SSOURL`          | Optional for SSO: URL of login page |
+| `librariesEndPoint`          | API endpoint for retrieve library list - DO NOT CHANGE |
+| `libraryPageEndPoint`          | API endpoint for retrieve a library based on db id - DO NOT CHANGE |
 
 > Sample Config.js
 
 ```
-apiURL: "http://stencil.biohpc.cornell.edu:8081",
-SSOURL: "https://stencil.biohpc.cornell.edu",
+apiURL: "http://localhost:8081",
+SSOURL: "http://localhost/restricted/index.html",
 librariesEndPoint: "/libraries",
 libraryPageEndPoint: "/libraries/dbid"
 ```
