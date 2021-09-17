@@ -28,7 +28,7 @@
     "nodemon": "^1.19.1"
   },
   "devDependencies": {
-    "axios": "^0.21.0",
+    "axios": "^0.21.2",
     "http-proxy-middleware": "^1.0.6"
   }
 }
