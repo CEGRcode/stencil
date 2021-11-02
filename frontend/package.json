@@ -10,7 +10,7 @@
     "@nivo/heatmap": "^0.70.0",
     "@nivo/line": "^0.70.0",
     "@nivo/scatterplot": "^0.70.0",
-    "axios": "^0.21.1",
+    "axios": "^0.21.4",
     "classnames": "^2.2.6",
     "igv": "^2.8.4",
     "mui-datatables": "^3.7.7",
