@@ -44,10 +44,11 @@ app.use(session({secret:process.env.SESSION_ENCRYPTION,
 
 // To handle all deprication warnings from mongoose
 // https://mongoosejs.com/docs/deprecations.html
-mongoose.set("useNewUrlParser", true);
-mongoose.set("useFindAndModify", false);
-mongoose.set("useCreateIndex", true);
-mongoose.set("useUnifiedTopology", true);
+// Values are now set by default in Mongoos 6
+//mongoose.set("useNewUrlParser", true);
+//mongoose.set("useFindAndModify", false);
+//mongoose.set("useCreateIndex", true);
+//mongoose.set("useUnifiedTopology", true);
 
 // connecting to mongodb using mongoclient
 mongoose.connect(
