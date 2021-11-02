@@ -1,12 +1,28 @@
-# stencil v1.0.0
-A web engine for visualizing and sharing life science datasets
+# STENCIL v1.0.0
+**A web engine for visualizing and sharing life science datasets**
+
+Qi Sun<sup>1</sup><sup>+</sup>, Ali Nematbakhsh<sup>1</sup><sup>+</sup>, Prashant K Kuntala<sup>2</sup>, Gretta Kellogg<sup>1</sup>, B. Franklin Pugh<sup>3</sup>, and William KM Lai<sup>3</sup><sup>*</sup>
+
+<sup>1</sup>Cornell Institute of Biotechnology, Cornell University, Ithaca, New York 14850, USA<br /><sup>2</sup>Department of Biochemistry and Molecular Biology, The Pennsylvania State University, University Park, Pennsylvania 16802, USA<br /><sup>3</sup>Department of Molecular Biology and Genetics, Cornell University, New York 14850, USA.
+
+<sup>+</sup>Co-first authors
+<sup>+</sup>To whom correspondence should be addressed.
+Contact: *wkl29@cornell.edu*
+
+The ability to aggregate experimental data analysis and results into a concise and interpretable format is a key step in evaluating the success of an experiment. This critical step determines baselines for reproducibility and is a key requirement for data dissemination. However, in practice it can be difficult to consolidate data analyses that encapsulates the broad range of datatypes available in the life sciences. We present STENCIL, a web templating engine designed to organize, visualize, and enable the sharing of interactive data visualizations. STENCIL leverages a flexible web framework for creating templates to render highly customizable visual front ends. This flexibility enables researchers to render small or large sets of experimental outcomes, producing high-quality downloadable and editable figures that retain their original relationship to the source data. REST API based back ends provide programmatic data access and supports easy data sharing. STENCIL is a lightweight tool that can stream data from Galaxy, a popular bioinformatic analysis web platform. STENCIL has been used to support the analysis and dissemination of two large scale genomic projects containing the complete data analysis for over 2,400 distinct datasets. Code and implementation details are available on GitHub: https://github.com/CEGRcode/stencil 
+
+## Citation
+STENCIL: A web templating engine for visualizing and sharing life science datasets<br />
+Qi Sun, Ali Nematbakhsh, Prashant K Kuntala, Gretta Kellogg, B. Franklin Pugh, William KM Lai<br />
+bioRxiv 2021.06.04.447108; doi: https://doi.org/10.1101/2021.06.04.447108
 
 ## Documentation
+Extended documentation available here:
 http://pughlab.mbg.cornell.edu/stencil/
 
 Quickstart:
 
-1. Start mongo db server.
+1. Start MongoDB server.
 
 2. Download source code:
 
@@ -17,99 +33,54 @@ Quickstart:
 3. Install dependencies.
 
    ```
-   cd stencil2/backend
+   cd stencil/backend
    npm install
 
-   cd stencil2/frontend
+   cd stencil/frontend
    npm install
 
    cd ..
    ```
 
-4. Configure the web site.
-
-   a. stencil2/backend/.env
-   ```
-   DB_HOST="localhost"                   // Mongo db host
-   DB_NAME="testDB"                      // Mongo db database name
-   API_PORT="8081                        // API port name
-
-   FRONT_API="https://localhost:3000"    // root URL of the frontend
-
-   HTTPS = true                          // using HTTPS
-   HTTPSCERT = "/home/xxx/fullchain.pem" // Not used if HTTPS == false: path of https certificate   
-   HTTPSKEY = "/home/xxx/privkey.pem"    // Not used if HTTPS == false: path of https key
-
-   SSO_TOKEN_KEY = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" // Optional for SSO, must be 32 char
-   SSO_TOKEN_IV = "AAAAAAAAAAAAAAAA"     // Optional for SSO, must be 16 char
-
-   SESSION_ENCRYPTION = "xxxxxx"         // String used for encript session variables in cookies
-   
-   MASTER_PWD = "aaaaaa"                 // Optional: allows admin user to login as any user
-
-   PROXY_SETTING='{"/xxx" : "http://xxx.xxxx.xxxx.xx:xxxx"}'   // Optional: proxy setting
-      
-   ```
-   
-   * SSO_TOKEN_KEY and SSO_TOKEN_IV are used to encrypting user ID by SSO protected redirecting page, and then decrypted by stencil login page. The key must be 32, IV must be 16 char; You should replace the two strings to your own.
-   * An example SSO redirecting page is provided in the repository directory sso_apache_site. The restricted directory should be an SSO protected directory. The redirecting page restricted/index.html should be defined as SSOURL. The cgi-bin/stencil.cgi.py file should be modifiedto match SSO_TOKEN_KEY and SSO_TOKEN_IV and redirect URL.
-
-   * If your frontend app needs to access api call from 3rd party, e.g. galaxy server, you need to use proxy  through backend server. In the frontend app, the URL "http://xxx.xxxx.xxxx.xx:xxxx/datasets/{options}" should be replaced with "http://backendserver:xxxx/datasets/{options}". Most browsers would prohibit cross-domain call for the front end, so that proxy is needed.
-
-
-
-   b. stencil2/frontend/.env
-   ```
-   PORT="3000"                          // frontend port number
-   HTTPS=false                          // activate HTTPS
-   SSL_CRT_FILE=/home/xxx/fullchain.pem //path of https certificate   
-   SSL_KEY_FILE=/home/xxx/privkey.pem   //path of https key
-   BROWSER=none
-   ```   
-   * "Let’s Encript” offers free https certificate. You can set up the certificate by following instructions on its web site.  https://letsencrypt.org/getting-started/
-
-   c. stencil2/frontend/src/Config.js
-   ```
-   apiURL: "http://localhost:8081",                    // URL of the backend server
-   SSOURL: "http://localhost/restricted/index.html",   // Optional for SSO: URL of login page
-
-   librariesEndPoint: "/libraries",                    // API endpoint for retrieve library list - DO NOT CHANGE
-   libraryPageEndPoint: "/libraries/dbid",             // API endpoint for retrieve a library based on db id - DO NOT CHANGE
-   ```
-
-3. Start the backend and front end server.
+4. Start the backend and frontend server.
 
    ```
    screen
 
-   cd stencil2/backend
+   cd stencil/backend
 
    npm start
 
    #press ctrl-a c to switch screen
 
-   cd stencil2/frontend
+   cd stencil/frontend
    npm start
    ```
 
 4. Post example data.
 
-   Modify the postData.py and postLibrary.py located in stencil2/backend/utils.
+   Modify the postData.py and postLibrary.py located in stencil/backend/utils.
 
    Replace the URL from "http://localhost/samples" to appropriate backend URL.
 
    ```
    cd stencil/backend/utils
-      
-   python postLibrary.py ../sampleData/example_lib.json
+
+   sh post_all.sh
    ```
 
-5. Open browser
+5. Access STENCIL.
+   
+   Open browser and navigate to:
 
    URL:  http://localhost:3000
 
-6. Web access of image files stored in stencil:
+   If opening STENCIL for the first time, initialize the admin user account to access STENCIL.
 
-   keep under stencil2/backend/sampleData/Images. They can be organized in sub-directories.
+### Notes
 
-   The image url is: http//localhost:8081/images/subDirection/myImage.png
+   Locally hosted data files stored in stencil are kept under:<br />
+   stencil/backend/sampleData/localdata<br />
+   The folder structure is arbitrary and can be organized into sub-directories.<br />
+   The locally hosted file path is set in the backed .env file<br />
+   Locally hosted images can be directly viewed at: http//localhost:8081/images/subDirection/myImage.png
