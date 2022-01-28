@@ -1,5 +1,5 @@
 ---
-sidebar_position: 7
+sidebar_position: 4
 id: docker
 title: Building a Docker image
 sidebar_label: Docker

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 3
 id: layout
 title: Configure layouts
 sidebar_label: Configure layouts

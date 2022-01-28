@@ -1,5 +1,5 @@
 ---
-sidebar_position: 6
+sidebar_position: 3
 id: deploy
 title: Deployment
 sidebar_label: Production deployment

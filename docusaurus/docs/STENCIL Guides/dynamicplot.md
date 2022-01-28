@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 2
 id: dynamic
 title: Dynamic plot JSON format
 sidebar_label: Dynamic plot JSON format
