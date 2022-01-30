@@ -5,7 +5,7 @@ title: Dependency Installation
 sidebar_label: Install Dependencies
 ---
 
-# Install dependencies
+# Install dependencies for development/quickstart
 
 ## MacOS using [homebrew](https://brew.sh/)
 
@@ -57,7 +57,6 @@ mongod --dbpath ~/Desktop/data/db
 # Install Node.js
 sudo dnf module enable nodejs:14
 sudo dnf install nodejs
-sudo npm i -g pm2
 ```
 
 ### Install MongoDB
@@ -159,7 +158,7 @@ sudo systemctl stop mongod
 sudo systemctl restart mongod
 ```
 
-### Firewall configurations
+### Firewall configurations for development server
 CentOS 8 closes most ports to the public by default. Firewall exceptions should be added for the STENCIL frontend to be publicly visible and for the frontend to communicate to the backend. These ports exceptions should be changed if STENCIL is hosted through other ports.
 
 ```
