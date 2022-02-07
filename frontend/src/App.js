@@ -113,94 +113,90 @@ class App extends Component {
     const apiBaseURL =  Config.settings.apiURL;
     const libraryEndPoint = Config.settings.librariesEndPoint;
 
-	// retrieve all project id for the first time
-	let mode = 0
+  	// retrieve all project id for the first time
+  	let mode = 0
 
     //mode 0: load to project information
     const url = window.location.href;
     let proj = "";
     let found = url.match("project/([^?]+)");
-    if (found){
-      //proj = found[1];
-	  mode = 0;
-      proj = decodeURI(found[1]);
+    if (found) {
+        //proj = found[1];
+        mode = 0;
+        proj = decodeURI(found[1]);
     }
 
-	//mode 2: when switch library, no need to reload project information
+    //mode 2: when switch library, no need to reload project information
     found = url.match("getLib");
-    if (found){
+    if (found) {
       //proj = found[1];
-	  mode = 2;
+      mode = 2;
     }
 
-    if (mode === 0 )
-    {
-		//console.log("mode : 0");
-    let proj2Libs = {};
-    let backendURL = apiBaseURL + libraryEndPoint;
-    let backendURL2 = apiBaseURL + "/libraries/projdesc";
-    axios.all([
-      axios.get(backendURL, {withCredentials: true}),
-      axios.get(backendURL2)
-    ]).then(axios.spread((res1, res2) => {
-        let theUid = res1.data.uid;
-        let theRole = res1.data.role;
-        let items = [];
-        let projSearchList = [];
-        if (theUid){
-          if (Object.keys(res1.data.libraries).length > 0){
-            res1.data.libraries.forEach(library => {
-              if (! proj2Libs.hasOwnProperty(library.projectId)){
-                proj2Libs[library.projectId]= [];
+    if (mode === 0) {
+  		//console.log("mode : 0");
+      let proj2Libs = {};
+      let backendURL = apiBaseURL + libraryEndPoint;
+      let backendURL2 = apiBaseURL + "/libraries/projdesc";
+      axios.all([
+        axios.get(backendURL, {withCredentials: true}),
+        axios.get(backendURL2)
+        ]).then(axios.spread((res1, res2) => {
+          let theUid = res1.data.uid;
+          let theRole = res1.data.role;
+          let items = [];
+          let projSearchList = [];
+          if (theUid) {
+            if (Object.keys(res1.data.libraries).length > 0){
+              res1.data.libraries.forEach(library => {
+                if (! proj2Libs.hasOwnProperty(library.projectId)){
+                  proj2Libs[library.projectId]= [];
+                }
+                proj2Libs[library.projectId].push ({ "dbid": library.dbId, "libid": library.libraryId});
+              })
+
+              let theProjList = Object.keys(proj2Libs).sort();
+
+              //console.log("check default proj: " + proj);
+              if ((proj === "") && (theProjList.length>0)) {
+                proj = theProjList[0];
+                //console.log("default proj: " + proj);
               }
-              proj2Libs[library.projectId].push ({ "dbid": library.dbId, "libid": library.libraryId});
-            })
 
-            let theProjList = Object.keys(proj2Libs).sort();
+              if (theProjList){
+                projSearchList = theProjList.map(item=>{return({value:item, label:item})})
+              }
 
-            //console.log("check default proj: " + proj);
-            if ((proj === "") && (theProjList.length>0)) {
-              proj = theProjList[0];
-              //console.log("default proj: " + proj);
+              const libList = proj2Libs[proj];
+
+              // create the search options; [replace with existing search endpoint in future]
+              for (let i = 0; i < libList.length; i++) {
+                items.push({ value: libList[i].dbid, label: libList[i].libid });
+              }
+              // sort the items
+              items.sort(compareByLabel);
             }
 
-            if (theProjList){
-              projSearchList = theProjList.map(item=>{return({value:item, label:item})})
-            }
-
-            const libList = proj2Libs[proj];
-
-            // create the search options; [replace with existing search endpoint in future]
-            for (let i = 0; i < libList.length; i++) {
-              items.push({ value: libList[i].dbid, label: libList[i].libid });
-            }
-            // sort the items
-            items.sort(compareByLabel);
+            //console.log(res2);
+            this.setState({uid: theUid, role:theRole, allLibraryList: items, currentProject:proj, projList:projSearchList, login:true, projDesc:res2.data });
+            window.localStorage.setItem("localState", JSON.stringify(this.state));
           }
-
-          //console.log(res2);
-          this.setState({uid: theUid, role:theRole, allLibraryList: items, currentProject:proj, projList:projSearchList, login:true, projDesc:res2.data });
-          window.localStorage.setItem("localState", JSON.stringify(this.state));
-        }
-        else
-        {
-          console.log("login failed");
-          this.setState({allLibraryList: [], currentProject:"", projList:[], login:false });
-        }
-
-
+          else {
+            console.log("login failed");
+            this.setState({allLibraryList: [], currentProject:"", projList:[], login:false });
+          }
       }))
       .catch(err => {
         console.log(err);
       });
     }
-	else {
-		//console.log("mode : 2");
-		let stickyValue = window.localStorage.getItem("localState");
-		stickyValue = JSON.parse(stickyValue);
-		this.setState(stickyValue);
-	}
-    }
+    else {
+  		//console.log("mode : 2");
+  		let stickyValue = window.localStorage.getItem("localState");
+  		stickyValue = JSON.parse(stickyValue);
+  		this.setState(stickyValue);
+	   }
+  }
 
   render() {
     const { isThemeLight } = this.state;

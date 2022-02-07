@@ -18,7 +18,6 @@ router.get("/projdesc", librariesController.projDesc);
 // create one new library
 router.post("/", librariesController.createNewLibrary);
 
-
 // DELETE
 // delete a libary by database id
 router.delete("/dbid/:token/:dbid", librariesController.deleteLibraryById);
@@ -26,7 +25,6 @@ router.delete("/dbid/:token/:dbid", librariesController.deleteLibraryById);
 // DELETE
 // delete a libary by user library id and project ID
 router.delete("/libid/:token/:projid/:libid", librariesController.deleteLibraryByLibId);
-
 
 // export the router
 module.exports = router;

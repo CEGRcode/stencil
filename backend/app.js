@@ -100,8 +100,6 @@ app.post('/login', async function(req, res) {
 	var password = req.body.password.trim();
   var token = req.body.token;
 
-
-
   if (token){
     console.log("process token");
     //console.log(token);
