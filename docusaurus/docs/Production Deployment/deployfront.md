@@ -53,7 +53,6 @@ SSL_CRT_FILE=/home/xxx/fullchain.pem
 SSL_KEY_FILE=/home/xxx/privkey.pem
 BROWSER=none
 ```
-- "Let’s Encript” offers free https certificate. You can set up the certificate by following instructions on its web site. https://letsencrypt.org/getting-started/
 
 ## Configuring STENCIL Config.js
 - Modify *stencil/frontend/src/Config.js*
@@ -76,16 +75,4 @@ librariesEndPoint: "/libraries",
 libraryPageEndPoint: "/libraries/dbid"
 ```
 
-## Build React site
-This will build an optimized website for serving.
-
-```
-cd stencil/frontend
-npm run build
-```
-
-- Resulting built site will be in stencil/frontend/build. Move it to the hosted NGINX path folder.
-
-```
-cp -r stencil/frontend/build/* /usr/share/nginx/html/
-```
+## Configure NGINX
