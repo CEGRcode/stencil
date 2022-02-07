@@ -58,6 +58,7 @@ npm start
 
 ### Register initial Admin account
 **The account username 'root' is configured to be an Admin automatically.**
+
 <img alt="Docusaurus with Keytar" src={useBaseUrl('/img/Register-1.png')} />
 
 After successful registration, you will be returned to the Login page. Use the credentials you initialized the 'root' account for to login.

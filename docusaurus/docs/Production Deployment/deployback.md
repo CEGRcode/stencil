@@ -8,7 +8,13 @@ sidebar_label: Backend deployment
 ---
 
 ## Install MongoDB
-- Add MongoDB repo to yum repo
+- The following steps assume you are logged in as root
+
+```
+sudo su -
+```
+
+#### Add MongoDB repo to yum repo
 
 ```
 cat > /etc/yum.repos.d/mongodb-org-5.0.repo <<EOF

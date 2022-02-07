@@ -18,8 +18,8 @@ The instructions here have been tested for a server running `CentOS 8`. However,
 
 ```
 # Install Node.js
-sudo dnf module enable nodejs:14
-sudo dnf install nodejs
+sudo dnf -y module enable nodejs:14
+sudo dnf -y install nodejs
 ```
 
 #### Update the NPM package manager

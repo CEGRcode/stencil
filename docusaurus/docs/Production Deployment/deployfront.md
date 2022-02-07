@@ -9,7 +9,7 @@ sidebar_label: Frontend deployment
 ## Install NGINX for reverse-proxy
 
 ```
-sudo dnf install nginx
+sudo dnf -y install nginx
 ```
 
 Enable NGINX to start with reboot
