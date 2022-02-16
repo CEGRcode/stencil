@@ -14,6 +14,7 @@ import Button from '@material-ui/core/Button';
 import Divider from "@material-ui/core/Divider";
 
 // Cornell logos
+import stencillogo from '../logos/stencillogo.svg';
 import logo1 from '../logos/logo1.svg';
 import logo2 from '../logos/logo2.svg';
 
@@ -210,6 +211,13 @@ class LoginPage extends React.Component {
               >
                 <Grid item>
                   <img
+                    src={stencillogo}
+                    alt="stencil_logo"
+                    className={classes.companyLogo}
+                  />
+                </Grid>
+                <Grid item>
+                  <img
                     src={logo1}
                     alt="cib_logo"
                     className={classes.companyLogo}
@@ -264,7 +272,7 @@ class Guest extends React.Component{
 
   componentDidMount(){
     window.location.href =  Config.settings.apiURL + "/guest";
-  } 
+  }
   render() {
     return(
       <div>
