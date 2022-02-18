@@ -31,17 +31,25 @@ function Heatmap_stencil(props) {
   if (props.chartData === undefined ){
     return "No chart data detected";
   }
+  //console.log(props.chartData);
 
   // Heatmap settings
   const plotOptions = {
     ...(props.chartOptions['keys']?{keys: props.chartOptions['keys']}:{ }),
     ...(props.chartOptions['indexBy']?{indexBy: props.chartOptions['indexBy']}:{indexBy: props.chartOptions['keys'][0]}),
-    ...(props.chartOptions['colors']?{colors: props.chartOptions['colors']}:{colors: { scheme: 'spectral' } }),
     ...(props.chartOptions['forceSquare']?{forceSquare: props.chartOptions['forceSquare']}:{forceSquare: true}),
     ...(props.chartOptions['hoverTarget']?{hoverTarget: props.chartOptions['hoverTarget']}:{hoverTarget: "rowColumn"}),
     ...(props.chartOptions['cellHoverOthersOpacity']?{cellHoverOthersOpacity: props.chartOptions['cellHoverOthersOpacity']}:{cellHoverOthersOpacity: 0.25}),
     ...(props.chartOptions['cellOpacity']?{cellOpacity: props.chartOptions['cellOpacity']}:{cellOpacity: 1}),
     ...(props.chartOptions['enableLabels']?{enableLabels: props.chartOptions['enableLabels']}:{enableLabels: false}),
+
+    ...(props.chartOptions['colors']?{
+            colors: {
+              ...(props.chartOptions['colors']['type']?{ type: props.chartOptions['colors']['type']}:{ type: "diverging" }),
+              ...(props.chartOptions['colors']['scheme']?{ scheme: props.chartOptions['colors']['scheme']}:{ scheme: "red_blue" })
+            },
+    }
+    :{ colors: null }),
 
     ...(props.chartOptions['axisTop']?{
             axisTop: {
@@ -146,6 +154,7 @@ function Heatmap_stencil(props) {
       motionStiffness: 90,
       motionDamping: 15
   };
+  //console.log(plotOptions);
 
   // Function to export the plot as svg
   let svgString = "";
