@@ -166,7 +166,7 @@ class LayoutList extends React.Component {
                 spacing={3}
                 direction="column"
                 wrap="nowrap"
-                justify="flex-start"
+                justifyContent="flex-start"
                 className={classes.mainContainer}
               >
                 {content}

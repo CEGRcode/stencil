@@ -122,7 +122,7 @@ class EditUserPage extends React.Component {
             </Typography>):("")
             }
                <input type='hidden' name="uid" value={this.state.userName} />
-              <Grid container spacing={2} justify="center" alignItems="center" direction="row">
+              <Grid container spacing={2} justifyContent="center" alignItems="center" direction="row">
                   <Grid item xs={3}>
                     <Typography variant="h6" gutterBottom>User</Typography>
                   </Grid>
@@ -130,7 +130,7 @@ class EditUserPage extends React.Component {
                     <Typography variant="body2" gutterBottom>{this.state.userName}</Typography>
                   </Grid>
               </Grid>
-              <Grid container spacing={2} justify="center" alignItems="center" direction="row">
+              <Grid container spacing={2} justifyContent="center" alignItems="center" direction="row">
                   <Grid item  xs={3}>
                     <Typography variant="h6" gutterBottom>Role</Typography>
                   </Grid>
@@ -148,7 +148,7 @@ class EditUserPage extends React.Component {
                     </Select>
                   </Grid>
               </Grid>
-              <Grid container spacing={2} justify="center" alignItems="center" direction="row">
+              <Grid container spacing={2} justifyContent="center" alignItems="center" direction="row">
                   <Grid item  xs={3}>
                     <Typography variant="h6" gutterBottom>Status</Typography>
                   </Grid>
@@ -165,7 +165,7 @@ class EditUserPage extends React.Component {
                     </Select>
                   </Grid>
               </Grid>
-              <Grid container spacing={2} justify="center" alignItems="center" direction="row">
+              <Grid container spacing={2} justifyContent="center" alignItems="center" direction="row">
                   <Grid item  xs={3}>
                     <Typography variant="h6" gutterBottom>Projects</Typography>
                   </Grid>
@@ -178,7 +178,7 @@ class EditUserPage extends React.Component {
                     onChange={this.handleChangeProjects}/>
                   </Grid>
               </Grid>
-              <Grid container spacing={2} justify="center" alignItems="center" direction="row">
+              <Grid container spacing={2} justifyContent="center" alignItems="center" direction="row">
                   <Grid item  xs={3}>
                     <Typography variant="h6" gutterBottom>Email</Typography>
                   </Grid>
@@ -186,7 +186,7 @@ class EditUserPage extends React.Component {
                   <input type="text" name="email" placeholder={this.state.userEmail} size="25" variant="outlined" />
                   </Grid>
               </Grid>
-              <Grid container spacing={2} justify="center" alignItems="center" direction="row">
+              <Grid container spacing={2} justifyContent="center" alignItems="center" direction="row">
                   <Grid item  xs={3}>
                     <Typography variant="h6" gutterBottom>Password</Typography>
                   </Grid>
@@ -194,7 +194,7 @@ class EditUserPage extends React.Component {
                   <input type="password" name="password" placeholder="Leave blank if unchanged" size="25" variant="outlined" />
                   </Grid>
               </Grid>
-              <Grid container spacing={2} justify="center" alignItems="center" direction="row">
+              <Grid container spacing={2} justifyContent="center" alignItems="center" direction="row">
                   <Grid item  xs={3}>
                     <Typography variant="h6" gutterBottom>Confirm Password</Typography>
                   </Grid>
@@ -202,7 +202,7 @@ class EditUserPage extends React.Component {
                   <input type="password" name="password2" placeholder="Leave blank if unchanged" size="25" variant="outlined" />
                   </Grid>
               </Grid>
-              <Grid container spacing={2} direction="row" justify="center" alignItems="center">
+              <Grid container spacing={2} direction="row" justifyContent="center" alignItems="center">
                   <Grid item  xs={3}>
                   <br />
                   <Button type="submit" color="primary" fullWidth variant="contained">Edit User</Button>

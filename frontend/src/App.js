@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 // Material ui styling
 import { withStyles } from "@material-ui/core/styles";
-import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
+import { MuiThemeProvider, createTheme } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
 
 // Sub Components
@@ -20,7 +20,7 @@ import { DataProvider } from "./Components/DataContext";
 import Config from "./Config";
 
 // creating a themes with default fontfamily
-const theme1 = createMuiTheme({
+const theme1 = createTheme({
   typography: {
     fontFamily: [
       '"Roboto Slab"',
@@ -39,7 +39,7 @@ const theme1 = createMuiTheme({
   }
 });
 
-const theme2 = createMuiTheme({
+const theme2 = createTheme({
   palette: {
     primary: {
       light: "#60ad5e",

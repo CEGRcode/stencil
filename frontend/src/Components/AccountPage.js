@@ -112,7 +112,7 @@ class AccountPage extends React.Component {
             </Typography>):("")
             }
                <input type='hidden' name="uid" value={this.state.userName} />
-              <Grid container spacing={2} justify="center" alignItems="center" direction="row">
+              <Grid container spacing={2} justifyContent="center" alignItems="center" direction="row">
                   <Grid item xs={3}>
                     <Typography variant="h6" gutterBottom>User</Typography>
                   </Grid>
@@ -120,7 +120,7 @@ class AccountPage extends React.Component {
                     <Typography variant="body2" gutterBottom>{this.state.userName}</Typography>
                   </Grid>
               </Grid>
-              <Grid container spacing={2} justify="center" alignItems="center" direction="row">
+              <Grid container spacing={2} justifyContent="center" alignItems="center" direction="row">
                   <Grid item xs={3}>
                     <Typography variant="h6" gutterBottom>Role</Typography>
                   </Grid>
@@ -128,7 +128,7 @@ class AccountPage extends React.Component {
                     <Typography variant="body2" gutterBottom>{this.state.role}</Typography>
                   </Grid>
               </Grid>
-              <Grid container spacing={2} justify="center" alignItems="center" direction="row">
+              <Grid container spacing={2} justifyContent="center" alignItems="center" direction="row">
                   <Grid item  xs={3}>
                     <Typography variant="h6" gutterBottom>Email</Typography>
                   </Grid>
@@ -140,7 +140,7 @@ class AccountPage extends React.Component {
                     variant="outlined" size="25"/>
                   </Grid>
               </Grid>
-              <Grid container spacing={2} justify="center" alignItems="center" direction="row">
+              <Grid container spacing={2} justifyContent="center" alignItems="center" direction="row">
                   <Grid item  xs={3}>
                     <Typography variant="h6" gutterBottom>Password</Typography>
                   </Grid>
@@ -152,7 +152,7 @@ class AccountPage extends React.Component {
                     variant="outlined" size="25"/>
                   </Grid>
               </Grid>
-              <Grid container spacing={2} justify="center" alignItems="center" direction="row">
+              <Grid container spacing={2} justifyContent="center" alignItems="center" direction="row">
                   <Grid item  xs={3}>
                     <Typography variant="h6" gutterBottom>Confirm Password</Typography>
                   </Grid>
@@ -164,7 +164,7 @@ class AccountPage extends React.Component {
                     variant="outlined" size="25"/>
                   </Grid>
               </Grid>
-              <Grid container spacing={2} justify="center" alignItems="center" direction="row">
+              <Grid container spacing={2} justifyContent="center" alignItems="center" direction="row">
                   <Grid item  xs={3}>
                   <br />
                   <Button type="submit" color="primary" fullWidth variant="contained">Edit User</Button>

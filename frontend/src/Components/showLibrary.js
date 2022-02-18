@@ -13,7 +13,7 @@ import HeaderInfo from "./SubComponents/LibraryHeaderInfo";
 import LayoutList from "./LayoutList";
 import Config from "../Config";
 // retrieve app configuration settings
-require("dotenv").config();
+//require("dotenv").config();
 
 // component styles.
 const styles = theme => ({

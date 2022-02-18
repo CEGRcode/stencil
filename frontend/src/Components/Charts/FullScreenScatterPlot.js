@@ -108,7 +108,7 @@ export default function FullScreenDialog(props) {
           </CardContent>
         </div>
 
-        <Grid container direction="row" justify="center" spacing={2}>
+        <Grid container direction="row" justifyContent="center" spacing={2}>
           <Grid item>
               <TextField
                 id="xMin-textfield"

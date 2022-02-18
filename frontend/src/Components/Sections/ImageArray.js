@@ -171,7 +171,7 @@ class ImageArray extends React.Component {
 
     return (
       <Grid item>
-        <Grid container spacing={3} direction="row" justify="space-evenly">
+        <Grid container spacing={3} direction="row" justifyContent="space-evenly">
           {
             stepId.map(stepIndex=>{
               return (
@@ -254,7 +254,7 @@ class ImageArray extends React.Component {
               //show the layout by rows
               tablayout.map(row=>{
                 return (
-                  <Grid container key={Math.random().toString(36).substr(10, 17)} spacing={spacing} direction="row" wrap="nowrap" justify="flex-start" className={classes.mainContainer}>
+                  <Grid container key={Math.random().toString(36).substr(10, 17)} spacing={spacing} direction="row" wrap="nowrap" justifyContent="flex-start" className={classes.mainContainer}>
                     {
                       row.map(stepId=>{
                         if (Array.isArray(stepId)) {
@@ -273,13 +273,13 @@ class ImageArray extends React.Component {
           </CardContent>
           ):(
             <CardContent className={classes.sectionHolder}>
-              <Grid container direction="row" spacing={spacing} justify="center">
+              <Grid container direction="row" spacing={spacing} justifyContent="center">
              {
               //show the layout by column
               tablayout.map(row=>{
                 return (
                   <Grid item key={Math.random().toString(36).substr(10, 17)}>
-                  <Grid container spacing={spacing} direction="column" wrap="nowrap" justify="flex-start" className={classes.mainContainer}>
+                  <Grid container spacing={spacing} direction="column" wrap="nowrap" justifyContent="flex-start" className={classes.mainContainer}>
                     {
                       row.map(stepId=>{
                         if (Array.isArray(stepId)) {

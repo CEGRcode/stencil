@@ -205,7 +205,7 @@ class LoginPage extends React.Component {
                 spacing={4}
                 alignItems={"center"}
                 direction="row"
-                justify="center"
+                justifyContent="center"
                 alignContent="center"
                 className={classes.footer}
               >
@@ -295,27 +295,27 @@ class Register extends React.Component{
                 <Typography variant="subtitle1" align="center" gutterBottom>
                  * SSO users please leave the password fields blank.<br />
                 </Typography>
-                <Grid container spacing={2} direction="column" justify="center" alignItems="center">
+                <Grid container spacing={2} direction="column" justifyContent="center" alignItems="center">
                   <Grid item xs={8}>
                   <input type="text" name="username" placeholder="Username" size="small" variant="outlined" />
                   </Grid>
                 </Grid>
-                <Grid container spacing={2} direction="column" justify="center" alignItems="center">
+                <Grid container spacing={2} direction="column" justifyContent="center" alignItems="center">
                   <Grid item xs={8}>
                   <input type="text" name="email" placeholder="Email" size="small" variant="outlined" />
                   </Grid>
                 </Grid>
-                <Grid container spacing={2} direction="column" justify="center" alignItems="center">
+                <Grid container spacing={2} direction="column" justifyContent="center" alignItems="center">
                   <Grid item xs={8}>
                   <input type="password" name="password" placeholder="Password" size="small" variant="outlined" />
                   </Grid>
                 </Grid>
-                <Grid container spacing={2} direction="column" justify="center" alignItems="center">
+                <Grid container spacing={2} direction="column" justifyContent="center" alignItems="center">
                   <Grid item xs={8}>
                   <input type="password" name="password2" placeholder="Repeat password" size="small" variant="outlined" />
                   </Grid>
                 </Grid>
-                <Grid container spacing={2} direction="row" justify="center" alignItems="center">
+                <Grid container spacing={2} direction="row" justifyContent="center" alignItems="center">
                   <Grid item  xs={3}>
                   <br />
                   <Button type="submit" color="primary" fullWidth variant="contained">Register</Button>
@@ -335,17 +335,17 @@ class LoginBox extends React.Component{
                     id="main-login"
                     action={Config.settings.apiURL + "/login"}
                     method="post">
-                  <Grid container direction="column" justify="center" alignItems="center" spacing={2}>
+                  <Grid container direction="column" justifyContent="center" alignItems="center" spacing={2}>
                     <Grid item xs={8}>
                       <input type="text" name="username" placeholder="Username" size="small" variant="outlined" />
                     </Grid>
                   </Grid>
-                  <Grid container direction="column" justify="center" alignItems="center" spacing={2}>
+                  <Grid container direction="column" justifyContent="center" alignItems="center" spacing={2}>
                     <Grid item xs={8}>
                       <input type="password" name="password" placeholder="Password" size="small" variant="outlined" />
                     </Grid>
                   </Grid>
-                  <Grid container direction="row" justify="center" alignItems="center" spacing={2}>
+                  <Grid container direction="row" justifyContent="center" alignItems="center" spacing={2}>
                     <Grid item xs={3}>
                     <br />
                     <Button type="submit" color="primary" fullWidth variant="contained">Submit</Button>

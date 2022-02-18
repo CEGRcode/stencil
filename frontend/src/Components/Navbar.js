@@ -38,13 +38,13 @@ class NavBar extends React.Component {
         className={classes.appBar2}
       >
         <CardActions>
-          <Grid container alignItems={"center"} justify={"space-between"}>
+          <Grid container alignItems={"center"} justifyContent={"space-between"}>
             <Grid item sm={"auto"}>
               <Grid
                 container
                 spacing={1}
                 alignItems={"center"}
-                justify={"space-between"}
+                justifyContent={"space-between"}
               >
                 {/* Filter Menu */}
                 <Grid item sm={"auto"} >
