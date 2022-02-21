@@ -13,12 +13,12 @@ sidebar_label: Deployment preparations
 The instructions here have been tested for a server running `CentOS 8`. However, all the app related configuration and deployment should be generally valid for any linux distribution. Install relevant dependencies based on respective distros.
 
 ## Install NodeJS
-- Requires NodeJS >= 14 (or any latest release)
+- Requires NodeJS >= 16 (or any latest release)
 - Install from [here](https://nodejs.org/en/download/)
 
 ```
 # Install Node.js
-sudo dnf -y module enable nodejs:14
+sudo dnf -y module enable nodejs:16
 sudo dnf -y install nodejs
 ```
 

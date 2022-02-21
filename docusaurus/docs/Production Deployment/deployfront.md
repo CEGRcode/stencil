@@ -30,6 +30,49 @@ sudo firewall-cmd --permanent --add-port=443/tcp
 sudo firewall-cmd --reload
 ```
 
+## Configure NGINX for proxying
+```
+vim /etc/nginx/nginx.conf
+```
+
+```
+server {
+    listen       80 default_server;
+    listen       [::]:80 default_server;
+    server_name  _;
+    root         /usr/share/nginx/html;
+
+    # Load configuration files for the default server block.
+    include /etc/nginx/default.d/*.conf;
+
+     location / {
+         proxy_set_header   X-Forwarded-For $remote_addr;
+         proxy_set_header   Host $http_host;
+         proxy_pass         http://localhost:3000;
+
+         # enable WebSockets
+         proxy_http_version 1.1;
+         proxy_set_header Upgrade $http_upgrade;
+         proxy_set_header Connection "upgrade";
+
+     }
+
+     error_page 404 /404.html;
+        location = /40x.html {
+     }
+
+     error_page 500 502 503 504 /50x.html;
+        location = /50x.html {
+     }
+}
+```
+
+## Install STENCIL-Frontend
+```
+cd stencil/frontend
+npm install
+```
+
 ## Configuring frontend .env
 - Create a `.env` file or edit the existing.
 - Add settings to your `.env` file as described in the table below.
@@ -75,4 +118,13 @@ librariesEndPoint: "/libraries",
 libraryPageEndPoint: "/libraries/dbid"
 ```
 
-## Configure NGINX
+## Minify STENCIL-Frontend
+```
+cd stencil/frontend
+npm run build
+```
+
+```
+cd /usr/share/nginx/html
+cp -r /stencil/frontend/build/* .
+```

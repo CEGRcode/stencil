@@ -95,6 +95,13 @@ sudo systemctl enable mongod
 sudo systemctl start mongod
 ```
 
+## Install STENCIL-backend
+
+```
+cd stencil/backend
+npm install
+```
+
 ## Configuring backend .env
 - Create a `.env` file or edit the existing.
 - Add settings to your `.env` file as described in the table below.
