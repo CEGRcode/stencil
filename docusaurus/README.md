@@ -31,3 +31,14 @@ GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
 ```
 
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+
+
+## Deployment instructions 220413
+Get Personal Access Token here:
+https://github.com/settings/tokens
+
+```
+GIT_USER='Git User ID' GIT_PASS='Personal access token' npm run deploy
+```
+
+Takes 30 sec to 5 min for site to update after deployment

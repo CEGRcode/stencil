@@ -73,9 +73,11 @@ class EditUserPage extends React.Component {
         console.log(err);
       });
   }
+
   handleChange = (event) => {
     this.setState({"role":event.target.value});
   };
+
   handleChangeStatus = (event) => {
     this.setState({"status":event.target.value});
   };
@@ -83,6 +85,7 @@ class EditUserPage extends React.Component {
   handleChangeProjects = (event) => {
     this.setState({"projects":event.target.value});
   };
+
   render() {
     const { classes } = this.props;
     // console.log("render edituser id");
