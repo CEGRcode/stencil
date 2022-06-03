@@ -1,6 +1,6 @@
 ---
-sidebar_position: 1
-id: payload
+sidebar_position: 3
+id: galaxy
 title: Galaxy POST command
 sidebar_label: Galaxy integration
 ---

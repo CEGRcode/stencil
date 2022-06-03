@@ -1,6 +1,6 @@
 ---
-sidebar_position: 2
-id: dynamic
+sidebar_position: 4
+id: nivoplot
 title: Dynamic plot JSON format
 sidebar_label: Dynamic plot JSON format
 ---

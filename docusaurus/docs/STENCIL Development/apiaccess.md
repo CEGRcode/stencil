@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 6
 id: apiaccess
 title: API access
 sidebar_label: API access
