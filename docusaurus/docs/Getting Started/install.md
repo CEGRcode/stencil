@@ -11,7 +11,7 @@ sidebar_label: Install Dependencies
 
 ### Install NodeJS
 
-- Requires NodeJS >= 14 (or any latest release)
+- Requires NodeJS >= 16 (or any latest release)
 - Install from [here](https://nodejs.org/en/download/)
 
 ```
@@ -49,13 +49,20 @@ mongod --dbpath ~/Desktop/data/db
 ## CentOS 8 setup
 - These instructions assume sudo rights
 
+### Install git
+- Install git for cloning
+
+```
+sudo yum -y install git
+```
+
 ### Install NodeJS
 - Requires NodeJS >= 14 (or any latest release)
 - Install from [here](https://nodejs.org/en/download/)
 
 ```
 # Install Node.js
-sudo dnf module enable nodejs:14
+sudo dnf module enable nodejs:16
 sudo dnf install nodejs
 ```
 

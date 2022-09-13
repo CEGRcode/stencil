@@ -153,6 +153,8 @@ By default, the backend will not be open to the public. Add an exception to open
 ```
 # Required for public access to the backend
 sudo firewall-cmd --permanent --add-port=8081/tcp
+# Restart Firewall
+sudo firewall-cmd --reload
 ```
 
 ## Install NodeJS load balancer (PM2)
