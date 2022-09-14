@@ -124,7 +124,9 @@ cd stencil/frontend
 npm run build
 ```
 
+
+## Deploy STENCIL-frontend to NGINX
 ```
-cd /usr/share/nginx/html
-cp -r /stencil/frontend/build/* .
+cp -r /build/* /usr/share/nginx/html
+sudo systemctl reload nginx
 ```
