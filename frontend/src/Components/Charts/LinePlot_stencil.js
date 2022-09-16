@@ -94,9 +94,9 @@ function LinePlot_stencil(props) {
               ...(props.chartOptions['axisLeft']['legendOffset']?{ legendOffset: props.chartOptions['axisLeft']['legendOffset'] }:{ legendOffset: -60}),
             },
         }
-        :{
-          axisLeft: { tickSize: 5, tickPadding: 5, tickRotation: 0, orient: "left", legend: "Y-axis", legendOffset: -50, legendPosition: "middle"},
-        }),
+      :{
+        axisLeft: { tickSize: 5, tickPadding: 5, tickRotation: 0, orient: "left", legend: "Y-axis", legendOffset: -50, legendPosition: "middle"},
+      }),
 
     ...(props.chartOptions['legends']?{
           legends: [ {

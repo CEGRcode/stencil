@@ -15,3 +15,6 @@ python3 postLibrary.py ../sampleData/CTCF-ENCSR000EGM.json
 python3 postLibrary.py ../sampleData/p300-ENCSR000EGE.json
 python3 postLibrary.py ../sampleData/RNA-seq_DESeq2.json
 python3 postLibrary.py ../sampleData/ATAC-seq_DESeq2.json
+
+# nivo sample data
+python3 postLibrary.py ../sampleData/Sample_SwarmPlot.json

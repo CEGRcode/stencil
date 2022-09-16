@@ -123,7 +123,7 @@ function ScatterPlot_stencil(props) {
           axisBottom: { tickSize: 5, tickPadding: 5, tickRotation: 45, orient: 'bottom', legend: 'X-axis', legendPosition: 'middle', legendOffset: 46, },
         }),
 
-        ...(props.chartOptions['axisLeft']?{
+      ...(props.chartOptions['axisLeft']?{
             axisLeft: {
                 ...(props.chartOptions['axisLeft']['tickSize']?{ tickSize: props.chartOptions['axisLeft']['tickSize']}:{ tickSize: 5 }),
                 ...(props.chartOptions['axisLeft']['tickPadding']?{ tickPadding: props.chartOptions['axisLeft']['tickPadding']}:{ tickPadding: 5 }),
@@ -135,7 +135,7 @@ function ScatterPlot_stencil(props) {
                 ...(props.chartOptions['axisLeft']['tickValues']?{ tickValues: props.chartOptions['axisLeft']['tickValues'] }:{ })
               },
           }
-          :{
+        :{
             axisLeft: { tickSize: 5, tickPadding: 5, tickRotation: 0, orient: 'left', legend: 'Y-axis', legendPosition: 'middle', legendOffset: -60 },
           }),
 

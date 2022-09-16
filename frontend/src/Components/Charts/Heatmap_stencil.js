@@ -88,9 +88,9 @@ function Heatmap_stencil(props) {
               ...(props.chartOptions['axisBottom']['legendOffset']?{ legendOffset: props.chartOptions['axisBottom']['legendOffset'] }:{ legendOffset: -40 })
             },
         }
-        :{ axisBottom: null }),
+      :{ axisBottom: null }),
 
-        ...(props.chartOptions['axisRight']?{
+      ...(props.chartOptions['axisRight']?{
             axisRight: {
               ...(props.chartOptions['axisRight']['tickSize']?{ tickSize: props.chartOptions['axisRight']['tickSize']}:{ tickSize: 5 }),
               ...(props.chartOptions['axisRight']['tickPadding']?{ tickPadding: props.chartOptions['axisRight']['tickPadding']}:{ tickPadding: 5 }),
@@ -101,9 +101,9 @@ function Heatmap_stencil(props) {
               ...(props.chartOptions['axisRight']['legendOffset']?{ legendOffset: props.chartOptions['axisRight']['legendOffset'] }:{ legendOffset: 40 })
             },
         }
-        :{ axisRight: null }),
+      :{ axisRight: null }),
 
-        ...(props.chartOptions['axisTop']?{
+      ...(props.chartOptions['axisTop']?{
             axisTop: {
                 ...(props.chartOptions['axisTop']['tickSize']?{ tickSize: props.chartOptions['axisTop']['tickSize']}:{ tickSize: 0 }),
                 ...(props.chartOptions['axisTop']['tickPadding']?{ tickPadding: props.chartOptions['axisTop']['tickPadding']}:{ tickPadding: 0 }),
@@ -114,7 +114,7 @@ function Heatmap_stencil(props) {
                 ...(props.chartOptions['axisTop']['legendOffset']?{ legendOffset: props.chartOptions['axisTop']['legendOffset'] }:{ legendOffset: -20}),
                 ...(props.chartOptions['axisTop']['tickValues']?{ tickValues: props.chartOptions['axisTop']['tickValues'] }:{ tickValues: null })            },
           }
-          :{ axisTop: null }),
+      :{ axisTop: null }),
 
         ...(props.chartOptions['margin']?{
           margin: {

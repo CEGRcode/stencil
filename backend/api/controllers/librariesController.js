@@ -299,10 +299,11 @@ exports.queryLibraryDataById = async (req, res, next) => {
               doc.libraryData.forEach(item => {
                 //console.log(item);
                 switch (item.get("dataType").toLowerCase()) {
-                  case "lineplot":
                   case "barchart":
-                  case "scatterplot":
                   case "heatmap":
+                  case "lineplot":
+                  case "scatterplot":
+                  case "swarmplot":            
                   case "basictable":
                   case "igvtrack":
                     var originalURL = item.get("URL");
