@@ -32,7 +32,7 @@ function SwarmPlot_stencil(props) {
     return "No chart data detected";
   }
 
-  console.log(props.chartOptions);
+  //console.log(props.chartOptions);
   // Swarmplot settings
   const plotOptions = {
     ...(props.chartOptions['groups']?{groups: props.chartOptions['groups']}:{ }),
