@@ -1,0 +1,96 @@
+{
+	"chartOptions": {
+		"keys": ["Raoul", "Josiane", "Marcel", "René", "Paul", "Jacques"],
+		"axisBottom": {
+			"orient": "top",
+			"tickSize": 10,
+			"tickPadding": 5,
+			"tickRotation": 0,
+			"legend": "X-axis label",
+			"legendOffset": 46
+		},
+		"axisLeft": {
+			"orient": "left",
+			"tickSize": 10,
+			"tickPadding": 5,
+			"tickRotation": 0,
+			"legend": "Y-axis label",
+			"legendPosition": "middle",
+			"legendOffset": -50
+		}
+	},
+	"chartData": [
+	  {
+	    "Raoul": 137,
+	    "Josiane": 95,
+	    "Marcel": 35,
+	    "René": 109,
+	    "Paul": 15,
+	    "Jacques": 154
+	  },
+	  {
+	    "Raoul": 41,
+	    "Josiane": 168,
+	    "Marcel": 98,
+	    "René": 108,
+	    "Paul": 78,
+	    "Jacques": 136
+	  },
+	  {
+	    "Raoul": 176,
+	    "Josiane": 154,
+	    "Marcel": 189,
+	    "René": 69,
+	    "Paul": 191,
+	    "Jacques": 29
+	  },
+	  {
+	    "Raoul": 50,
+	    "Josiane": 60,
+	    "Marcel": 32,
+	    "René": 10,
+	    "Paul": 196,
+	    "Jacques": 176
+	  },
+	  {
+	    "Raoul": 133,
+	    "Josiane": 181,
+	    "Marcel": 126,
+	    "René": 76,
+	    "Paul": 147,
+	    "Jacques": 78
+	  },
+	  {
+	    "Raoul": 197,
+	    "Josiane": 190,
+	    "Marcel": 143,
+	    "René": 166,
+	    "Paul": 55,
+	    "Jacques": 35
+	  },
+	  {
+	    "Raoul": 160,
+	    "Josiane": 28,
+	    "Marcel": 171,
+	    "René": 136,
+	    "Paul": 85,
+	    "Jacques": 40
+	  },
+	  {
+	    "Raoul": 187,
+	    "Josiane": 83,
+	    "Marcel": 131,
+	    "René": 18,
+	    "Paul": 47,
+	    "Jacques": 124
+	  },
+	  {
+	    "Raoul": 109,
+	    "Josiane": 110,
+	    "Marcel": 170,
+	    "René": 13,
+	    "Paul": 143,
+	    "Jacques": 59
+	  }
+	]
+}

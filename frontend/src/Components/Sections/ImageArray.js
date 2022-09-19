@@ -13,6 +13,7 @@ import ScatterPlot from "../Charts/ScatterPlot_stencil";
 import HeatMap from "../Charts/Heatmap_stencil";
 import SwarmPlot from "../Charts/SwarmPlot_stencil";
 import NetworkPlot from "../Charts/NetworkPlot_stencil";
+import StreamPlot from "../Charts/StreamPlot_stencil";
 
 const styles = {
   card: {
@@ -166,13 +167,25 @@ class ImageArray extends React.Component {
             <NetworkPlot chartData={item.preLoadData?item.preLoadData.chartData: {}} chartOptions={item.preLoadData?item.preLoadData.chartOptions: {}} width={sizes[0]} height={sizes[1]} />
             </Grid>
           );
+        case "streamplot":
+          //console.log(item);
+          //console.log(item.preLoadData);
+          //console.log(item.preLoadData.chartOptions);
+          return (sizes===undefined)?(
+            <Grid item key={stepId}>
+            <StreamPlot chartData={item.preLoadData?item.preLoadData.chartData: {}} chartOptions={item.preLoadData?item.preLoadData.chartOptions: {}} width={600} height={500} />
+            </Grid>):(
+            <Grid item key={stepId}>
+            <StreamPlot chartData={item.preLoadData?item.preLoadData.chartData: {}} chartOptions={item.preLoadData?item.preLoadData.chartOptions: {}} width={sizes[0]} height={sizes[1]} />
+            </Grid>
+          );
         default:
-        return(
-          <Grid item>
-            dataType not known: {item.dataType}
-          </Grid>
-        )
-      };
+          return(
+            <Grid item>
+              dataType not known: {item.dataType}
+            </Grid>
+          )
+        };
     }
   }
   // end of show plot function

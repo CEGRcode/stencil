@@ -1,0 +1,21 @@
+{
+	"projectId": "Chart Examples",
+	"libraryType": "StreamPlot example",
+	"sampleId": "StreamPlot",
+	"libraryId": "StreamPlot",
+	"libraryDescription": "Example of StreamPlot chart",
+	"createdBy": "cegr@cornell.edu",
+	"token": "SGAN9WTPAUCAYDO8A8HD",
+	"submitter": "cegr@cornell.edu",
+	"libraryData": [
+		{
+			"id": "stream_plot",
+			"dataType": "streamplot",
+			"layoutId": "SingleChart",
+			"layoutTitle": "Example of StreamPlot",
+			"tabId": "StreamPlot",
+			"URL": "http://localhost:8081/localdata/streamplot_data.json",
+			"stepId": "0"
+		}
+	]
+}
