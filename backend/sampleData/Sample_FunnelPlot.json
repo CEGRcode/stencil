@@ -1,0 +1,21 @@
+{
+	"projectId": "Chart Examples",
+	"libraryType": "FunnelPlot example",
+	"sampleId": "FunnelPlot",
+	"libraryId": "FunnelPlot",
+	"libraryDescription": "Example of FunnelPlot chart",
+	"createdBy": "cegr@cornell.edu",
+	"token": "SGAN9WTPAUCAYDO8A8HD",
+	"submitter": "cegr@cornell.edu",
+	"libraryData": [
+		{
+			"id": "funnel_plot",
+			"dataType": "funnelplot",
+			"layoutId": "SingleChart",
+			"layoutTitle": "Example of FunnelPlot",
+			"tabId": "FunnelPlot",
+			"URL": "http://localhost:8081/localdata/funnelplot_data.json",
+			"stepId": "0"
+		}
+	]
+}

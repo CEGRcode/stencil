@@ -1,0 +1,41 @@
+{
+	"chartOptions": {
+		"valueFormat": ">-.4s",
+		"colors": "set2",
+		"labelColor": "white",
+		"borderWidth": 20,
+		"beforeSeparatorLength": 100,
+		"beforeSeparatorOffset": 20,
+		"afterSeparatorLength": 100,
+		"afterSeparatorOffset": 20,
+		"currentPartSizeExtension": 10,
+		"currentBorderWidth": 40
+	},
+	"chartData": [
+	  {
+	    "id": "step_sent",
+	    "value": 78454,
+	    "label": "Sent"
+	  },
+	  {
+	    "id": "step_viewed",
+	    "value": 58414,
+	    "label": "Viewed"
+	  },
+	  {
+	    "id": "step_clicked",
+	    "value": 50365,
+	    "label": "Clicked"
+	  },
+	  {
+	    "id": "step_add_to_card",
+	    "value": 47079,
+	    "label": "Add To Card"
+	  },
+	  {
+	    "id": "step_purchased",
+	    "value": 36094,
+	    "label": "Purchased"
+	  }
+	]
+}
