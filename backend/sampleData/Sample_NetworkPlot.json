@@ -1,0 +1,21 @@
+{
+	"projectId": "Chart Examples",
+	"libraryType": "NetworkPlot example",
+	"sampleId": "NetworkPlot",
+	"libraryId": "NetworkPlot",
+	"libraryDescription": "Example of NetworkPlot chart",
+	"createdBy": "cegr@cornell.edu",
+	"token": "SGAN9WTPAUCAYDO8A8HD",
+	"submitter": "cegr@cornell.edu",
+	"libraryData": [
+		{
+			"id": "network_plot",
+			"dataType": "networkplot",
+			"layoutId": "SingleChart",
+			"layoutTitle": "Example of NetworkPlot",
+			"tabId": "NetworkPlot",
+			"URL": "http://localhost:8081/localdata/networkplot_data.json",
+			"stepId": "0"
+		}
+	]
+}

@@ -18,3 +18,4 @@ python3 postLibrary.py ../sampleData/ATAC-seq_DESeq2.json
 
 # nivo sample data
 python3 postLibrary.py ../sampleData/Sample_SwarmPlot.json
+python3 postLibrary.py ../sampleData/Sample_NetworkPlot.json
