@@ -15,6 +15,7 @@ import SwarmPlot from "../Charts/SwarmPlot_stencil";
 import NetworkPlot from "../Charts/NetworkPlot_stencil";
 import StreamPlot from "../Charts/StreamPlot_stencil";
 import FunnelPlot from "../Charts/FunnelPlot_stencil";
+import Treemap from "../Charts/Treemap_stencil";
 
 const styles = {
   card: {
@@ -190,6 +191,18 @@ class ImageArray extends React.Component {
             </Grid>):(
             <Grid item key={stepId}>
             <FunnelPlot chartData={item.preLoadData?item.preLoadData.chartData: {}} chartOptions={item.preLoadData?item.preLoadData.chartOptions: {}} width={sizes[0]} height={sizes[1]} />
+            </Grid>
+          );
+        case "treemap":
+          //console.log(item);
+          //console.log(item.preLoadData);
+          //console.log(item.preLoadData.chartOptions);
+          return (sizes===undefined)?(
+            <Grid item key={stepId}>
+            <Treemap chartData={item.preLoadData?item.preLoadData.chartData: {}} chartOptions={item.preLoadData?item.preLoadData.chartOptions: {}} width={600} height={500} />
+            </Grid>):(
+            <Grid item key={stepId}>
+            <Treemap chartData={item.preLoadData?item.preLoadData.chartData: {}} chartOptions={item.preLoadData?item.preLoadData.chartOptions: {}} width={sizes[0]} height={sizes[1]} />
             </Grid>
           );
         default:
