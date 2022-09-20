@@ -221,7 +221,7 @@ class ImageArray extends React.Component {
           );
        case "chordplot":
          //console.log(item);
-         console.log(item.preLoadData);
+         //console.log(item.preLoadData);
          //console.log(item.preLoadData.chartOptions);
          return (sizes===undefined)?(
            <Grid item key={stepId}>
