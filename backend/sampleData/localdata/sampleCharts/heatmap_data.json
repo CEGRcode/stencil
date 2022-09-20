@@ -1,0 +1,208 @@
+{
+	"chartOptions": {
+		"keys": ["K562 Sample2", "K562 Sample3", "K562 Sample1", "HepG2 Sample2", "HepG2 Sample3", "HepG2 Sample1"],
+		"indexBy": "Samples",
+		"colors": { "type": "diverging", "scheme": "red_blue"},
+		"enableLabels": false,
+		"margin": {	"top": 30,	"right": 40, "bottom": 85, "left": 20	},
+		"axisBottom": {
+			"orient": "bottom",
+			"tickSize": 5,
+			"tickPadding": 5,
+			"tickRotation": -25,
+			"legendOffset": 36
+		},
+		"axisRight": {
+			"orient": "right",
+			"tickSize": 5,
+			"tickPadding": 5,
+			"tickRotation": 0,
+			"legend": "",
+			"legendPosition": "middle",
+			"legendOffset": -120
+		},
+		"axisTop": {
+			"legend": "Sample-to-Sample distance",
+			"tickValues": []
+		},
+		"hoverTarget": "cell",
+		"cellHoverOthersOpacity": 0.25,
+		"cellOpacity": 1
+	},
+	"chartData": [
+      {
+        "id": "K562 Sample2",
+        "data": [
+          {
+            "x": "K562 Sample2",
+            "y": 0.0
+          },
+          {
+            "x": "K562 Sample3",
+            "y": 96.717
+          },
+          {
+            "x": "K562 Sample1",
+            "y": 91.102
+          },
+          {
+            "x": "HepG2 Sample2",
+            "y": 626.898
+          },
+          {
+            "x": "HepG2 Sample3",
+            "y": 672.571
+          },
+          {
+            "x": "HepG2 Sample1",
+            "y": 636.473
+          }
+        ]
+      },
+      {
+        "id": "K562 Sample3",
+        "data": [
+          {
+            "x": "K562 Sample2",
+            "y": 96.717
+          },
+          {
+            "x": "K562 Sample3",
+            "y": 0.0
+          },
+          {
+            "x": "K562 Sample1",
+            "y": 89.42
+          },
+          {
+            "x": "HepG2 Sample2",
+            "y": 625.475
+          },
+          {
+            "x": "HepG2 Sample3",
+            "y": 671.53
+          },
+          {
+            "x": "HepG2 Sample1",
+            "y": 635.164
+          }
+        ]
+      },
+      {
+        "id": "K562 Sample1",
+        "data": [
+          {
+            "x": "K562 Sample2",
+            "y": 91.102
+          },
+          {
+            "x": "K562 Sample3",
+            "y": 89.42
+          },
+          {
+            "x": "K562 Sample1",
+            "y": 0.0
+          },
+          {
+            "x": "HepG2 Sample2",
+            "y": 618.475
+          },
+          {
+            "x": "HepG2 Sample3",
+            "y": 664.608
+          },
+          {
+            "x": "HepG2 Sample1",
+            "y": 628.372
+          }
+        ]
+      },
+      {
+        "id": "HepG2 Sample2",
+        "data": [
+          {
+            "x": "K562 Sample2",
+            "y": 626.898
+          },
+          {
+            "x": "K562 Sample3",
+            "y": 625.475
+          },
+          {
+            "x": "K562 Sample1",
+            "y": 618.475
+          },
+          {
+            "x": "HepG2 Sample2",
+            "y": 0.0
+          },
+          {
+            "x": "HepG2 Sample3",
+            "y": 129.946
+          },
+          {
+            "x": "HepG2 Sample1",
+            "y": 104.15
+          }
+        ]
+      },
+      {
+        "id": "HepG2 Sample3",
+        "data": [
+          {
+            "x": "K562 Sample2",
+            "y": 672.571
+          },
+          {
+            "x": "K562 Sample3",
+            "y": 671.53
+          },
+          {
+            "x": "K562 Sample1",
+            "y": 664.608
+          },
+          {
+            "x": "HepG2 Sample2",
+            "y": 129.946
+          },
+          {
+            "x": "HepG2 Sample3",
+            "y": 0.0
+          },
+          {
+            "x": "HepG2 Sample1",
+            "y": 123.822
+          }
+        ]
+      },
+      {
+        "id": "HepG2 Sample1",
+        "data": [
+          {
+            "x": "K562 Sample2",
+            "y": 636.473
+          },
+          {
+            "x": "K562 Sample3",
+            "y": 635.164
+          },
+          {
+            "x": "K562 Sample1",
+            "y": 628.372
+          },
+          {
+            "x": "HepG2 Sample2",
+            "y": 104.15
+          },
+          {
+            "x": "HepG2 Sample3",
+            "y": 123.822
+          },
+          {
+            "x": "HepG2 Sample1",
+            "y": 0.0
+          }
+        ]
+      }
+    ]
+}

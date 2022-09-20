@@ -1,0 +1,21 @@
+{
+	"projectId": "Chart Examples",
+	"libraryType": "Scatterplot example",
+	"sampleId": "Scatterplot",
+	"libraryId": "Scatterplot",
+	"libraryDescription": "Example of Scatterplot",
+	"createdBy": "cegr@cornell.edu",
+	"token": "SGAN9WTPAUCAYDO8A8HD",
+	"submitter": "cegr@cornell.edu",
+	"libraryData": [
+		{
+			"id": "Scatterplot",
+			"dataType": "scatterplot",
+			"layoutId": "SingleChart",
+			"layoutTitle": "Example of Scatterplot",
+			"tabId": "Scatterplot",
+			"URL": "http://localhost:8081/localdata/sampleCharts/scatterplot_data.json",
+			"stepId": "0"
+		}
+	]
+}

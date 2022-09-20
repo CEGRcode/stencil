@@ -24,3 +24,6 @@ python3 postLibrary.py ../sampleData/sampleJSON/sampleCharts/Sample_FunnelPlot.j
 python3 postLibrary.py ../sampleData/sampleJSON/sampleCharts/Sample_Treemap.json
 python3 postLibrary.py ../sampleData/sampleJSON/sampleCharts/Sample_Radarplot.json
 python3 postLibrary.py ../sampleData/sampleJSON/sampleCharts/Sample_Barchart.json
+python3 postLibrary.py ../sampleData/sampleJSON/sampleCharts/Sample_Lineplot.json
+python3 postLibrary.py ../sampleData/sampleJSON/sampleCharts/Sample_Scatterplot.json
+python3 postLibrary.py ../sampleData/sampleJSON/sampleCharts/Sample_Heatmap.json

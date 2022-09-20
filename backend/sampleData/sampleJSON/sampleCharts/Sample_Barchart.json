@@ -1,0 +1,21 @@
+{
+	"projectId": "Chart Examples",
+	"libraryType": "Barchart example",
+	"sampleId": "Barchart",
+	"libraryId": "Barchart",
+	"libraryDescription": "Example of Barchart",
+	"createdBy": "cegr@cornell.edu",
+	"token": "SGAN9WTPAUCAYDO8A8HD",
+	"submitter": "cegr@cornell.edu",
+	"libraryData": [
+		{
+			"id": "Barchart",
+			"dataType": "barchart",
+			"layoutId": "SingleChart",
+			"layoutTitle": "Example of Barchart",
+			"tabId": "Barchart",
+			"URL": "http://localhost:8081/localdata/sampleCharts/barchart_data.json",
+			"stepId": "0"
+		}
+	]
+}
