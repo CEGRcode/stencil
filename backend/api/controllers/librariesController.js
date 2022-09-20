@@ -303,7 +303,12 @@ exports.queryLibraryDataById = async (req, res, next) => {
                   case "heatmap":
                   case "lineplot":
                   case "scatterplot":
-                  case "swarmplot":            
+                  case "swarmplot":
+                  case "networkplot":
+                  case "streamplot":
+                  case "funnelplot":
+                  case "treemap":
+                  case "radarplot":
                   case "basictable":
                   case "igvtrack":
                     var originalURL = item.get("URL");

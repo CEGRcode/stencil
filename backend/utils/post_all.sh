@@ -22,3 +22,4 @@ python3 postLibrary.py ../sampleData/Sample_NetworkPlot.json
 python3 postLibrary.py ../sampleData/Sample_StreamPlot.json
 python3 postLibrary.py ../sampleData/Sample_FunnelPlot.json
 python3 postLibrary.py ../sampleData/Sample_Treemap.json
+python3 postLibrary.py ../sampleData/Sample_Radarplot.json

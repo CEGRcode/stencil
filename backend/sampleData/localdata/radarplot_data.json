@@ -1,0 +1,40 @@
+{
+	"chartOptions": {
+			"keys": [ "chardonay", "carmenere", "syrah" ],
+			"indexBy": "taste",
+			"valueFormat": ">-.2f",
+			"colors": "set2"
+	},
+	"chartData": [
+  {
+    "taste": "fruity",
+    "chardonay": 24,
+    "carmenere": 76,
+    "syrah": 98
+  },
+  {
+    "taste": "bitter",
+    "chardonay": 64,
+    "carmenere": 107,
+    "syrah": 94
+  },
+  {
+    "taste": "heavy",
+    "chardonay": 68,
+    "carmenere": 99,
+    "syrah": 54
+  },
+  {
+    "taste": "strong",
+    "chardonay": 56,
+    "carmenere": 31,
+    "syrah": 44
+  },
+  {
+    "taste": "sunny",
+    "chardonay": 53,
+    "carmenere": 107,
+    "syrah": 31
+  }
+]
+}
