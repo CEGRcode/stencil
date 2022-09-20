@@ -1,0 +1,47 @@
+{
+	"chartOptions": {
+		"keys": [ "John", "Raoul", "Jane", "Marcel", "Ibrahim" ],
+		"valueFormat": ".2f",
+		"padAngle": 0.02,
+		"innerRadiusRatio": 0.96,
+		"innerRadiusOffset": 0.02,
+		"inactiveArcOpacity": 0.25
+	},
+	"chartData": [
+		  [
+		    394,
+		    1984,
+		    451,
+		    1599,
+		    4
+		  ],
+		  [
+		    891,
+		    393,
+		    1732,
+		    22,
+		    7
+		  ],
+		  [
+		    347,
+		    290,
+		    193,
+		    438,
+		    473
+		  ],
+		  [
+		    52,
+		    290,
+		    7,
+		    467,
+		    1286
+		  ],
+		  [
+		    1287,
+		    163,
+		    341,
+		    319,
+		    1110
+		  ]
+	]
+}
