@@ -1,13 +1,15 @@
 ---
 sidebar_position: 7
-id: mongodb
-title: MongoDB commands
-sidebar_label: Coding Guidelines
+id: tipstricks
+title: Dev Tips & Tricks
+sidebar_label: Dev Tips & Tricks
 ---
 
 ---
 
-## Reset the MongoDB database for dropping development data
+## Reset the MongoDB database
+
+### Useful for dropping development data
 
 1. Check that the stencil database is visible
     ```
