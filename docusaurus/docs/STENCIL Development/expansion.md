@@ -62,6 +62,9 @@ Make sure the switch case statement is added for your chart and the datatype mat
   case "igvtrack":        
   ```
 
+3. Restart Backend server if running before continuing with tutorial
+  - NodeJS backend server initializes itself during startup and does not update the API in realtime
+
 ### Add the component to STENCIL frontend
 
 STENCIL charts follow the sample template and can be copy-pasted to generate a new charting component.
