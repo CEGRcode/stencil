@@ -14,7 +14,7 @@
 			"layoutId": "SingleChart",
 			"layoutTitle": "Example of RadarPlot",
 			"tabId": "Radar Plot",
-			"URL": "http://localhost:8081/localdata/radarplot_data.json",
+			"URL": "http://localhost:8081/localdata/sampleCharts/radarplot_data.json",
 			"stepId": "0"
 		}
 	]

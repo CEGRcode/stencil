@@ -14,7 +14,7 @@
 			"layoutId": "SingleChart",
 			"layoutTitle": "Example of FunnelPlot",
 			"tabId": "FunnelPlot",
-			"URL": "http://localhost:8081/localdata/funnelplot_data.json",
+			"URL": "http://localhost:8081/localdata/sampleCharts/funnelplot_data.json",
 			"stepId": "0"
 		}
 	]

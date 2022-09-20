@@ -14,7 +14,7 @@
 			"layoutId": "SingleChart",
 			"layoutTitle": "Example of StreamPlot",
 			"tabId": "StreamPlot",
-			"URL": "http://localhost:8081/localdata/streamplot_data.json",
+			"URL": "http://localhost:8081/localdata/sampleCharts/streamplot_data.json",
 			"stepId": "0"
 		}
 	]

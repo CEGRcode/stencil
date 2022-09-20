@@ -14,7 +14,7 @@
 			"layoutId": "SingleChart",
 			"layoutTitle": "Example of Treemap",
 			"tabId": "Treemap Plot",
-			"URL": "http://localhost:8081/localdata/treemap_data.json",
+			"URL": "http://localhost:8081/localdata/sampleCharts/treemap_data.json",
 			"stepId": "0"
 		}
 	]

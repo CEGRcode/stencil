@@ -14,7 +14,7 @@
 			"layoutId": "SingleChart",
 			"layoutTitle": "Example of SwarmPlot",
 			"tabId": "SwarmPlot",
-			"URL": "http://localhost:8081/localdata/swarmplot_data.json",
+			"URL": "http://localhost:8081/localdata/sampleCharts/swarmplot_data.json",
 			"stepId": "0"
 		}
 	]
