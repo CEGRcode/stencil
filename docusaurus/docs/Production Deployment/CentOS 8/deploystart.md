@@ -57,6 +57,22 @@ npm install
 
 More details on above command usage : [npm docs](https://docs.npmjs.com/updating-packages-downloaded-from-the-registry)
 
+## Update sampleData for POSTing to backend
+- The sampleData by default points to 'localhost'. This needs to be updated to the backend server name for proper access
+- This example uses the artemis.cac.cornell.edu DNS as an example
+
+- Update to HTTP (non-SSL secured)
+```
+find ~/stencil/backend/sampleData \( -type d -name .git -prune \) -o -type f -print0 | xargs -0 sed -i ‘s/localhost:8081/artemics.cac.cornell.edu:8081/g’
+grep -ri local ~/stencil/backend/sampleData
+```
+
+- Update to HTTPS (SSL secured)
+```
+find ~/stencil/backend/sampleData \( -type d -name .git -prune \) -o -type f -print0 | xargs -0 sed -i ‘s|http://localhost:8081|https://artemis.cac.cornell.edu:8081|g’
+grep -ri local ~/stencil/backend/sampleData
+```
+
 ## Learn More
 
 ---
