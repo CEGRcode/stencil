@@ -27,3 +27,4 @@ python3 postLibrary.py ../sampleData/sampleJSON/sampleCharts/Sample_Barchart.jso
 python3 postLibrary.py ../sampleData/sampleJSON/sampleCharts/Sample_Lineplot.json
 python3 postLibrary.py ../sampleData/sampleJSON/sampleCharts/Sample_Scatterplot.json
 python3 postLibrary.py ../sampleData/sampleJSON/sampleCharts/Sample_Heatmap.json
+python3 postLibrary.py ../sampleData/sampleJSON/sampleCharts/Sample_Chordplot.json

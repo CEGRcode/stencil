@@ -309,6 +309,7 @@ exports.queryLibraryDataById = async (req, res, next) => {
                   case "funnelplot":
                   case "treemap":
                   case "radarplot":
+                  case "chordplot":
                   case "basictable":
                   case "igvtrack":
                     var originalURL = item.get("URL");
