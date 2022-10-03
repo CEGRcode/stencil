@@ -38,7 +38,7 @@ function LinePlot_stencil(props) {
     ...(props.chartOptions['colors']?{colors: props.chartOptions['colors']}:{colors: { scheme: 'spectral' } }),
     ...(props.chartOptions['enableArea']?{enableArea: props.chartOptions['enableArea']}:{ }),
     ...(props.chartOptions['areaOpacity']?{areaOpacity: props.chartOptions['areaOpacity']}:{ }),
-    ...(props.chartOptions['fill']?{fill: props.chartOptions['fill']}:{ }),
+    //...(props.chartOptions['fill']?{fill: props.chartOptions['fill']}:{ }),
     ...(props.chartOptions['fillOpacity']?{fillOpacity: props.chartOptions['fillOpacity']}:{ }),
 
     ...(props.chartOptions['xScale']?{

@@ -14,7 +14,7 @@ import LoginPage from "./Components/LoginPage";
 import AdminPage from "./Components/AdminPage";
 import AccountPage from "./Components/AccountPage";
 import EditUserPage from "./Components/EditUserPage";
-import Library from "./Components/showLibrary"
+import Library from "./Components/showLibrary";
 // React contextAPI for common app data
 import { DataProvider } from "./Components/DataContext";
 import Config from "./Config";
