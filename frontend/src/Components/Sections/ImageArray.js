@@ -3,7 +3,8 @@ import PropTypes from "prop-types";
 
 import { withStyles } from "@material-ui/core/styles";
 
-import { CardContent, Typography, Grid, Paper, Tabs, Tab, Radio} from "@material-ui/core";
+import { CardContent, Typography, Grid, Paper, Tabs, Tab, Radio, RadioGroup} from "@material-ui/core";
+import FormControlLabel from "@material-ui/core/FormControlLabel";
 
 import IGVBrowser from "../SubComponents/IGVbrowser";
 import BasicTable from "../Tables/BasicTable_stencil";
@@ -27,6 +28,8 @@ const styles = {
     fontSize: 18
   }
 };
+
+const Wire = ({ children, ...props }) => children(props);
 
 class ImageArray extends React.Component {
 
@@ -62,7 +65,6 @@ class ImageArray extends React.Component {
               />
         </Grid>
       )
-
     }
     else {
       switch (item.dataType.toLowerCase()) {
@@ -219,11 +221,11 @@ class ImageArray extends React.Component {
             <RadarPlot chartData={item.preLoadData?item.preLoadData.chartData: {}} chartOptions={item.preLoadData?item.preLoadData.chartOptions: {}} width={sizes[0]} height={sizes[1]} />
             </Grid>
           );
-       case "chordplot":
-         //console.log(item);
-         //console.log(item.preLoadData);
-         //console.log(item.preLoadData.chartOptions);
-         return (sizes===undefined)?(
+        case "chordplot":
+          //console.log(item);
+          //console.log(item.preLoadData);
+          //console.log(item.preLoadData.chartOptions);
+          return (sizes===undefined)?(
            <Grid item key={stepId}>
            <ChordPlot chartData={item.preLoadData?item.preLoadData.chartData: {}} chartOptions={item.preLoadData?item.preLoadData.chartOptions: {}} width={600} height={500} />
            </Grid>):(
@@ -242,40 +244,54 @@ class ImageArray extends React.Component {
   }
   // end of show plot function
 
-  RadioGroup = (props) => {
-    let radioButtonGroupIndex = props.radioButtonGroupIndex;
+  RadioButtonGroup = (props) => {
     let plottitle = props.plottitle;
     let stepId = props.stepId;
     let thisTab= props.thisTab;
     let plotsizes = props.plotsizes;
-    let rgroup = "radioGroup" + String(radioButtonGroupIndex)
+
+    let rgroup = "radioGroup" + String(thisTab[stepId[0]]["tabId"])
+
+    let selectedStepId = this.state[rgroup];
+//    console.log(this.state["selectedTab"]);
+//    console.log(thisTab);
+//    console.log(stepId);
+    if (selectedStepId === undefined){
+      selectedStepId = stepId[0];
+    }
+    //console.log(selectedStepId);
 
     let handleRadioChange = event => {
       this.setState({ [rgroup]: event.target.value });
+      //console.log(rgroup + "\t" + event.target.value);
     };
-
-    let seletedStepId = this.state[rgroup];
-
-    if (seletedStepId === undefined){
-      seletedStepId =stepId[0];
-    }
 
     return (
       <Grid item>
+        <img src={thisTab[selectedStepId].URL} width={plotsizes[selectedStepId][0]} height={plotsizes[selectedStepId][1]} alt=""/>
         <Grid container spacing={3} direction="row" justifyContent="space-evenly">
-          {
-            stepId.map(stepIndex=>{
-              return (
-                <Grid item key={Math.random().toString(36).substr(10, 17)}>
-                  <Radio checked={seletedStepId === stepIndex} onChange={handleRadioChange} value= {stepIndex} name= {rgroup} color="default"/>
-                  {plottitle[stepIndex]}
-                </Grid>
-              )
-            } )
-          }
+          <RadioGroup row onChange={handleRadioChange} name={rgroup}>
+            {
+              stepId.map(stepIndex=>{
+                return (
+                  <Wire key={Math.random().toString(36).substr(10, 17)} value={stepIndex}>
+                    {(props) => (
+                        <FormControlLabel
+                          checked={selectedStepId === stepIndex}
+                          control={<Radio />}
+                          name={rgroup}
+                          color="default"
+                          label={plottitle[stepIndex]}
+                          {...props}
+                        />
+                    )}
+                  </Wire>
+                )
+              } )
+            }
+          </RadioGroup>
         </Grid>
-        { <this.Plot imgObj={thisTab[seletedStepId]} sizes={plotsizes[seletedStepId]} /> }
-    </Grid>
+      </Grid>
     )
   }
 
@@ -306,7 +322,6 @@ class ImageArray extends React.Component {
     let plotsizes = this.props.plotsizes;
     let plottitle = this.props.plottitles;
     let thisTab = this.props.data[selectedTab];
-    let radioButtonGroupIndex = 0;
     //console.log(tablayout);
 
     return (
@@ -349,8 +364,7 @@ class ImageArray extends React.Component {
                     {
                       row.map(stepId=>{
                         if (Array.isArray(stepId)) {
-                          radioButtonGroupIndex = radioButtonGroupIndex +1;
-                          return ( <this.RadioGroup key={Math.random().toString(36).substr(10, 17)} radioButtonGroupIndex={radioButtonGroupIndex}  plottitle={plottitle} stepId={stepId} thisTab={thisTab} plotsizes={plotsizes} /> )
+                          return ( <this.RadioButtonGroup key={Math.random().toString(36).substr(10, 17)} plottitle={plottitle} stepId={stepId} thisTab={thisTab} plotsizes={plotsizes} /> )
                         }
                         else {
                           return ( <this.Plot key={Math.random().toString(36).substr(10, 17)} imgObj={thisTab[stepId]} sizes={plotsizes[stepId]} /> )
@@ -373,9 +387,9 @@ class ImageArray extends React.Component {
                   <Grid container spacing={spacing} direction="column" wrap="nowrap" justifyContent="flex-start" className={classes.mainContainer}>
                     {
                       row.map(stepId=>{
+                        //console.log(row);
                         if (Array.isArray(stepId)) {
-                          radioButtonGroupIndex = radioButtonGroupIndex +1;
-                          return ( <this.RadioGroup key={Math.random().toString(36).substr(10, 17)} radioButtonGroupIndex={radioButtonGroupIndex}  plottitle={plottitle} stepId={stepId} thisTab={thisTab} plotsizes={plotsizes} /> )
+                          return ( <this.RadioButtonGroup key={Math.random().toString(36).substr(10, 17)} plottitle={plottitle} stepId={stepId} thisTab={thisTab} plotsizes={plotsizes} /> )
                         } else {
                           return ( <this.Plot key={Math.random().toString(36).substr(10, 17)} imgObj={thisTab[stepId]} sizes={plotsizes[stepId]} /> )
                         }
