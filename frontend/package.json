@@ -17,7 +17,7 @@
     "@nivo/stream": "^0.79.0",
     "@nivo/swarmplot": "^0.79.0",
     "@nivo/treemap": "^0.79.0",
-    "axios": "^0.21.4",
+    "axios": "^1.6.0",
     "classnames": "^2.2.6",
     "igv": "^2.13.2",
     "mui-datatables": "^3.8.5",
